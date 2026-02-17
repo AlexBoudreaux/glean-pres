@@ -208,7 +208,9 @@ export default function HubPage() {
             LinkedIn
           </a>
           <a
-            href="#"
+            href="https://cap.link/1g8qw2ysqv9aywn"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted
                        bg-surface border border-border
                        hover:text-foreground hover:border-border-hover hover:bg-surface-hover
