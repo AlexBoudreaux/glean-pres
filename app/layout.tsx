@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Instrument_Serif } from "next/font/google";
+import { Sora, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const sora = Sora({
@@ -12,6 +12,12 @@ const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
   subsets: ["latin"],
   weight: "400",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} ${instrumentSerif.variable} font-sans antialiased`}
+        className={`${sora.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         {children}
       </body>

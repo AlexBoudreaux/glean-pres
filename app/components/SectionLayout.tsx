@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { GleanMark } from "./GleanLogo";
 
 export function SectionLayout({
   title,
@@ -17,7 +18,6 @@ export function SectionLayout({
   const [totalPanels, setTotalPanels] = useState(0);
   const [currentTitle, setCurrentTitle] = useState("");
 
-  // Set up IntersectionObserver to track which panel is in view
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -52,7 +52,6 @@ export function SectionLayout({
     return () => observer.disconnect();
   }, []);
 
-  // Scroll to a specific panel by index
   const scrollToPanel = useCallback((index: number) => {
     const container = containerRef.current;
     if (!container) return;
@@ -63,10 +62,8 @@ export function SectionLayout({
     }
   }, []);
 
-  // Keyboard navigation
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
-      // Don't capture if user is typing in an input
       if (
         e.target instanceof HTMLInputElement ||
         e.target instanceof HTMLTextAreaElement
@@ -112,24 +109,25 @@ export function SectionLayout({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [currentIndex, scrollToPanel, router]);
 
-  const progress = totalPanels > 0 ? ((currentIndex + 1) / totalPanels) * 100 : 0;
+  const progress =
+    totalPanels > 0 ? ((currentIndex + 1) / totalPanels) * 100 : 0;
 
   return (
     <div className="h-screen w-screen overflow-hidden relative">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 h-12 bg-background/80 backdrop-blur-md border-b border-border">
+      <header className="fixed top-0 left-0 right-0 z-50 h-12 bg-background/80 backdrop-blur-xl border-b border-border">
         <div className="h-full max-w-[1400px] mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="text-muted hover:text-foreground transition-colors text-sm flex items-center gap-2"
+              className="text-muted hover:text-foreground transition-colors text-sm flex items-center gap-2.5 group"
             >
               <svg
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 viewBox="0 0 16 16"
                 fill="none"
-                className="opacity-60"
+                className="opacity-50 group-hover:opacity-100 transition-opacity"
               >
                 <path
                   d="M10 12L6 8L10 4"
@@ -139,20 +137,20 @@ export function SectionLayout({
                   strokeLinejoin="round"
                 />
               </svg>
-              Back
+              <GleanMark size={14} className="text-accent/60" />
             </Link>
-            <span className="text-border">|</span>
+            <div className="w-px h-4 bg-border" />
             <span className="text-foreground text-sm font-medium">
               {title}
             </span>
           </div>
 
-          <div className="flex items-center gap-3">
-            <span className="text-muted text-xs tabular-nums">
+          <div className="flex items-center gap-4">
+            <span className="text-muted text-xs max-w-[200px] truncate">
               {currentTitle}
             </span>
-            <span className="text-muted/40 text-xs tabular-nums">
-              {currentIndex + 1} / {totalPanels}
+            <span className="font-mono text-faint text-xs tabular-nums">
+              {currentIndex + 1}/{totalPanels}
             </span>
           </div>
         </div>
@@ -160,14 +158,14 @@ export function SectionLayout({
         {/* Progress bar */}
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-border">
           <div
-            className="h-full bg-accent/60 transition-all duration-500 ease-out"
+            className="h-full bg-accent/50 transition-all duration-500 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
       </header>
 
       {/* Scroll-snap container */}
-      <div ref={containerRef} className="snap-container pt-0">
+      <div ref={containerRef} className="snap-container">
         {children}
       </div>
     </div>
