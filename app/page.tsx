@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { GleanLogo } from "./components/GleanLogo";
 
 const cases = [
@@ -50,6 +51,15 @@ function LinkedInIcon() {
   );
 }
 
+function PlayIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 function ProfilePhoto() {
   return (
     <div className="relative inline-block">
@@ -68,10 +78,14 @@ function ProfilePhoto() {
             "linear-gradient(135deg, rgba(52,60,237,0.6), rgba(52,60,237,0.1) 50%, rgba(216,253,73,0.3))",
         }}
       >
-        {/* Photo placeholder */}
-        <div className="w-20 h-20 rounded-full bg-surface-raised border-2 border-background flex items-center justify-center">
-          <span className="text-muted text-xs font-mono">AB</span>
-        </div>
+        <Image
+          src="/profile-pic.png"
+          alt="Alex Boudreaux"
+          width={80}
+          height={80}
+          className="w-20 h-20 rounded-full object-cover border-2 border-background"
+          priority
+        />
       </div>
     </div>
   );
@@ -178,6 +192,16 @@ export default function HubPage() {
           >
             <LinkedInIcon />
             LinkedIn
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted
+                       bg-surface border border-border
+                       hover:text-foreground hover:border-border-hover hover:bg-surface-hover
+                       transition-all duration-200"
+          >
+            <PlayIcon />
+            Demo Video
           </a>
         </div>
       </div>
