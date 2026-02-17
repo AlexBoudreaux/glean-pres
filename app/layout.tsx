@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Sora, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import { SlideShell } from "./components/SlideShell";
 
-const inter = Inter({
-  variable: "--font-inter",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
   subsets: ["latin"],
+  weight: "400",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Alex Boudreaux | Glean GTM Engineer Case Study",
+  title: "Alex Boudreaux | Glean GTM Engineer",
   description: "Case study presentation for Glean GTM Engineer role",
 };
 
@@ -26,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${sora.variable} ${instrumentSerif.variable} font-sans antialiased`}
       >
-        <SlideShell>{children}</SlideShell>
+        {children}
       </body>
     </html>
   );
