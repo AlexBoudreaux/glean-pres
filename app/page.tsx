@@ -11,7 +11,7 @@ const cases = [
     href: "/fiserv",
     label: "AI-First Workflow",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
         <path d="M8 10h.01" />
         <path d="M12 10h.01" />
@@ -27,7 +27,7 @@ const cases = [
     href: "/experiment",
     label: "Data-Driven Experiment",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 3v18h18" />
         <path d="M7 16l4-8 4 4 6-10" />
       </svg>
@@ -126,25 +126,39 @@ export default function HubPage() {
             <Link
               key={c.href}
               href={c.href}
-              className="card-glow group block p-8 rounded-xl bg-surface border border-border"
+              className="card-glow group flex flex-col p-8 rounded-xl bg-surface border border-border"
             >
-              <div className="flex items-center gap-3 mb-5">
-                <span className="font-mono text-accent/40 text-sm tracking-wider">
+              {/* Header: icon container + number */}
+              <div className="flex items-start justify-between mb-6">
+                <div className="w-12 h-12 rounded-lg bg-accent-muted flex items-center justify-center text-accent">
+                  {c.icon}
+                </div>
+                <span className="font-mono text-faint text-2xl tracking-tight">
                   {c.number}
                 </span>
-                <span className="text-accent/30">{c.icon}</span>
               </div>
 
-              <h2 className="text-[22px] font-semibold leading-tight mb-3 group-hover:text-foreground transition-colors">
+              {/* Label tag */}
+              <span className="inline-flex self-start px-2.5 py-1 rounded-md bg-surface-raised text-secondary text-xs font-medium tracking-wide mb-4">
+                {c.label}
+              </span>
+
+              {/* Title (min-height for alignment across cards) */}
+              <h2 className="text-[22px] font-semibold leading-snug min-h-[60px] mb-3 group-hover:text-foreground transition-colors">
                 {c.title}
               </h2>
 
-              <p className="text-muted text-[15px] leading-relaxed mb-8">
+              {/* Description */}
+              <p className="text-muted text-[15px] leading-relaxed mb-6">
                 {c.description}
               </p>
 
+              {/* Spacer to push CTA to bottom */}
+              <div className="flex-grow" />
+
+              {/* CTA */}
               <span className="text-accent text-sm font-medium flex items-center gap-2 group-hover:gap-3.5 transition-all duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]">
-                {c.label}
+                Explore case study
                 <svg
                   width="14"
                   height="14"
