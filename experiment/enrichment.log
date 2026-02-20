@@ -1,0 +1,2205 @@
+2026-02-17 22:08:47,000 [INFO] ============================================================
+2026-02-17 22:08:47,000 [INFO] ENRICHMENT PIPELINE STARTING
+2026-02-17 22:08:47,000 [INFO] ============================================================
+2026-02-17 22:08:47,000 [INFO] Loaded prompt template (6985 chars)
+2026-02-17 22:08:47,000 [INFO] Loaded 44 known customers
+2026-02-17 22:08:47,001 [INFO] Loaded 176 non-customers
+2026-02-17 22:08:47,001 [INFO] Total companies to enrich: 220
+2026-02-17 22:08:47,002 [INFO] Already enriched: 0
+2026-02-17 22:08:47,002 [INFO] Remaining to process: 220
+2026-02-17 22:08:47,002 [INFO] [1/220] Enriching Booking.com (booking.com) [CUSTOMER]
+2026-02-17 22:10:03,585 [INFO]   Saved to booking_com.json
+2026-02-17 22:10:08,590 [INFO] [2/220] Enriching Databricks (databricks.com) [CUSTOMER]
+2026-02-17 22:10:59,703 [WARNING]   Error on attempt 1/3: Empty output from Claude CLI
+2026-02-17 22:10:59,704 [INFO]   Retrying in 30s...
+2026-02-18 03:00:00,285 [INFO] ============================================================
+2026-02-18 03:00:00,285 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-18 03:00:00,285 [INFO] ============================================================
+2026-02-18 03:00:00,285 [INFO] Loaded prompt template (6985 chars)
+2026-02-18 03:00:00,286 [INFO] Loaded 44 known customers
+2026-02-18 03:00:00,286 [INFO] Loaded 176 non-customers
+2026-02-18 03:00:00,286 [INFO] Total companies to enrich: 220
+2026-02-18 03:00:00,288 [INFO] Already enriched: 1
+2026-02-18 03:00:00,288 [INFO] Remaining to process: 219
+2026-02-18 03:00:00,288 [INFO] [2/220] Enriching Databricks (databricks.com) [CUSTOMER]
+2026-02-18 03:00:00,288 [INFO] [2/220] Enriching Wealthsimple (wealthsimple.com) [CUSTOMER]
+2026-02-18 03:00:00,288 [INFO] [2/220] Enriching Confluent (confluent.io) [CUSTOMER]
+2026-02-18 03:00:00,288 [INFO] [2/220] Enriching Webflow (webflow.com) [CUSTOMER]
+2026-02-18 03:00:00,289 [INFO] [2/220] Enriching Super.com (super.com) [CUSTOMER]
+2026-02-18 03:01:14,070 [INFO]   [Databricks] Saved to databricks_com.json
+2026-02-18 03:01:14,072 [INFO] [3/220] Enriching Upside (upside.com) [CUSTOMER]
+2026-02-18 03:01:15,560 [INFO]   [Webflow] Saved to webflow_com.json
+2026-02-18 03:01:15,560 [INFO] [4/220] Enriching Grammarly (grammarly.com) [CUSTOMER]
+2026-02-18 03:01:28,553 [INFO]   [Super.com] Saved to super_com.json
+2026-02-18 03:01:28,554 [INFO] [5/220] Enriching CRO Metrics (crometrics.com) [CUSTOMER]
+2026-02-18 03:01:35,850 [INFO]   [Confluent] Saved to confluent_io.json
+2026-02-18 03:01:35,851 [INFO] [6/220] Enriching Duolingo (duolingo.com) [CUSTOMER]
+2026-02-18 03:01:57,958 [INFO]   [Wealthsimple] Saved to wealthsimple_com.json
+2026-02-18 03:01:57,959 [INFO] [7/220] Enriching Deutsche Telekom (telekom.com) [CUSTOMER]
+2026-02-18 03:02:21,465 [INFO]   [Grammarly] Saved to grammarly_com.json
+2026-02-18 03:02:21,466 [INFO] [8/220] Enriching Nextdoor (nextdoor.com) [CUSTOMER]
+2026-02-18 03:02:40,266 [INFO]   [Upside] Saved to upside_com.json
+2026-02-18 03:02:40,266 [INFO] [9/220] Enriching Motive (gomotive.com) [CUSTOMER]
+2026-02-18 03:03:01,161 [INFO]   [Duolingo] Saved to duolingo_com.json
+2026-02-18 03:03:01,162 [INFO] [10/220] Enriching Sigma Computing (sigmacomputing.com) [CUSTOMER]
+2026-02-18 03:03:27,719 [INFO]   [CRO Metrics] Saved to crometrics_com.json
+2026-02-18 03:03:27,720 [INFO] [11/220] Enriching TIME (time.com) [CUSTOMER]
+2026-02-18 03:03:33,066 [INFO]   [Deutsche Telekom] Saved to telekom_com.json
+2026-02-18 03:03:33,066 [INFO] [12/220] Enriching GCash (gcash.com) [CUSTOMER]
+2026-02-18 03:03:52,281 [INFO]   [Nextdoor] Saved to nextdoor_com.json
+2026-02-18 03:03:52,282 [INFO] [13/220] Enriching Pure Storage (purestorage.com) [CUSTOMER]
+2026-02-18 03:03:58,094 [WARNING]   [Sigma Computing] Error on attempt 1/3: Empty output from Claude CLI
+2026-02-18 03:03:58,094 [INFO]   [Sigma Computing] Retrying in 30s...
+2026-02-18 03:04:24,606 [INFO]   [Motive] Saved to gomotive_com.json
+2026-02-18 03:04:24,606 [INFO] [14/220] Enriching DBS (dbs.com) [CUSTOMER]
+2026-02-18 03:04:42,748 [INFO]   [GCash] Saved to gcash_com.json
+2026-02-18 03:04:42,749 [INFO] [15/220] Enriching Plaid (plaid.com) [CUSTOMER]
+2026-02-18 03:05:01,295 [INFO]   [Pure Storage] Saved to purestorage_com.json
+2026-02-18 03:05:01,296 [INFO] [16/220] Enriching Pinterest (pinterest.com) [CUSTOMER]
+2026-02-18 03:05:15,612 [INFO]   [TIME] Saved to time_com.json
+2026-02-18 03:05:15,612 [INFO] [17/220] Enriching LaunchDarkly (launchdarkly.com) [CUSTOMER]
+2026-02-18 03:05:23,092 [INFO]   [Sigma Computing] Saved to sigmacomputing_com.json
+2026-02-18 03:05:23,092 [INFO] [18/220] Enriching Greenhouse (greenhouse.io) [CUSTOMER]
+2026-02-18 03:05:43,331 [INFO]   [DBS] Saved to dbs_com.json
+2026-02-18 03:05:43,332 [INFO] [19/220] Enriching Bill (bill.com) [CUSTOMER]
+2026-02-18 03:06:11,321 [INFO]   [LaunchDarkly] Saved to launchdarkly_com.json
+2026-02-18 03:06:11,322 [INFO] [20/220] Enriching Gainsight (gainsight.com) [CUSTOMER]
+2026-02-18 03:06:11,902 [INFO]   [Plaid] Saved to plaid_com.json
+2026-02-18 03:06:11,902 [INFO] [21/220] Enriching Vanta (vanta.com) [CUSTOMER]
+2026-02-18 03:06:13,033 [INFO]   [Pinterest] Saved to pinterest_com.json
+2026-02-18 03:06:13,033 [INFO] [22/220] Enriching Zscaler (zscaler.com) [CUSTOMER]
+2026-02-18 03:06:32,224 [INFO]   [Greenhouse] Saved to greenhouse_io.json
+2026-02-18 03:06:32,225 [INFO] [23/220] Enriching Samsung (samsung.com) [CUSTOMER]
+2026-02-18 03:07:02,380 [INFO]   [Zscaler] Saved to zscaler_com.json
+2026-02-18 03:07:02,381 [INFO] [24/220] Enriching Redis (redis.com) [CUSTOMER]
+2026-02-18 03:07:12,838 [INFO]   [Bill] Saved to bill_com.json
+2026-02-18 03:07:12,839 [INFO] [25/220] Enriching BetterUp (betterup.com) [CUSTOMER]
+2026-02-18 03:07:28,010 [INFO]   [Vanta] Saved to vanta_com.json
+2026-02-18 03:07:28,011 [INFO] [26/220] Enriching Samsara (samsara.com) [CUSTOMER]
+2026-02-18 03:07:31,774 [INFO]   [Samsung] Saved to samsung_com.json
+2026-02-18 03:07:31,775 [INFO] [27/220] Enriching SeatGeek (seatgeek.com) [CUSTOMER]
+2026-02-18 03:07:50,705 [INFO]   [Gainsight] Saved to gainsight_com.json
+2026-02-18 03:07:50,705 [INFO] [28/220] Enriching Instacart (instacart.com) [CUSTOMER]
+2026-02-18 03:08:16,329 [INFO]   [Redis] Saved to redis_com.json
+2026-02-18 03:08:16,330 [INFO] [29/220] Enriching Abnormal Security (abnormalsecurity.com) [CUSTOMER]
+2026-02-18 03:08:29,951 [INFO]   [SeatGeek] Saved to seatgeek_com.json
+2026-02-18 03:08:29,952 [INFO] [30/220] Enriching Handshake (joinhandshake.com) [CUSTOMER]
+2026-02-18 03:08:42,548 [INFO]   [BetterUp] Saved to betterup_com.json
+2026-02-18 03:08:42,549 [INFO] [31/220] Enriching Worldwide Technology (wwt.com) [CUSTOMER]
+2026-02-18 03:08:48,920 [INFO]   [Samsara] Saved to samsara_com.json
+2026-02-18 03:08:48,920 [INFO] [32/220] Enriching Crunchyroll (crunchyroll.com) [CUSTOMER]
+2026-02-18 03:09:06,858 [INFO]   [Instacart] Saved to instacart_com.json
+2026-02-18 03:09:06,860 [INFO] [33/220] Enriching Reddit (reddit.com) [CUSTOMER]
+2026-02-18 03:09:23,610 [INFO]   [Abnormal Security] Saved to abnormalsecurity_com.json
+2026-02-18 03:09:23,612 [INFO] [34/220] Enriching Rivian (rivian.com) [CUSTOMER]
+2026-02-18 03:09:44,855 [INFO]   [Worldwide Technology] Saved to wwt_com.json
+2026-02-18 03:09:44,855 [INFO] [35/220] Enriching Zillow (zillow.com) [CUSTOMER]
+2026-02-18 03:10:04,088 [INFO]   [Handshake] Saved to joinhandshake_com.json
+2026-02-18 03:10:04,089 [INFO] [36/220] Enriching Zapier (zapier.com) [CUSTOMER]
+2026-02-18 03:10:24,642 [INFO]   [Crunchyroll] Saved to crunchyroll_com.json
+2026-02-18 03:10:24,643 [INFO] [37/220] Enriching Rubrik (rubrik.com) [CUSTOMER]
+2026-02-18 03:10:27,026 [INFO]   [Rivian] Saved to rivian_com.json
+2026-02-18 03:10:27,026 [INFO] [38/220] Enriching Intercom (intercom.com) [CUSTOMER]
+2026-02-18 03:10:48,572 [INFO]   [Reddit] Saved to reddit_com.json
+2026-02-18 03:10:48,572 [INFO] [39/220] Enriching Intuit (intuit.com) [CUSTOMER]
+2026-02-18 03:11:02,530 [INFO]   [Zillow] Saved to zillow_com.json
+2026-02-18 03:11:02,531 [INFO] [40/220] Enriching Covered California (coveredca.com) [CUSTOMER]
+2026-02-18 03:11:42,863 [INFO]   [Zapier] Saved to zapier_com.json
+2026-02-18 03:11:42,865 [INFO] [41/220] Enriching Satori (satoricyber.com) [non-customer]
+2026-02-18 03:11:47,823 [INFO]   [Rubrik] Saved to rubrik_com.json
+2026-02-18 03:11:47,823 [INFO] [42/220] Enriching Gnip (acquired by Twitter) (gnip.com) [non-customer]
+2026-02-18 03:12:00,858 [WARNING]   [Covered California] Error on attempt 1/3: Empty output from Claude CLI
+2026-02-18 03:12:00,859 [INFO]   [Covered California] Retrying in 30s...
+2026-02-18 03:12:08,439 [INFO]   [Intercom] Saved to intercom_com.json
+2026-02-18 03:12:08,439 [INFO] [43/220] Enriching Axway (axway.com) [non-customer]
+2026-02-18 03:12:18,210 [INFO]   [Intuit] Saved to intuit_com.json
+2026-02-18 03:12:18,212 [INFO] [44/220] Enriching 3Pillar (3pillarglobal.com) [non-customer]
+2026-02-18 03:12:36,223 [INFO]   [Gnip (acquired by Twitter)] Saved to gnip_com.json
+2026-02-18 03:12:36,223 [INFO] [45/220] Enriching Relevantz Data and AI (relevantz.com) [non-customer]
+2026-02-18 03:12:59,010 [INFO]   [Satori] Saved to satoricyber_com.json
+2026-02-18 03:12:59,010 [INFO] [46/220] Enriching Fivetran (5tran.co) [non-customer]
+2026-02-18 03:13:30,552 [INFO]   [3Pillar] Saved to 3pillarglobal_com.json
+2026-02-18 03:13:30,553 [INFO] [47/220] Enriching AVASOFT (avasoft.com) [non-customer]
+2026-02-18 03:13:42,668 [INFO]   [Relevantz Data and AI] Saved to relevantz_com.json
+2026-02-18 03:13:42,669 [INFO] [48/220] Enriching Datawatch Corporation (altair.com) [non-customer]
+2026-02-18 03:13:44,079 [INFO]   [Axway] Saved to axway_com.json
+2026-02-18 03:13:44,079 [INFO] [49/220] Enriching HashiCorp (hashicorp.com) [non-customer]
+2026-02-18 03:13:51,859 [INFO]   [Covered California] Saved to coveredca_com.json
+2026-02-18 03:13:51,860 [INFO] [50/220] Enriching Syniti (syniti.com) [non-customer]
+2026-02-18 03:14:17,360 [WARNING]   [Fivetran] Error on attempt 1/3: Could not extract JSON from output: {"company_name": "Fivetran", "domain": "5tran.co", "signals": {"tool_count": {"score": 2, "reasoning": "From job postings and tech stack sources, confirmed tools include: Slack (referenced in engineer...
+2026-02-18 03:14:17,361 [INFO]   [Fivetran] Retrying in 30s...
+2026-02-18 03:14:47,895 [INFO]   [AVASOFT] Saved to avasoft_com.json
+2026-02-18 03:14:47,895 [INFO] [51/220] Enriching PagerDuty (pagerduty.com) [non-customer]
+2026-02-18 03:14:52,622 [INFO]   [Datawatch Corporation] Saved to altair_com.json
+2026-02-18 03:14:52,623 [INFO] [52/220] Enriching Altair RapidMiner (rapidminer.com) [non-customer]
+2026-02-18 03:14:53,181 [INFO]   [Syniti] Saved to syniti_com.json
+2026-02-18 03:14:53,181 [INFO] [53/220] Enriching Trace3 (trace3.com) [non-customer]
+2026-02-18 03:15:10,711 [INFO]   [HashiCorp] Saved to hashicorp_com.json
+2026-02-18 03:15:10,712 [INFO] [54/220] Enriching Druva (druva.com) [non-customer]
+2026-02-18 03:15:59,143 [INFO]   [Altair RapidMiner] Saved to rapidminer_com.json
+2026-02-18 03:15:59,143 [INFO] [55/220] Enriching Magic Software Enterprises (magicsoftware.com) [non-customer]
+2026-02-18 03:16:08,248 [INFO]   [Fivetran] Saved to 5tran_co.json
+2026-02-18 03:16:08,249 [INFO] [56/220] Enriching Syncfusion (syncfusion.com) [non-customer]
+2026-02-18 03:16:13,048 [INFO]   [PagerDuty] Saved to pagerduty_com.json
+2026-02-18 03:16:13,048 [INFO] [57/220] Enriching Pivotal Software, Inc. (vmware.com) [non-customer]
+2026-02-18 03:16:23,432 [INFO]   [Trace3] Saved to trace3_com.json
+2026-02-18 03:16:23,434 [INFO] [58/220] Enriching Wind River (windriver.com) [non-customer]
+2026-02-18 03:16:30,373 [INFO]   [Druva] Saved to druva_com.json
+2026-02-18 03:16:30,374 [INFO] [59/220] Enriching Boomi (boomi.com) [non-customer]
+2026-02-18 03:17:14,116 [INFO]   [Syncfusion] Saved to syncfusion_com.json
+2026-02-18 03:17:14,118 [INFO] [60/220] Enriching Hudl (hudl.com) [non-customer]
+2026-02-18 03:17:18,081 [INFO]   [Pivotal Software, Inc.] Saved to vmware_com.json
+2026-02-18 03:17:18,082 [INFO] [61/220] Enriching Progress MarkLogic - Progress Data Platform (progress.com) [non-customer]
+2026-02-18 03:17:33,321 [INFO]   [Magic Software Enterprises] Saved to magicsoftware_com.json
+2026-02-18 03:17:33,322 [INFO] [62/220] Enriching MAQ Software (maqsoftware.com) [non-customer]
+2026-02-18 03:17:42,422 [INFO]   [Wind River] Saved to windriver_com.json
+2026-02-18 03:17:42,422 [INFO] [63/220] Enriching zeb (zeb.co) [non-customer]
+2026-02-18 03:17:47,492 [INFO]   [Boomi] Saved to boomi_com.json
+2026-02-18 03:17:47,492 [INFO] [64/220] Enriching Calsoft (calsoftinc.com) [non-customer]
+2026-02-18 03:18:43,504 [INFO]   [Progress MarkLogic - Progress Data Platform] Saved to progress_com.json
+2026-02-18 03:18:43,505 [INFO] [65/220] Enriching Talend (talend.com) [non-customer]
+2026-02-18 03:18:47,799 [INFO]   [Calsoft] Saved to calsoftinc_com.json
+2026-02-18 03:18:47,799 [INFO] [66/220] Enriching Coherent Solutions (coherentsolutions.com) [non-customer]
+2026-02-18 03:18:48,466 [INFO]   [Hudl] Saved to hudl_com.json
+2026-02-18 03:18:48,466 [INFO] [67/220] Enriching Acquia (acquia.com) [non-customer]
+2026-02-18 03:18:59,191 [INFO]   [zeb] Saved to zeb_co.json
+2026-02-18 03:18:59,191 [INFO] [68/220] Enriching erwin by Quest Software (erwin.com) [non-customer]
+2026-02-18 03:19:08,754 [INFO]   [Talend] Saved to talend_com.json
+2026-02-18 03:19:08,755 [INFO] [69/220] Enriching Hortonworks (hortonworks.com) [non-customer]
+2026-02-18 03:19:10,085 [INFO]   [MAQ Software] Saved to maqsoftware_com.json
+2026-02-18 03:19:10,085 [INFO] [70/220] Enriching Bentley Mobility Simulation (bentley.com) [non-customer]
+2026-02-18 03:19:56,274 [INFO]   [Acquia] Saved to acquia_com.json
+2026-02-18 03:19:56,276 [INFO] [71/220] Enriching Cohesity (cohesity.com) [non-customer]
+2026-02-18 03:20:03,882 [INFO]   [Coherent Solutions] Saved to coherentsolutions_com.json
+2026-02-18 03:20:03,883 [INFO] [72/220] Enriching Dataiku (dataiku.com) [non-customer]
+2026-02-18 03:20:10,779 [INFO]   [Hortonworks] Saved to hortonworks_com.json
+2026-02-18 03:20:10,779 [INFO] [73/220] Enriching Crest Data (crestdata.ai) [non-customer]
+2026-02-18 03:20:13,921 [INFO]   [erwin by Quest Software] Saved to erwin_com.json
+2026-02-18 03:20:13,922 [INFO] [74/220] Enriching Cyera (cyera.com) [non-customer]
+2026-02-18 03:20:21,751 [WARNING]   [Bentley Mobility Simulation] Error on attempt 1/3: Could not extract JSON from output: {"company_name": "Bentley Mobility Simulation", "domain": "bentley.com", "signals": {"tool_count": {"score": 1, "reasoning": "Himalayas tech stack page returned 403. Job postings and career pages refe...
+2026-02-18 03:20:21,751 [INFO]   [Bentley Mobility Simulation] Retrying in 30s...
+2026-02-18 03:20:36,416 [WARNING]   [Crest Data] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:20:36,418 [INFO]   [Crest Data] Retrying in 30s...
+2026-02-18 03:20:38,323 [WARNING]   [Dataiku] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:20:38,323 [INFO]   [Dataiku] Retrying in 30s...
+2026-02-18 03:20:39,191 [WARNING]   [Cyera] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:20:39,192 [INFO]   [Cyera] Retrying in 30s...
+2026-02-18 03:20:41,496 [WARNING]   [Cohesity] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:20:41,496 [INFO]   [Cohesity] Retrying in 30s...
+2026-02-18 03:20:57,060 [WARNING]   [Bentley Mobility Simulation] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:20:57,061 [INFO]   [Bentley Mobility Simulation] Retrying in 60s...
+2026-02-18 03:21:13,384 [WARNING]   [Crest Data] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:21:13,385 [INFO]   [Crest Data] Retrying in 60s...
+2026-02-18 03:21:14,135 [WARNING]   [Dataiku] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:21:14,136 [INFO]   [Dataiku] Retrying in 60s...
+2026-02-18 03:21:14,843 [WARNING]   [Cyera] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:21:14,843 [INFO]   [Cyera] Retrying in 60s...
+2026-02-18 03:21:16,930 [WARNING]   [Cohesity] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:21:16,930 [INFO]   [Cohesity] Retrying in 60s...
+2026-02-18 03:22:03,321 [WARNING]   [Bentley Mobility Simulation] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:03,323 [ERROR]   [Bentley Mobility Simulation] FAILED after 3 attempts
+2026-02-18 03:22:03,323 [INFO] [74/220] Enriching Candle Corporation (candle.com) [non-customer]
+2026-02-18 03:22:09,043 [WARNING]   [Candle Corporation] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:09,043 [INFO]   [Candle Corporation] Retrying in 30s...
+2026-02-18 03:22:19,382 [WARNING]   [Crest Data] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:19,387 [ERROR]   [Crest Data] FAILED after 3 attempts
+2026-02-18 03:22:19,387 [INFO] [74/220] Enriching DDN (ddn.com) [non-customer]
+2026-02-18 03:22:19,620 [WARNING]   [Dataiku] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:19,620 [ERROR]   [Dataiku] FAILED after 3 attempts
+2026-02-18 03:22:19,620 [INFO] [74/220] Enriching Palantir Technologies (palantir.com) [non-customer]
+2026-02-18 03:22:20,651 [WARNING]   [Cyera] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:20,651 [ERROR]   [Cyera] FAILED after 3 attempts
+2026-02-18 03:22:20,651 [INFO] [74/220] Enriching PartnerLinQ (partnerlinq.com) [non-customer]
+2026-02-18 03:22:21,874 [WARNING]   [Cohesity] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:21,875 [ERROR]   [Cohesity] FAILED after 3 attempts
+2026-02-18 03:22:21,875 [INFO] [74/220] Enriching Qlik (qlik.com) [non-customer]
+2026-02-18 03:22:24,549 [WARNING]   [Palantir Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:24,549 [INFO]   [Palantir Technologies] Retrying in 30s...
+2026-02-18 03:22:25,343 [WARNING]   [DDN] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:25,343 [INFO]   [DDN] Retrying in 30s...
+2026-02-18 03:22:26,399 [WARNING]   [PartnerLinQ] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:26,399 [INFO]   [PartnerLinQ] Retrying in 30s...
+2026-02-18 03:22:27,460 [WARNING]   [Qlik] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:27,460 [INFO]   [Qlik] Retrying in 30s...
+2026-02-18 03:22:44,789 [WARNING]   [Candle Corporation] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:44,790 [INFO]   [Candle Corporation] Retrying in 60s...
+2026-02-18 03:22:59,976 [WARNING]   [Palantir Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:22:59,977 [INFO]   [Palantir Technologies] Retrying in 60s...
+2026-02-18 03:23:01,143 [WARNING]   [DDN] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:23:01,143 [INFO]   [DDN] Retrying in 60s...
+2026-02-18 03:23:02,066 [WARNING]   [PartnerLinQ] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:23:02,066 [INFO]   [PartnerLinQ] Retrying in 60s...
+2026-02-18 03:23:03,757 [WARNING]   [Qlik] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:23:03,758 [INFO]   [Qlik] Retrying in 60s...
+2026-02-18 03:23:50,795 [WARNING]   [Candle Corporation] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:23:50,798 [ERROR]   [Candle Corporation] FAILED after 3 attempts
+2026-02-18 03:23:50,798 [INFO] [74/220] Enriching Moraph (moraph.com) [non-customer]
+2026-02-18 03:23:56,155 [WARNING]   [Moraph] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:23:56,155 [INFO]   [Moraph] Retrying in 30s...
+2026-02-18 03:24:05,610 [WARNING]   [Palantir Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:05,611 [ERROR]   [Palantir Technologies] FAILED after 3 attempts
+2026-02-18 03:24:05,611 [INFO] [74/220] Enriching Istio (istio.io) [non-customer]
+2026-02-18 03:24:06,862 [WARNING]   [DDN] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:06,862 [ERROR]   [DDN] FAILED after 3 attempts
+2026-02-18 03:24:06,862 [INFO] [74/220] Enriching Datadog (datadoghq.com) [non-customer]
+2026-02-18 03:24:08,028 [WARNING]   [PartnerLinQ] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:08,028 [ERROR]   [PartnerLinQ] FAILED after 3 attempts
+2026-02-18 03:24:08,029 [INFO] [74/220] Enriching Microsoft Power Platform Community (powerplatform.com) [non-customer]
+2026-02-18 03:24:10,017 [WARNING]   [Qlik] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:10,017 [ERROR]   [Qlik] FAILED after 3 attempts
+2026-02-18 03:24:10,017 [INFO] [74/220] Enriching Trimble App Xchange (trimble.com) [non-customer]
+2026-02-18 03:24:10,816 [WARNING]   [Istio] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:10,816 [INFO]   [Istio] Retrying in 30s...
+2026-02-18 03:24:13,681 [WARNING]   [Microsoft Power Platform Community] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:13,681 [INFO]   [Microsoft Power Platform Community] Retrying in 30s...
+2026-02-18 03:24:14,701 [WARNING]   [Datadog] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:14,701 [INFO]   [Datadog] Retrying in 30s...
+2026-02-18 03:24:15,831 [WARNING]   [Trimble App Xchange] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:15,831 [INFO]   [Trimble App Xchange] Retrying in 30s...
+2026-02-18 03:24:32,146 [WARNING]   [Moraph] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:32,148 [INFO]   [Moraph] Retrying in 60s...
+2026-02-18 03:24:46,768 [WARNING]   [Istio] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:46,769 [INFO]   [Istio] Retrying in 60s...
+2026-02-18 03:24:50,081 [WARNING]   [Microsoft Power Platform Community] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:50,082 [INFO]   [Microsoft Power Platform Community] Retrying in 60s...
+2026-02-18 03:24:50,920 [WARNING]   [Datadog] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:50,920 [INFO]   [Datadog] Retrying in 60s...
+2026-02-18 03:24:52,101 [WARNING]   [Trimble App Xchange] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:24:52,101 [INFO]   [Trimble App Xchange] Retrying in 60s...
+2026-02-18 03:25:37,845 [WARNING]   [Moraph] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:37,846 [ERROR]   [Moraph] FAILED after 3 attempts
+2026-02-18 03:25:37,846 [INFO] [74/220] Enriching SS&C Blue Prism (blueprism.com) [non-customer]
+2026-02-18 03:25:43,563 [WARNING]   [SS&C Blue Prism] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:43,563 [INFO]   [SS&C Blue Prism] Retrying in 30s...
+2026-02-18 03:25:52,336 [WARNING]   [Istio] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:52,337 [ERROR]   [Istio] FAILED after 3 attempts
+2026-02-18 03:25:52,337 [INFO] [74/220] Enriching StreamSets (streamsets.com) [non-customer]
+2026-02-18 03:25:56,137 [WARNING]   [Microsoft Power Platform Community] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:56,137 [ERROR]   [Microsoft Power Platform Community] FAILED after 3 attempts
+2026-02-18 03:25:56,137 [INFO] [74/220] Enriching Cultura Technologies (culturatech.com) [non-customer]
+2026-02-18 03:25:56,890 [WARNING]   [Datadog] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:56,891 [ERROR]   [Datadog] FAILED after 3 attempts
+2026-02-18 03:25:56,891 [INFO] [74/220] Enriching Blockchain Developer (crussaire.com) [non-customer]
+2026-02-18 03:25:57,540 [WARNING]   [Trimble App Xchange] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:57,540 [ERROR]   [Trimble App Xchange] FAILED after 3 attempts
+2026-02-18 03:25:57,540 [INFO] [74/220] Enriching Minit Process Mining (Now Part of Microsoft Power Automate) (aka.ms) [non-customer]
+2026-02-18 03:25:57,635 [WARNING]   [StreamSets] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:25:57,635 [INFO]   [StreamSets] Retrying in 30s...
+2026-02-18 03:26:02,079 [WARNING]   [Cultura Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:02,080 [INFO]   [Cultura Technologies] Retrying in 30s...
+2026-02-18 03:26:02,552 [WARNING]   [Blockchain Developer] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:02,552 [INFO]   [Blockchain Developer] Retrying in 30s...
+2026-02-18 03:26:03,219 [WARNING]   [Minit Process Mining (Now Part of Microsoft Power Automate)] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:03,220 [INFO]   [Minit Process Mining (Now Part of Microsoft Power Automate)] Retrying in 30s...
+2026-02-18 03:26:19,578 [WARNING]   [SS&C Blue Prism] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:19,578 [INFO]   [SS&C Blue Prism] Retrying in 60s...
+2026-02-18 03:26:33,271 [WARNING]   [StreamSets] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:33,272 [INFO]   [StreamSets] Retrying in 60s...
+2026-02-18 03:26:37,456 [WARNING]   [Cultura Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:37,456 [INFO]   [Cultura Technologies] Retrying in 60s...
+2026-02-18 03:26:38,208 [WARNING]   [Blockchain Developer] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:38,208 [INFO]   [Blockchain Developer] Retrying in 60s...
+2026-02-18 03:26:39,895 [WARNING]   [Minit Process Mining (Now Part of Microsoft Power Automate)] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:26:39,895 [INFO]   [Minit Process Mining (Now Part of Microsoft Power Automate)] Retrying in 60s...
+2026-02-18 03:27:24,990 [WARNING]   [SS&C Blue Prism] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:24,991 [ERROR]   [SS&C Blue Prism] FAILED after 3 attempts
+2026-02-18 03:27:24,991 [INFO] [74/220] Enriching hooli (hbo.com) [non-customer]
+2026-02-18 03:27:31,203 [WARNING]   [hooli] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:31,204 [INFO]   [hooli] Retrying in 30s...
+2026-02-18 03:27:38,888 [WARNING]   [StreamSets] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:38,888 [ERROR]   [StreamSets] FAILED after 3 attempts
+2026-02-18 03:27:38,888 [INFO] [74/220] Enriching Zoho IoT (zoho.com) [non-customer]
+2026-02-18 03:27:43,467 [WARNING]   [Cultura Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:43,467 [ERROR]   [Cultura Technologies] FAILED after 3 attempts
+2026-02-18 03:27:43,467 [INFO] [74/220] Enriching Teradata (teradata.com) [non-customer]
+2026-02-18 03:27:43,962 [WARNING]   [Blockchain Developer] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:43,963 [ERROR]   [Blockchain Developer] FAILED after 3 attempts
+2026-02-18 03:27:43,963 [INFO] [74/220] Enriching Ascendion (ascendion.com) [non-customer]
+2026-02-18 03:27:44,399 [WARNING]   [Zoho IoT] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:44,399 [INFO]   [Zoho IoT] Retrying in 30s...
+2026-02-18 03:27:45,805 [WARNING]   [Minit Process Mining (Now Part of Microsoft Power Automate)] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:45,805 [ERROR]   [Minit Process Mining (Now Part of Microsoft Power Automate)] FAILED after 3 attempts
+2026-02-18 03:27:45,805 [INFO] [74/220] Enriching Cloud Software Group (cloud.com) [non-customer]
+2026-02-18 03:27:49,072 [WARNING]   [Ascendion] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:49,073 [INFO]   [Ascendion] Retrying in 30s...
+2026-02-18 03:27:49,227 [WARNING]   [Teradata] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:49,227 [INFO]   [Teradata] Retrying in 30s...
+2026-02-18 03:27:51,219 [WARNING]   [Cloud Software Group] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:27:51,219 [INFO]   [Cloud Software Group] Retrying in 30s...
+2026-02-18 03:28:06,970 [WARNING]   [hooli] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:28:06,970 [INFO]   [hooli] Retrying in 60s...
+2026-02-18 03:28:20,581 [WARNING]   [Zoho IoT] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:28:20,581 [INFO]   [Zoho IoT] Retrying in 60s...
+2026-02-18 03:28:24,443 [WARNING]   [Ascendion] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:28:24,444 [INFO]   [Ascendion] Retrying in 60s...
+2026-02-18 03:28:24,995 [WARNING]   [Teradata] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:28:24,995 [INFO]   [Teradata] Retrying in 60s...
+2026-02-18 03:28:26,826 [WARNING]   [Cloud Software Group] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:28:26,826 [INFO]   [Cloud Software Group] Retrying in 60s...
+2026-02-18 03:29:12,572 [WARNING]   [hooli] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:12,572 [ERROR]   [hooli] FAILED after 3 attempts
+2026-02-18 03:29:12,572 [INFO] [74/220] Enriching Conneqt business solutions (conneqtcorp.com) [non-customer]
+2026-02-18 03:29:18,428 [WARNING]   [Conneqt business solutions] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:18,428 [INFO]   [Conneqt business solutions] Retrying in 30s...
+2026-02-18 03:29:26,486 [WARNING]   [Zoho IoT] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:26,487 [ERROR]   [Zoho IoT] FAILED after 3 attempts
+2026-02-18 03:29:26,487 [INFO] [74/220] Enriching Metropolis Technologies (metropolis.io) [non-customer]
+2026-02-18 03:29:29,394 [WARNING]   [Ascendion] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:29,395 [ERROR]   [Ascendion] FAILED after 3 attempts
+2026-02-18 03:29:29,395 [INFO] [74/220] Enriching React (reactjs.org) [non-customer]
+2026-02-18 03:29:30,520 [WARNING]   [Teradata] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:30,520 [ERROR]   [Teradata] FAILED after 3 attempts
+2026-02-18 03:29:30,520 [INFO] [74/220] Enriching Nextgen Technologies Inc (nextgentechinc.com) [non-customer]
+2026-02-18 03:29:32,321 [WARNING]   [Metropolis Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:32,321 [INFO]   [Metropolis Technologies] Retrying in 30s...
+2026-02-18 03:29:32,397 [WARNING]   [Cloud Software Group] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:32,397 [ERROR]   [Cloud Software Group] FAILED after 3 attempts
+2026-02-18 03:29:32,397 [INFO] [74/220] Enriching Infor (infor.com) [non-customer]
+2026-02-18 03:29:35,050 [WARNING]   [React] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:35,051 [INFO]   [React] Retrying in 30s...
+2026-02-18 03:29:36,340 [WARNING]   [Nextgen Technologies Inc] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:36,341 [INFO]   [Nextgen Technologies Inc] Retrying in 30s...
+2026-02-18 03:29:39,031 [WARNING]   [Infor] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:39,032 [INFO]   [Infor] Retrying in 30s...
+2026-02-18 03:29:54,096 [WARNING]   [Conneqt business solutions] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:29:54,096 [INFO]   [Conneqt business solutions] Retrying in 60s...
+2026-02-18 03:30:07,902 [WARNING]   [Metropolis Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:30:07,902 [INFO]   [Metropolis Technologies] Retrying in 60s...
+2026-02-18 03:30:10,566 [WARNING]   [React] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:30:10,566 [INFO]   [React] Retrying in 60s...
+2026-02-18 03:30:12,556 [WARNING]   [Nextgen Technologies Inc] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:30:12,556 [INFO]   [Nextgen Technologies Inc] Retrying in 60s...
+2026-02-18 03:30:13,813 [WARNING]   [Infor] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:30:13,813 [INFO]   [Infor] Retrying in 60s...
+2026-02-18 03:30:59,481 [WARNING]   [Conneqt business solutions] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:30:59,481 [ERROR]   [Conneqt business solutions] FAILED after 3 attempts
+2026-02-18 03:30:59,481 [INFO] [74/220] Enriching IBM Turbonomic (ibm.com) [non-customer]
+2026-02-18 03:31:05,778 [WARNING]   [IBM Turbonomic] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:05,779 [INFO]   [IBM Turbonomic] Retrying in 30s...
+2026-02-18 03:31:13,333 [WARNING]   [Metropolis Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:13,333 [ERROR]   [Metropolis Technologies] FAILED after 3 attempts
+2026-02-18 03:31:13,333 [INFO] [74/220] Enriching ACS Solutions (acsicorp.com) [non-customer]
+2026-02-18 03:31:17,273 [WARNING]   [React] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:17,274 [ERROR]   [React] FAILED after 3 attempts
+2026-02-18 03:31:17,274 [INFO] [74/220] Enriching CRM Analytics (salesforce.com) [non-customer]
+2026-02-18 03:31:18,772 [WARNING]   [ACS Solutions] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:18,772 [INFO]   [ACS Solutions] Retrying in 30s...
+2026-02-18 03:31:18,970 [WARNING]   [Nextgen Technologies Inc] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:18,970 [ERROR]   [Nextgen Technologies Inc] FAILED after 3 attempts
+2026-02-18 03:31:18,970 [INFO] [74/220] Enriching Salt Project (saltproject.io) [non-customer]
+2026-02-18 03:31:20,038 [WARNING]   [Infor] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:20,039 [ERROR]   [Infor] FAILED after 3 attempts
+2026-02-18 03:31:20,039 [INFO] [74/220] Enriching Amdocs Cala (amdocs.com) [non-customer]
+2026-02-18 03:31:22,801 [WARNING]   [CRM Analytics] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:22,801 [INFO]   [CRM Analytics] Retrying in 30s...
+2026-02-18 03:31:24,403 [WARNING]   [Salt Project] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:24,403 [INFO]   [Salt Project] Retrying in 30s...
+2026-02-18 03:31:26,342 [WARNING]   [Amdocs Cala] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:26,342 [INFO]   [Amdocs Cala] Retrying in 30s...
+2026-02-18 03:31:41,056 [WARNING]   [IBM Turbonomic] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:41,057 [INFO]   [IBM Turbonomic] Retrying in 60s...
+2026-02-18 03:31:53,940 [WARNING]   [ACS Solutions] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:53,941 [INFO]   [ACS Solutions] Retrying in 60s...
+2026-02-18 03:31:58,677 [WARNING]   [CRM Analytics] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:31:58,677 [INFO]   [CRM Analytics] Retrying in 60s...
+2026-02-18 03:32:00,628 [WARNING]   [Salt Project] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:32:00,628 [INFO]   [Salt Project] Retrying in 60s...
+2026-02-18 03:32:02,084 [WARNING]   [Amdocs Cala] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:32:02,084 [INFO]   [Amdocs Cala] Retrying in 60s...
+2026-02-18 03:32:46,846 [WARNING]   [IBM Turbonomic] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:32:46,847 [ERROR]   [IBM Turbonomic] FAILED after 3 attempts
+2026-02-18 03:32:46,848 [INFO] [74/220] Enriching Azure Cosmos DB (azurecosmosdb.com) [non-customer]
+2026-02-18 03:32:52,842 [WARNING]   [Azure Cosmos DB] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:32:52,843 [INFO]   [Azure Cosmos DB] Retrying in 30s...
+2026-02-18 03:32:58,796 [WARNING]   [ACS Solutions] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:32:58,796 [ERROR]   [ACS Solutions] FAILED after 3 attempts
+2026-02-18 03:32:58,796 [INFO] [74/220] Enriching FastTrack Dynamics 365 (dynamics.com) [non-customer]
+2026-02-18 03:33:03,994 [WARNING]   [CRM Analytics] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:03,994 [ERROR]   [CRM Analytics] FAILED after 3 attempts
+2026-02-18 03:33:03,994 [INFO] [74/220] Enriching Red Hat (redhat.com) [non-customer]
+2026-02-18 03:33:04,217 [WARNING]   [FastTrack Dynamics 365] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:04,217 [INFO]   [FastTrack Dynamics 365] Retrying in 30s...
+2026-02-18 03:33:06,174 [WARNING]   [Salt Project] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:06,174 [ERROR]   [Salt Project] FAILED after 3 attempts
+2026-02-18 03:33:06,175 [INFO] [74/220] Enriching Thoughtworks (thoughtworks.com) [non-customer]
+2026-02-18 03:33:07,688 [WARNING]   [Amdocs Cala] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:07,688 [ERROR]   [Amdocs Cala] FAILED after 3 attempts
+2026-02-18 03:33:07,688 [INFO] [74/220] Enriching Microsoft Innovation Hub (microsoft.com) [non-customer]
+2026-02-18 03:33:09,935 [WARNING]   [Red Hat] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:09,937 [INFO]   [Red Hat] Retrying in 30s...
+2026-02-18 03:33:11,419 [WARNING]   [Thoughtworks] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:11,419 [INFO]   [Thoughtworks] Retrying in 30s...
+2026-02-18 03:33:13,789 [WARNING]   [Microsoft Innovation Hub] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:13,789 [INFO]   [Microsoft Innovation Hub] Retrying in 30s...
+2026-02-18 03:33:28,516 [WARNING]   [Azure Cosmos DB] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:28,516 [INFO]   [Azure Cosmos DB] Retrying in 60s...
+2026-02-18 03:33:39,727 [WARNING]   [FastTrack Dynamics 365] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:39,728 [INFO]   [FastTrack Dynamics 365] Retrying in 60s...
+2026-02-18 03:33:46,193 [WARNING]   [Red Hat] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:46,194 [INFO]   [Red Hat] Retrying in 60s...
+2026-02-18 03:33:47,014 [WARNING]   [Thoughtworks] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:47,014 [INFO]   [Thoughtworks] Retrying in 60s...
+2026-02-18 03:33:48,839 [WARNING]   [Microsoft Innovation Hub] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:33:48,839 [INFO]   [Microsoft Innovation Hub] Retrying in 60s...
+2026-02-18 03:34:34,213 [WARNING]   [Azure Cosmos DB] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:34,214 [ERROR]   [Azure Cosmos DB] FAILED after 3 attempts
+2026-02-18 03:34:34,215 [INFO] [74/220] Enriching Agentforce Commerce (commercecloud.com) [non-customer]
+2026-02-18 03:34:39,120 [WARNING]   [Agentforce Commerce] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:39,120 [INFO]   [Agentforce Commerce] Retrying in 30s...
+2026-02-18 03:34:45,614 [WARNING]   [FastTrack Dynamics 365] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:45,616 [ERROR]   [FastTrack Dynamics 365] FAILED after 3 attempts
+2026-02-18 03:34:45,616 [INFO] [74/220] Enriching Cox Business (coxbusiness.com) [non-customer]
+2026-02-18 03:34:51,437 [WARNING]   [Cox Business] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:51,437 [INFO]   [Cox Business] Retrying in 30s...
+2026-02-18 03:34:51,497 [WARNING]   [Red Hat] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:51,498 [ERROR]   [Red Hat] FAILED after 3 attempts
+2026-02-18 03:34:51,498 [INFO] [74/220] Enriching eClerx Digital (eclerxdigital.com) [non-customer]
+2026-02-18 03:34:52,442 [WARNING]   [Thoughtworks] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:52,443 [ERROR]   [Thoughtworks] FAILED after 3 attempts
+2026-02-18 03:34:52,443 [INFO] [74/220] Enriching acaisoft (acaisoft.com) [non-customer]
+2026-02-18 03:34:54,091 [WARNING]   [Microsoft Innovation Hub] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:54,091 [ERROR]   [Microsoft Innovation Hub] FAILED after 3 attempts
+2026-02-18 03:34:54,092 [INFO] [74/220] Enriching LucidLink (lucidlink.com) [non-customer]
+2026-02-18 03:34:56,475 [WARNING]   [eClerx Digital] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:56,476 [INFO]   [eClerx Digital] Retrying in 30s...
+2026-02-18 03:34:57,967 [WARNING]   [acaisoft] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:57,967 [INFO]   [acaisoft] Retrying in 30s...
+2026-02-18 03:34:59,685 [WARNING]   [LucidLink] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:34:59,685 [INFO]   [LucidLink] Retrying in 30s...
+2026-02-18 03:35:14,950 [WARNING]   [Agentforce Commerce] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:35:14,951 [INFO]   [Agentforce Commerce] Retrying in 60s...
+2026-02-18 03:35:27,102 [WARNING]   [Cox Business] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:35:27,103 [INFO]   [Cox Business] Retrying in 60s...
+2026-02-18 03:35:32,589 [WARNING]   [eClerx Digital] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:35:32,590 [INFO]   [eClerx Digital] Retrying in 60s...
+2026-02-18 03:35:33,904 [WARNING]   [acaisoft] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:35:33,905 [INFO]   [acaisoft] Retrying in 60s...
+2026-02-18 03:35:35,281 [WARNING]   [LucidLink] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:35:35,281 [INFO]   [LucidLink] Retrying in 60s...
+2026-02-18 03:36:20,725 [WARNING]   [Agentforce Commerce] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:20,725 [ERROR]   [Agentforce Commerce] FAILED after 3 attempts
+2026-02-18 03:36:20,725 [INFO] [74/220] Enriching Lumenore (lumenore.com) [non-customer]
+2026-02-18 03:36:26,852 [WARNING]   [Lumenore] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:26,852 [INFO]   [Lumenore] Retrying in 30s...
+2026-02-18 03:36:32,590 [WARNING]   [Cox Business] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:32,591 [ERROR]   [Cox Business] FAILED after 3 attempts
+2026-02-18 03:36:32,592 [INFO] [74/220] Enriching Conviva (conviva.com) [non-customer]
+2026-02-18 03:36:38,346 [WARNING]   [eClerx Digital] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:38,346 [ERROR]   [eClerx Digital] FAILED after 3 attempts
+2026-02-18 03:36:38,346 [INFO] [74/220] Enriching Striim (striim.com) [non-customer]
+2026-02-18 03:36:38,487 [WARNING]   [Conviva] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:38,487 [INFO]   [Conviva] Retrying in 30s...
+2026-02-18 03:36:39,499 [WARNING]   [acaisoft] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:39,499 [ERROR]   [acaisoft] FAILED after 3 attempts
+2026-02-18 03:36:39,499 [INFO] [74/220] Enriching CAST (castsoftware.com) [non-customer]
+2026-02-18 03:36:40,805 [WARNING]   [LucidLink] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:40,805 [ERROR]   [LucidLink] FAILED after 3 attempts
+2026-02-18 03:36:40,805 [INFO] [74/220] Enriching Devart (devart.com) [non-customer]
+2026-02-18 03:36:43,968 [WARNING]   [Striim] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:43,970 [INFO]   [Striim] Retrying in 30s...
+2026-02-18 03:36:45,271 [WARNING]   [CAST] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:45,271 [INFO]   [CAST] Retrying in 30s...
+2026-02-18 03:36:46,363 [WARNING]   [Devart] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:36:46,364 [INFO]   [Devart] Retrying in 30s...
+2026-02-18 03:37:02,196 [WARNING]   [Lumenore] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:37:02,196 [INFO]   [Lumenore] Retrying in 60s...
+2026-02-18 03:37:14,379 [WARNING]   [Conviva] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:37:14,379 [INFO]   [Conviva] Retrying in 60s...
+2026-02-18 03:37:19,080 [WARNING]   [Striim] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:37:19,080 [INFO]   [Striim] Retrying in 60s...
+2026-02-18 03:37:22,054 [WARNING]   [Devart] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:37:22,055 [INFO]   [Devart] Retrying in 60s...
+2026-02-18 03:37:25,333 [WARNING]   [CAST] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:37:25,334 [INFO]   [CAST] Retrying in 60s...
+2026-02-18 03:38:08,521 [WARNING]   [Lumenore] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:08,523 [ERROR]   [Lumenore] FAILED after 3 attempts
+2026-02-18 03:38:08,523 [INFO] [74/220] Enriching Reltio (reltio.com) [non-customer]
+2026-02-18 03:38:14,711 [WARNING]   [Reltio] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:14,711 [INFO]   [Reltio] Retrying in 30s...
+2026-02-18 03:38:20,053 [WARNING]   [Conviva] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:20,054 [ERROR]   [Conviva] FAILED after 3 attempts
+2026-02-18 03:38:20,054 [INFO] [74/220] Enriching WEKA (weka.io) [non-customer]
+2026-02-18 03:38:24,775 [WARNING]   [Striim] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:24,775 [ERROR]   [Striim] FAILED after 3 attempts
+2026-02-18 03:38:24,775 [INFO] [74/220] Enriching Incorta (incorta.com) [non-customer]
+2026-02-18 03:38:26,087 [WARNING]   [WEKA] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:26,087 [INFO]   [WEKA] Retrying in 30s...
+2026-02-18 03:38:27,598 [WARNING]   [Devart] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:27,598 [ERROR]   [Devart] FAILED after 3 attempts
+2026-02-18 03:38:27,598 [INFO] [74/220] Enriching Big Compute (bigcompute.org) [non-customer]
+2026-02-18 03:38:30,545 [WARNING]   [Incorta] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:30,546 [INFO]   [Incorta] Retrying in 30s...
+2026-02-18 03:38:30,592 [WARNING]   [CAST] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:30,592 [ERROR]   [CAST] FAILED after 3 attempts
+2026-02-18 03:38:30,592 [INFO] [74/220] Enriching InfluxData (influxdata.com) [non-customer]
+2026-02-18 03:38:32,982 [WARNING]   [Big Compute] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:32,982 [INFO]   [Big Compute] Retrying in 30s...
+2026-02-18 03:38:36,157 [WARNING]   [InfluxData] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:36,157 [INFO]   [InfluxData] Retrying in 30s...
+2026-02-18 03:38:50,738 [WARNING]   [Reltio] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:38:50,739 [INFO]   [Reltio] Retrying in 60s...
+2026-02-18 03:39:01,309 [WARNING]   [WEKA] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:39:01,310 [INFO]   [WEKA] Retrying in 60s...
+2026-02-18 03:39:06,469 [WARNING]   [Incorta] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:39:06,469 [INFO]   [Incorta] Retrying in 60s...
+2026-02-18 03:39:08,725 [WARNING]   [Big Compute] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:39:08,726 [INFO]   [Big Compute] Retrying in 60s...
+2026-02-18 03:39:12,038 [WARNING]   [InfluxData] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:39:12,039 [INFO]   [InfluxData] Retrying in 60s...
+2026-02-18 03:39:56,390 [WARNING]   [Reltio] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:39:56,391 [ERROR]   [Reltio] FAILED after 3 attempts
+2026-02-18 03:39:56,392 [INFO] [74/220] Enriching Astronomer (astronomer.io) [non-customer]
+2026-02-18 03:40:01,635 [WARNING]   [Astronomer] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:01,636 [INFO]   [Astronomer] Retrying in 30s...
+2026-02-18 03:40:06,821 [WARNING]   [WEKA] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:06,821 [ERROR]   [WEKA] FAILED after 3 attempts
+2026-02-18 03:40:06,821 [INFO] [74/220] Enriching Ascentt (ascentt.com) [non-customer]
+2026-02-18 03:40:11,976 [WARNING]   [Incorta] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:11,978 [ERROR]   [Incorta] FAILED after 3 attempts
+2026-02-18 03:40:11,978 [INFO] [74/220] Enriching Posit PBC (posit.co) [non-customer]
+2026-02-18 03:40:12,379 [WARNING]   [Ascentt] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:12,379 [INFO]   [Ascentt] Retrying in 30s...
+2026-02-18 03:40:14,277 [WARNING]   [Big Compute] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:14,277 [ERROR]   [Big Compute] FAILED after 3 attempts
+2026-02-18 03:40:14,277 [INFO] [74/220] Enriching XOps by gathr.ai (gathr.one) [non-customer]
+2026-02-18 03:40:17,299 [WARNING]   [InfluxData] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:17,299 [ERROR]   [InfluxData] FAILED after 3 attempts
+2026-02-18 03:40:17,300 [INFO] [74/220] Enriching Hevo Data (hevodata.com) [non-customer]
+2026-02-18 03:40:17,545 [WARNING]   [Posit PBC] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:17,545 [INFO]   [Posit PBC] Retrying in 30s...
+2026-02-18 03:40:19,674 [WARNING]   [XOps by gathr.ai] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:19,674 [INFO]   [XOps by gathr.ai] Retrying in 30s...
+2026-02-18 03:40:22,757 [WARNING]   [Hevo Data] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:22,757 [INFO]   [Hevo Data] Retrying in 30s...
+2026-02-18 03:40:36,903 [WARNING]   [Astronomer] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:36,904 [INFO]   [Astronomer] Retrying in 60s...
+2026-02-18 03:40:48,006 [WARNING]   [Ascentt] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:48,006 [INFO]   [Ascentt] Retrying in 60s...
+2026-02-18 03:40:53,913 [WARNING]   [Posit PBC] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:53,914 [INFO]   [Posit PBC] Retrying in 60s...
+2026-02-18 03:40:57,256 [WARNING]   [XOps by gathr.ai] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:57,256 [INFO]   [XOps by gathr.ai] Retrying in 60s...
+2026-02-18 03:40:58,085 [WARNING]   [Hevo Data] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:40:58,085 [INFO]   [Hevo Data] Retrying in 60s...
+2026-02-18 03:41:42,820 [WARNING]   [Astronomer] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:41:42,820 [ERROR]   [Astronomer] FAILED after 3 attempts
+2026-02-18 03:41:42,820 [INFO] [74/220] Enriching Hydrolix (hydrolix.io) [non-customer]
+2026-02-18 03:41:48,430 [WARNING]   [Hydrolix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:41:48,430 [INFO]   [Hydrolix] Retrying in 30s...
+2026-02-18 03:41:53,084 [WARNING]   [Ascentt] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:41:53,085 [ERROR]   [Ascentt] FAILED after 3 attempts
+2026-02-18 03:41:53,085 [INFO] [74/220] Enriching Blue Spire Inc (thebluespire.com) [non-customer]
+2026-02-18 03:41:58,730 [WARNING]   [Blue Spire Inc] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:41:58,730 [INFO]   [Blue Spire Inc] Retrying in 30s...
+2026-02-18 03:41:59,937 [WARNING]   [Posit PBC] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:41:59,937 [ERROR]   [Posit PBC] FAILED after 3 attempts
+2026-02-18 03:41:59,937 [INFO] [74/220] Enriching Temporal Technologies (temporal.io) [non-customer]
+2026-02-18 03:42:02,446 [WARNING]   [XOps by gathr.ai] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:02,446 [ERROR]   [XOps by gathr.ai] FAILED after 3 attempts
+2026-02-18 03:42:02,446 [INFO] [74/220] Enriching RSA Tech (rsatech.com) [non-customer]
+2026-02-18 03:42:03,557 [WARNING]   [Hevo Data] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:03,557 [ERROR]   [Hevo Data] FAILED after 3 attempts
+2026-02-18 03:42:03,557 [INFO] [74/220] Enriching Nallas Corporation (nallas.com) [non-customer]
+2026-02-18 03:42:05,742 [WARNING]   [Temporal Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:05,743 [INFO]   [Temporal Technologies] Retrying in 30s...
+2026-02-18 03:42:08,016 [WARNING]   [RSA Tech] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:08,016 [INFO]   [RSA Tech] Retrying in 30s...
+2026-02-18 03:42:09,141 [WARNING]   [Nallas Corporation] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:09,141 [INFO]   [Nallas Corporation] Retrying in 30s...
+2026-02-18 03:42:23,802 [WARNING]   [Hydrolix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:23,803 [INFO]   [Hydrolix] Retrying in 60s...
+2026-02-18 03:42:35,037 [WARNING]   [Blue Spire Inc] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:35,037 [INFO]   [Blue Spire Inc] Retrying in 60s...
+2026-02-18 03:42:40,785 [WARNING]   [Temporal Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:40,785 [INFO]   [Temporal Technologies] Retrying in 60s...
+2026-02-18 03:42:43,655 [WARNING]   [RSA Tech] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:43,655 [INFO]   [RSA Tech] Retrying in 60s...
+2026-02-18 03:42:45,276 [WARNING]   [Nallas Corporation] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:42:45,276 [INFO]   [Nallas Corporation] Retrying in 60s...
+2026-02-18 03:43:29,612 [WARNING]   [Hydrolix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:29,612 [ERROR]   [Hydrolix] FAILED after 3 attempts
+2026-02-18 03:43:29,612 [INFO] [74/220] Enriching OpenEBS (openebs.io) [non-customer]
+2026-02-18 03:43:35,071 [WARNING]   [OpenEBS] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:35,072 [INFO]   [OpenEBS] Retrying in 30s...
+2026-02-18 03:43:40,983 [WARNING]   [Blue Spire Inc] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:40,983 [ERROR]   [Blue Spire Inc] FAILED after 3 attempts
+2026-02-18 03:43:40,983 [INFO] [74/220] Enriching Oxagile (oxagile.com) [non-customer]
+2026-02-18 03:43:46,281 [WARNING]   [Temporal Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:46,282 [ERROR]   [Temporal Technologies] FAILED after 3 attempts
+2026-02-18 03:43:46,282 [INFO] [74/220] Enriching Domino Data Lab (domino.ai) [non-customer]
+2026-02-18 03:43:47,256 [WARNING]   [Oxagile] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:47,256 [INFO]   [Oxagile] Retrying in 30s...
+2026-02-18 03:43:49,665 [WARNING]   [RSA Tech] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:49,665 [ERROR]   [RSA Tech] FAILED after 3 attempts
+2026-02-18 03:43:49,665 [INFO] [74/220] Enriching Right Skale, Inc. (rightskale.ai) [non-customer]
+2026-02-18 03:43:50,697 [WARNING]   [Nallas Corporation] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:50,697 [ERROR]   [Nallas Corporation] FAILED after 3 attempts
+2026-02-18 03:43:50,697 [INFO] [74/220] Enriching Mobius 365 Knowledge Services, Inc. (mobius365.com) [non-customer]
+2026-02-18 03:43:51,833 [WARNING]   [Domino Data Lab] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:51,833 [INFO]   [Domino Data Lab] Retrying in 30s...
+2026-02-18 03:43:54,991 [WARNING]   [Right Skale, Inc.] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:54,991 [INFO]   [Right Skale, Inc.] Retrying in 30s...
+2026-02-18 03:43:56,269 [WARNING]   [Mobius 365 Knowledge Services, Inc.] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:43:56,269 [INFO]   [Mobius 365 Knowledge Services, Inc.] Retrying in 30s...
+2026-02-18 03:44:10,747 [WARNING]   [OpenEBS] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:44:10,748 [INFO]   [OpenEBS] Retrying in 60s...
+2026-02-18 03:44:23,195 [WARNING]   [Oxagile] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:44:23,195 [INFO]   [Oxagile] Retrying in 60s...
+2026-02-18 03:44:30,259 [WARNING]   [Domino Data Lab] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:44:30,260 [INFO]   [Domino Data Lab] Retrying in 60s...
+2026-02-18 03:44:30,560 [WARNING]   [Right Skale, Inc.] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:44:30,560 [INFO]   [Right Skale, Inc.] Retrying in 60s...
+2026-02-18 03:44:31,668 [WARNING]   [Mobius 365 Knowledge Services, Inc.] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:44:31,668 [INFO]   [Mobius 365 Knowledge Services, Inc.] Retrying in 60s...
+2026-02-18 03:45:16,783 [WARNING]   [OpenEBS] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:16,784 [ERROR]   [OpenEBS] FAILED after 3 attempts
+2026-02-18 03:45:16,784 [INFO] [74/220] Enriching KMCCorp India Pvt Ltd (kmccorp.com) [non-customer]
+2026-02-18 03:45:22,271 [WARNING]   [KMCCorp India Pvt Ltd] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:22,271 [INFO]   [KMCCorp India Pvt Ltd] Retrying in 30s...
+2026-02-18 03:45:28,111 [WARNING]   [Oxagile] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:28,111 [ERROR]   [Oxagile] FAILED after 3 attempts
+2026-02-18 03:45:28,111 [INFO] [74/220] Enriching Qumulo (qumulo.com) [non-customer]
+2026-02-18 03:45:33,906 [WARNING]   [Qumulo] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:33,907 [INFO]   [Qumulo] Retrying in 30s...
+2026-02-18 03:45:35,894 [WARNING]   [Domino Data Lab] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:35,894 [ERROR]   [Domino Data Lab] FAILED after 3 attempts
+2026-02-18 03:45:35,894 [INFO] [74/220] Enriching DOMA Technologies (domaonline.com) [non-customer]
+2026-02-18 03:45:36,270 [WARNING]   [Right Skale, Inc.] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:36,270 [ERROR]   [Right Skale, Inc.] FAILED after 3 attempts
+2026-02-18 03:45:36,270 [INFO] [74/220] Enriching Qwilt (qwilt.com) [non-customer]
+2026-02-18 03:45:37,894 [WARNING]   [Mobius 365 Knowledge Services, Inc.] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:37,894 [ERROR]   [Mobius 365 Knowledge Services, Inc.] FAILED after 3 attempts
+2026-02-18 03:45:37,894 [INFO] [74/220] Enriching VDURA (vdura.com) [non-customer]
+2026-02-18 03:45:41,111 [WARNING]   [DOMA Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:41,112 [INFO]   [DOMA Technologies] Retrying in 30s...
+2026-02-18 03:45:41,805 [WARNING]   [Qwilt] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:41,805 [INFO]   [Qwilt] Retrying in 30s...
+2026-02-18 03:45:43,570 [WARNING]   [VDURA] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:43,571 [INFO]   [VDURA] Retrying in 30s...
+2026-02-18 03:45:58,025 [WARNING]   [KMCCorp India Pvt Ltd] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:45:58,026 [INFO]   [KMCCorp India Pvt Ltd] Retrying in 60s...
+2026-02-18 03:46:09,450 [WARNING]   [Qumulo] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:46:09,450 [INFO]   [Qumulo] Retrying in 60s...
+2026-02-18 03:46:16,544 [WARNING]   [DOMA Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:46:16,544 [INFO]   [DOMA Technologies] Retrying in 60s...
+2026-02-18 03:46:17,612 [WARNING]   [Qwilt] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:46:17,612 [INFO]   [Qwilt] Retrying in 60s...
+2026-02-18 03:46:19,328 [WARNING]   [VDURA] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:46:19,328 [INFO]   [VDURA] Retrying in 60s...
+2026-02-18 03:47:03,436 [WARNING]   [KMCCorp India Pvt Ltd] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:03,436 [ERROR]   [KMCCorp India Pvt Ltd] FAILED after 3 attempts
+2026-02-18 03:47:03,436 [INFO] [74/220] Enriching Cloudwick (cloudwick.com) [non-customer]
+2026-02-18 03:47:09,327 [WARNING]   [Cloudwick] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:09,327 [INFO]   [Cloudwick] Retrying in 30s...
+2026-02-18 03:47:14,970 [WARNING]   [Qumulo] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:14,972 [ERROR]   [Qumulo] FAILED after 3 attempts
+2026-02-18 03:47:14,972 [INFO] [74/220] Enriching DATUM, an Infogix Company (precisely.com) [non-customer]
+2026-02-18 03:47:20,642 [WARNING]   [DATUM, an Infogix Company] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:20,642 [INFO]   [DATUM, an Infogix Company] Retrying in 30s...
+2026-02-18 03:47:22,222 [WARNING]   [DOMA Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:22,222 [ERROR]   [DOMA Technologies] FAILED after 3 attempts
+2026-02-18 03:47:22,222 [INFO] [74/220] Enriching SingleStore (singlestore.com) [non-customer]
+2026-02-18 03:47:23,023 [WARNING]   [Qwilt] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:23,023 [ERROR]   [Qwilt] FAILED after 3 attempts
+2026-02-18 03:47:23,023 [INFO] [74/220] Enriching Yellowbrick Data (yellowbrick.com) [non-customer]
+2026-02-18 03:47:24,906 [WARNING]   [VDURA] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:24,906 [ERROR]   [VDURA] FAILED after 3 attempts
+2026-02-18 03:47:24,907 [INFO] [74/220] Enriching Armada (armada.ai) [non-customer]
+2026-02-18 03:47:27,645 [WARNING]   [SingleStore] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:27,645 [INFO]   [SingleStore] Retrying in 30s...
+2026-02-18 03:47:28,484 [WARNING]   [Yellowbrick Data] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:28,485 [INFO]   [Yellowbrick Data] Retrying in 30s...
+2026-02-18 03:47:30,912 [WARNING]   [Armada] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:30,912 [INFO]   [Armada] Retrying in 30s...
+2026-02-18 03:47:45,489 [WARNING]   [Cloudwick] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:45,491 [INFO]   [Cloudwick] Retrying in 60s...
+2026-02-18 03:47:56,084 [WARNING]   [DATUM, an Infogix Company] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:47:56,084 [INFO]   [DATUM, an Infogix Company] Retrying in 60s...
+2026-02-18 03:48:03,097 [WARNING]   [SingleStore] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:48:03,099 [INFO]   [SingleStore] Retrying in 60s...
+2026-02-18 03:48:04,198 [WARNING]   [Yellowbrick Data] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:48:04,198 [INFO]   [Yellowbrick Data] Retrying in 60s...
+2026-02-18 03:48:06,429 [WARNING]   [Armada] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:48:06,430 [INFO]   [Armada] Retrying in 60s...
+2026-02-18 03:48:51,009 [WARNING]   [Cloudwick] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:48:51,009 [ERROR]   [Cloudwick] FAILED after 3 attempts
+2026-02-18 03:48:51,009 [INFO] [74/220] Enriching The Modern Data Company (themoderndatacompany.com) [non-customer]
+2026-02-18 03:48:56,095 [WARNING]   [The Modern Data Company] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:48:56,096 [INFO]   [The Modern Data Company] Retrying in 30s...
+2026-02-18 03:49:01,480 [WARNING]   [DATUM, an Infogix Company] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:01,480 [ERROR]   [DATUM, an Infogix Company] FAILED after 3 attempts
+2026-02-18 03:49:01,480 [INFO] [74/220] Enriching Stratacent (stratacent.com) [non-customer]
+2026-02-18 03:49:06,807 [WARNING]   [Stratacent] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:06,808 [INFO]   [Stratacent] Retrying in 30s...
+2026-02-18 03:49:08,456 [WARNING]   [SingleStore] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:08,456 [ERROR]   [SingleStore] FAILED after 3 attempts
+2026-02-18 03:49:08,456 [INFO] [74/220] Enriching ClickHouse (clickhouse.com) [non-customer]
+2026-02-18 03:49:10,108 [WARNING]   [Yellowbrick Data] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:10,108 [ERROR]   [Yellowbrick Data] FAILED after 3 attempts
+2026-02-18 03:49:10,108 [INFO] [74/220] Enriching Dekopon Stack (dekoponstack.com) [non-customer]
+2026-02-18 03:49:12,097 [WARNING]   [Armada] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:12,097 [ERROR]   [Armada] FAILED after 3 attempts
+2026-02-18 03:49:12,097 [INFO] [74/220] Enriching Stier Solutions Inc (stiersol.com) [non-customer]
+2026-02-18 03:49:13,827 [WARNING]   [ClickHouse] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:13,828 [INFO]   [ClickHouse] Retrying in 30s...
+2026-02-18 03:49:15,643 [WARNING]   [Dekopon Stack] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:15,644 [INFO]   [Dekopon Stack] Retrying in 30s...
+2026-02-18 03:49:17,635 [WARNING]   [Stier Solutions Inc] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:17,636 [INFO]   [Stier Solutions Inc] Retrying in 30s...
+2026-02-18 03:49:31,569 [WARNING]   [The Modern Data Company] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:31,569 [INFO]   [The Modern Data Company] Retrying in 60s...
+2026-02-18 03:49:43,371 [WARNING]   [Stratacent] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:43,372 [INFO]   [Stratacent] Retrying in 60s...
+2026-02-18 03:49:49,530 [WARNING]   [ClickHouse] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:49,531 [INFO]   [ClickHouse] Retrying in 60s...
+2026-02-18 03:49:51,320 [WARNING]   [Dekopon Stack] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:51,322 [INFO]   [Dekopon Stack] Retrying in 60s...
+2026-02-18 03:49:52,522 [WARNING]   [Stier Solutions Inc] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:49:52,523 [INFO]   [Stier Solutions Inc] Retrying in 60s...
+2026-02-18 03:50:37,987 [WARNING]   [The Modern Data Company] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:37,988 [ERROR]   [The Modern Data Company] FAILED after 3 attempts
+2026-02-18 03:50:37,989 [INFO] [74/220] Enriching Wasabi Technologies (wasabi.com) [non-customer]
+2026-02-18 03:50:43,235 [WARNING]   [Wasabi Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:43,235 [INFO]   [Wasabi Technologies] Retrying in 30s...
+2026-02-18 03:50:48,346 [WARNING]   [Stratacent] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:48,346 [ERROR]   [Stratacent] FAILED after 3 attempts
+2026-02-18 03:50:48,346 [INFO] [74/220] Enriching AI/R (aircompany.ai) [non-customer]
+2026-02-18 03:50:53,952 [WARNING]   [AI/R] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:53,952 [INFO]   [AI/R] Retrying in 30s...
+2026-02-18 03:50:55,023 [WARNING]   [ClickHouse] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:55,023 [ERROR]   [ClickHouse] FAILED after 3 attempts
+2026-02-18 03:50:55,023 [INFO] [74/220] Enriching ibi | Information Builders (ibi.com) [non-customer]
+2026-02-18 03:50:57,560 [WARNING]   [Dekopon Stack] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:57,560 [ERROR]   [Dekopon Stack] FAILED after 3 attempts
+2026-02-18 03:50:57,560 [INFO] [74/220] Enriching Veritas Technologies LLC (veritas.com) [non-customer]
+2026-02-18 03:50:58,161 [WARNING]   [Stier Solutions Inc] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:50:58,161 [ERROR]   [Stier Solutions Inc] FAILED after 3 attempts
+2026-02-18 03:50:58,161 [INFO] [74/220] Enriching Zendesk WFM (Tymeshift) (zdsk.co) [non-customer]
+2026-02-18 03:51:00,914 [WARNING]   [ibi | Information Builders] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:00,915 [INFO]   [ibi | Information Builders] Retrying in 30s...
+2026-02-18 03:51:02,892 [WARNING]   [Veritas Technologies LLC] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:02,892 [INFO]   [Veritas Technologies LLC] Retrying in 30s...
+2026-02-18 03:51:03,512 [WARNING]   [Zendesk WFM (Tymeshift)] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:03,512 [INFO]   [Zendesk WFM (Tymeshift)] Retrying in 30s...
+2026-02-18 03:51:18,670 [WARNING]   [Wasabi Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:18,671 [INFO]   [Wasabi Technologies] Retrying in 60s...
+2026-02-18 03:51:28,946 [WARNING]   [AI/R] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:28,947 [INFO]   [AI/R] Retrying in 60s...
+2026-02-18 03:51:35,960 [WARNING]   [ibi | Information Builders] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:35,962 [INFO]   [ibi | Information Builders] Retrying in 60s...
+2026-02-18 03:51:38,586 [WARNING]   [Zendesk WFM (Tymeshift)] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:38,586 [INFO]   [Zendesk WFM (Tymeshift)] Retrying in 60s...
+2026-02-18 03:51:38,918 [WARNING]   [Veritas Technologies LLC] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:51:38,918 [INFO]   [Veritas Technologies LLC] Retrying in 60s...
+2026-02-18 03:52:24,387 [WARNING]   [Wasabi Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:24,389 [ERROR]   [Wasabi Technologies] FAILED after 3 attempts
+2026-02-18 03:52:24,389 [INFO] [74/220] Enriching Altimetrik (altimetrik.com) [non-customer]
+2026-02-18 03:52:31,829 [WARNING]   [Altimetrik] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:31,829 [INFO]   [Altimetrik] Retrying in 30s...
+2026-02-18 03:52:34,459 [WARNING]   [AI/R] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:34,460 [ERROR]   [AI/R] FAILED after 3 attempts
+2026-02-18 03:52:34,460 [INFO] [74/220] Enriching Kaseya (kaseya.com) [non-customer]
+2026-02-18 03:52:40,393 [WARNING]   [Kaseya] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:40,393 [INFO]   [Kaseya] Retrying in 30s...
+2026-02-18 03:52:41,278 [WARNING]   [ibi | Information Builders] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:41,278 [ERROR]   [ibi | Information Builders] FAILED after 3 attempts
+2026-02-18 03:52:41,279 [INFO] [74/220] Enriching Splunk (splunk.com) [non-customer]
+2026-02-18 03:52:44,302 [WARNING]   [Veritas Technologies LLC] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:44,302 [ERROR]   [Veritas Technologies LLC] FAILED after 3 attempts
+2026-02-18 03:52:44,302 [INFO] [74/220] Enriching Datavant (datavant.com) [non-customer]
+2026-02-18 03:52:44,522 [WARNING]   [Zendesk WFM (Tymeshift)] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:44,523 [ERROR]   [Zendesk WFM (Tymeshift)] FAILED after 3 attempts
+2026-02-18 03:52:44,523 [INFO] [74/220] Enriching Veeva Systems (veeva.com) [non-customer]
+2026-02-18 03:52:46,750 [WARNING]   [Splunk] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:46,751 [INFO]   [Splunk] Retrying in 30s...
+2026-02-18 03:52:49,703 [WARNING]   [Datavant] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:49,704 [INFO]   [Datavant] Retrying in 30s...
+2026-02-18 03:52:50,022 [WARNING]   [Veeva Systems] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:52:50,022 [INFO]   [Veeva Systems] Retrying in 30s...
+2026-02-18 03:53:08,018 [WARNING]   [Altimetrik] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:53:08,018 [INFO]   [Altimetrik] Retrying in 60s...
+2026-02-18 03:53:15,831 [WARNING]   [Kaseya] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:53:15,832 [INFO]   [Kaseya] Retrying in 60s...
+2026-02-18 03:53:22,428 [WARNING]   [Splunk] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:53:22,429 [INFO]   [Splunk] Retrying in 60s...
+2026-02-18 03:53:26,484 [WARNING]   [Datavant] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:53:26,484 [INFO]   [Datavant] Retrying in 60s...
+2026-02-18 03:53:28,858 [WARNING]   [Veeva Systems] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:53:28,859 [INFO]   [Veeva Systems] Retrying in 60s...
+2026-02-18 03:54:13,551 [WARNING]   [Altimetrik] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:13,551 [ERROR]   [Altimetrik] FAILED after 3 attempts
+2026-02-18 03:54:13,552 [INFO] [74/220] Enriching Avaya (avaya.com) [non-customer]
+2026-02-18 03:54:18,985 [WARNING]   [Avaya] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:18,986 [INFO]   [Avaya] Retrying in 30s...
+2026-02-18 03:54:21,436 [WARNING]   [Kaseya] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:21,436 [ERROR]   [Kaseya] FAILED after 3 attempts
+2026-02-18 03:54:21,436 [INFO] [74/220] Enriching FPT Automotive (fptsoftware.com) [non-customer]
+2026-02-18 03:54:27,174 [WARNING]   [FPT Automotive] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:27,175 [INFO]   [FPT Automotive] Retrying in 30s...
+2026-02-18 03:54:28,117 [WARNING]   [Splunk] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:28,117 [ERROR]   [Splunk] FAILED after 3 attempts
+2026-02-18 03:54:28,117 [INFO] [74/220] Enriching Dynatrace (dynatrace.com) [non-customer]
+2026-02-18 03:54:32,163 [WARNING]   [Datavant] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:32,163 [ERROR]   [Datavant] FAILED after 3 attempts
+2026-02-18 03:54:32,163 [INFO] [74/220] Enriching Centific (centific.com) [non-customer]
+2026-02-18 03:54:33,615 [WARNING]   [Dynatrace] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:33,616 [INFO]   [Dynatrace] Retrying in 30s...
+2026-02-18 03:54:33,891 [WARNING]   [Veeva Systems] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:33,891 [ERROR]   [Veeva Systems] FAILED after 3 attempts
+2026-02-18 03:54:33,891 [INFO] [74/220] Enriching MongoDB (mongodb.com) [non-customer]
+2026-02-18 03:54:37,770 [WARNING]   [Centific] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:37,771 [INFO]   [Centific] Retrying in 30s...
+2026-02-18 03:54:39,267 [WARNING]   [MongoDB] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:39,267 [INFO]   [MongoDB] Retrying in 30s...
+2026-02-18 03:54:54,369 [WARNING]   [Avaya] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:54:54,369 [INFO]   [Avaya] Retrying in 60s...
+2026-02-18 03:55:03,010 [WARNING]   [FPT Automotive] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:55:03,011 [INFO]   [FPT Automotive] Retrying in 60s...
+2026-02-18 03:55:10,627 [WARNING]   [Dynatrace] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:55:10,628 [INFO]   [Dynatrace] Retrying in 60s...
+2026-02-18 03:55:14,998 [WARNING]   [Centific] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:55:14,998 [INFO]   [Centific] Retrying in 60s...
+2026-02-18 03:55:16,280 [WARNING]   [MongoDB] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:55:16,280 [INFO]   [MongoDB] Retrying in 60s...
+2026-02-18 03:56:00,175 [WARNING]   [Avaya] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:00,176 [ERROR]   [Avaya] FAILED after 3 attempts
+2026-02-18 03:56:00,176 [INFO] [74/220] Enriching Nutanix (nutanix.com) [non-customer]
+2026-02-18 03:56:05,683 [WARNING]   [Nutanix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:05,684 [INFO]   [Nutanix] Retrying in 30s...
+2026-02-18 03:56:09,022 [WARNING]   [FPT Automotive] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:09,022 [ERROR]   [FPT Automotive] FAILED after 3 attempts
+2026-02-18 03:56:09,023 [INFO] [74/220] Enriching CSG (csgi.com) [non-customer]
+2026-02-18 03:56:14,425 [WARNING]   [CSG] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:14,425 [INFO]   [CSG] Retrying in 30s...
+2026-02-18 03:56:16,296 [WARNING]   [Dynatrace] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:16,296 [ERROR]   [Dynatrace] FAILED after 3 attempts
+2026-02-18 03:56:16,296 [INFO] [74/220] Enriching Citrix (citrix.com) [non-customer]
+2026-02-18 03:56:20,932 [WARNING]   [Centific] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:20,932 [ERROR]   [Centific] FAILED after 3 attempts
+2026-02-18 03:56:20,932 [INFO] [74/220] Enriching Siemens Digital Industries Software (siemens.com) [non-customer]
+2026-02-18 03:56:21,948 [WARNING]   [MongoDB] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:21,949 [ERROR]   [MongoDB] FAILED after 3 attempts
+2026-02-18 03:56:21,949 [INFO] [74/220] Enriching Layer7 API Security (broadcom.com) [non-customer]
+2026-02-18 03:56:22,022 [WARNING]   [Citrix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:22,023 [INFO]   [Citrix] Retrying in 30s...
+2026-02-18 03:56:25,983 [WARNING]   [Siemens Digital Industries Software] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:25,984 [INFO]   [Siemens Digital Industries Software] Retrying in 30s...
+2026-02-18 03:56:27,370 [WARNING]   [Layer7 API Security] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:27,370 [INFO]   [Layer7 API Security] Retrying in 30s...
+2026-02-18 03:56:41,382 [WARNING]   [Nutanix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:41,382 [INFO]   [Nutanix] Retrying in 60s...
+2026-02-18 03:56:49,814 [WARNING]   [CSG] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:49,814 [INFO]   [CSG] Retrying in 60s...
+2026-02-18 03:56:57,633 [WARNING]   [Citrix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:56:57,633 [INFO]   [Citrix] Retrying in 60s...
+2026-02-18 03:57:01,448 [WARNING]   [Siemens Digital Industries Software] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:57:01,449 [INFO]   [Siemens Digital Industries Software] Retrying in 60s...
+2026-02-18 03:57:03,054 [WARNING]   [Layer7 API Security] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:57:03,054 [INFO]   [Layer7 API Security] Retrying in 60s...
+2026-02-18 03:57:47,041 [WARNING]   [Nutanix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:57:47,043 [ERROR]   [Nutanix] FAILED after 3 attempts
+2026-02-18 03:57:47,044 [INFO] [74/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-18 03:57:53,341 [WARNING]   [NiCE] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:57:53,342 [INFO]   [NiCE] Retrying in 30s...
+2026-02-18 03:57:55,518 [WARNING]   [CSG] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:57:55,518 [ERROR]   [CSG] FAILED after 3 attempts
+2026-02-18 03:57:55,519 [INFO] [74/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-18 03:58:01,110 [WARNING]   [Dell Compellent] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:01,111 [INFO]   [Dell Compellent] Retrying in 30s...
+2026-02-18 03:58:03,024 [WARNING]   [Citrix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:03,025 [ERROR]   [Citrix] FAILED after 3 attempts
+2026-02-18 03:58:03,025 [INFO] [74/220] Enriching Starburst (starburst.io) [non-customer]
+2026-02-18 03:58:07,207 [WARNING]   [Siemens Digital Industries Software] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:07,208 [ERROR]   [Siemens Digital Industries Software] FAILED after 3 attempts
+2026-02-18 03:58:07,208 [INFO] [74/220] Enriching MResult (mresult.com) [non-customer]
+2026-02-18 03:58:08,564 [WARNING]   [Starburst] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:08,564 [INFO]   [Starburst] Retrying in 30s...
+2026-02-18 03:58:08,837 [WARNING]   [Layer7 API Security] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:08,837 [ERROR]   [Layer7 API Security] FAILED after 3 attempts
+2026-02-18 03:58:08,837 [INFO] [74/220] Enriching Quantum Metric (quantummetric.com) [non-customer]
+2026-02-18 03:58:13,025 [WARNING]   [MResult] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:13,025 [INFO]   [MResult] Retrying in 30s...
+2026-02-18 03:58:14,996 [WARNING]   [Quantum Metric] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:14,997 [INFO]   [Quantum Metric] Retrying in 30s...
+2026-02-18 03:58:29,317 [WARNING]   [NiCE] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:29,317 [INFO]   [NiCE] Retrying in 60s...
+2026-02-18 03:58:36,569 [WARNING]   [Dell Compellent] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:36,570 [INFO]   [Dell Compellent] Retrying in 60s...
+2026-02-18 03:58:44,045 [WARNING]   [Starburst] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:44,046 [INFO]   [Starburst] Retrying in 60s...
+2026-02-18 03:58:47,946 [WARNING]   [MResult] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:47,946 [INFO]   [MResult] Retrying in 60s...
+2026-02-18 03:58:50,501 [WARNING]   [Quantum Metric] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 03:58:50,501 [INFO]   [Quantum Metric] Retrying in 60s...
+2026-02-18 03:59:35,038 [WARNING]   [NiCE] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:35,039 [ERROR]   [NiCE] FAILED after 3 attempts
+2026-02-18 03:59:35,040 [INFO] [74/220] Enriching Unify Technologies (unifytech.com) [non-customer]
+2026-02-18 03:59:40,818 [WARNING]   [Unify Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:40,818 [INFO]   [Unify Technologies] Retrying in 30s...
+2026-02-18 03:59:41,979 [WARNING]   [Dell Compellent] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:41,979 [ERROR]   [Dell Compellent] FAILED after 3 attempts
+2026-02-18 03:59:41,980 [INFO] [74/220] Enriching Quickbase (quickbase.com) [non-customer]
+2026-02-18 03:59:47,349 [WARNING]   [Quickbase] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:47,350 [INFO]   [Quickbase] Retrying in 30s...
+2026-02-18 03:59:49,491 [WARNING]   [Starburst] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:49,492 [ERROR]   [Starburst] FAILED after 3 attempts
+2026-02-18 03:59:49,492 [INFO] [74/220] Enriching Magnitude Software - insightsoftware (insightsoftware.com) [non-customer]
+2026-02-18 03:59:53,573 [WARNING]   [MResult] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:53,573 [ERROR]   [MResult] FAILED after 3 attempts
+2026-02-18 03:59:53,574 [INFO] [74/220] Enriching Ideas2IT Technologies (ideas2it.com) [non-customer]
+2026-02-18 03:59:55,264 [WARNING]   [Magnitude Software - insightsoftware] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:55,264 [INFO]   [Magnitude Software - insightsoftware] Retrying in 30s...
+2026-02-18 03:59:57,224 [WARNING]   [Quantum Metric] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:57,224 [ERROR]   [Quantum Metric] FAILED after 3 attempts
+2026-02-18 03:59:57,225 [INFO] [74/220] Enriching Prophecy Technologies (prophecytechs.com) [non-customer]
+2026-02-18 03:59:59,294 [WARNING]   [Ideas2IT Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 03:59:59,294 [INFO]   [Ideas2IT Technologies] Retrying in 30s...
+2026-02-18 04:00:02,775 [WARNING]   [Prophecy Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:00:02,775 [INFO]   [Prophecy Technologies] Retrying in 30s...
+2026-02-18 04:00:15,787 [WARNING]   [Unify Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:00:15,788 [INFO]   [Unify Technologies] Retrying in 60s...
+2026-02-18 04:00:23,380 [WARNING]   [Quickbase] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:00:23,380 [INFO]   [Quickbase] Retrying in 60s...
+2026-02-18 04:00:30,619 [WARNING]   [Magnitude Software - insightsoftware] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:00:30,620 [INFO]   [Magnitude Software - insightsoftware] Retrying in 60s...
+2026-02-18 04:00:34,934 [WARNING]   [Ideas2IT Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:00:34,934 [INFO]   [Ideas2IT Technologies] Retrying in 60s...
+2026-02-18 04:00:38,746 [WARNING]   [Prophecy Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:00:38,746 [INFO]   [Prophecy Technologies] Retrying in 60s...
+2026-02-18 04:01:21,232 [WARNING]   [Unify Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:21,232 [ERROR]   [Unify Technologies] FAILED after 3 attempts
+2026-02-18 04:01:21,232 [INFO] [74/220] Enriching Celigo (celigo.com) [non-customer]
+2026-02-18 04:01:27,314 [WARNING]   [Celigo] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:27,315 [INFO]   [Celigo] Retrying in 30s...
+2026-02-18 04:01:29,679 [WARNING]   [Quickbase] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:29,680 [ERROR]   [Quickbase] FAILED after 3 attempts
+2026-02-18 04:01:29,680 [INFO] [74/220] Enriching Contata (contata.com) [non-customer]
+2026-02-18 04:01:35,219 [WARNING]   [Contata] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:35,220 [INFO]   [Contata] Retrying in 30s...
+2026-02-18 04:01:36,215 [WARNING]   [Magnitude Software - insightsoftware] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:36,215 [ERROR]   [Magnitude Software - insightsoftware] FAILED after 3 attempts
+2026-02-18 04:01:36,215 [INFO] [74/220] Enriching Ataccama (ataccama.com) [non-customer]
+2026-02-18 04:01:40,829 [WARNING]   [Ideas2IT Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:40,830 [ERROR]   [Ideas2IT Technologies] FAILED after 3 attempts
+2026-02-18 04:01:40,830 [INFO] [74/220] Enriching Zolon Tech Inc. (zolontech.com) [non-customer]
+2026-02-18 04:01:43,478 [WARNING]   [Ataccama] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:43,478 [INFO]   [Ataccama] Retrying in 30s...
+2026-02-18 04:01:43,602 [WARNING]   [Prophecy Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:43,602 [ERROR]   [Prophecy Technologies] FAILED after 3 attempts
+2026-02-18 04:01:43,602 [INFO] [74/220] Enriching Kinective (kinective.io) [non-customer]
+2026-02-18 04:01:46,480 [WARNING]   [Zolon Tech Inc.] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:46,480 [INFO]   [Zolon Tech Inc.] Retrying in 30s...
+2026-02-18 04:01:49,102 [WARNING]   [Kinective] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:01:49,102 [INFO]   [Kinective] Retrying in 30s...
+2026-02-18 04:02:02,619 [WARNING]   [Celigo] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:02:02,620 [INFO]   [Celigo] Retrying in 60s...
+2026-02-18 04:02:10,332 [WARNING]   [Contata] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:02:10,332 [INFO]   [Contata] Retrying in 60s...
+2026-02-18 04:02:18,300 [WARNING]   [Ataccama] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:02:18,301 [INFO]   [Ataccama] Retrying in 60s...
+2026-02-18 04:02:21,291 [WARNING]   [Zolon Tech Inc.] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:02:21,291 [INFO]   [Zolon Tech Inc.] Retrying in 60s...
+2026-02-18 04:02:24,421 [WARNING]   [Kinective] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:02:24,421 [INFO]   [Kinective] Retrying in 60s...
+2026-02-18 04:03:08,115 [WARNING]   [Celigo] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:08,115 [ERROR]   [Celigo] FAILED after 3 attempts
+2026-02-18 04:03:08,115 [INFO] [74/220] Enriching Emplifi (emplifi.io) [non-customer]
+2026-02-18 04:03:13,477 [WARNING]   [Emplifi] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:13,479 [INFO]   [Emplifi] Retrying in 30s...
+2026-02-18 04:03:15,716 [WARNING]   [Contata] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:15,716 [ERROR]   [Contata] FAILED after 3 attempts
+2026-02-18 04:03:15,716 [INFO] [74/220] Enriching Lytics (contentstack.com) [non-customer]
+2026-02-18 04:03:21,395 [WARNING]   [Lytics] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:21,395 [INFO]   [Lytics] Retrying in 30s...
+2026-02-18 04:03:24,141 [WARNING]   [Ataccama] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:24,141 [ERROR]   [Ataccama] FAILED after 3 attempts
+2026-02-18 04:03:24,141 [INFO] [74/220] Enriching dbt Labs (getdbt.com) [non-customer]
+2026-02-18 04:03:27,035 [WARNING]   [Zolon Tech Inc.] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:27,035 [ERROR]   [Zolon Tech Inc.] FAILED after 3 attempts
+2026-02-18 04:03:27,035 [INFO] [74/220] Enriching Arbisoft (arbisoft.com) [non-customer]
+2026-02-18 04:03:30,015 [WARNING]   [Kinective] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:30,015 [ERROR]   [Kinective] FAILED after 3 attempts
+2026-02-18 04:03:30,016 [INFO] [74/220] Enriching Sparq (teamsparq.com) [non-customer]
+2026-02-18 04:03:30,020 [WARNING]   [dbt Labs] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:30,020 [INFO]   [dbt Labs] Retrying in 30s...
+2026-02-18 04:03:32,426 [WARNING]   [Arbisoft] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:32,426 [INFO]   [Arbisoft] Retrying in 30s...
+2026-02-18 04:03:36,044 [WARNING]   [Sparq] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:36,045 [INFO]   [Sparq] Retrying in 30s...
+2026-02-18 04:03:48,806 [WARNING]   [Emplifi] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:48,806 [INFO]   [Emplifi] Retrying in 60s...
+2026-02-18 04:03:57,206 [WARNING]   [Lytics] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:03:57,206 [INFO]   [Lytics] Retrying in 60s...
+2026-02-18 04:04:06,227 [WARNING]   [dbt Labs] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:04:06,227 [INFO]   [dbt Labs] Retrying in 60s...
+2026-02-18 04:04:07,252 [WARNING]   [Arbisoft] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:04:07,253 [INFO]   [Arbisoft] Retrying in 60s...
+2026-02-18 04:04:12,059 [WARNING]   [Sparq] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:04:12,059 [INFO]   [Sparq] Retrying in 60s...
+2026-02-18 04:04:55,458 [WARNING]   [Emplifi] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:04:55,458 [ERROR]   [Emplifi] FAILED after 3 attempts
+2026-02-18 04:04:55,458 [INFO] [74/220] Enriching KX (kx.com) [non-customer]
+2026-02-18 04:05:00,279 [WARNING]   [KX] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:00,281 [INFO]   [KX] Retrying in 30s...
+2026-02-18 04:05:02,937 [WARNING]   [Lytics] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:02,937 [ERROR]   [Lytics] FAILED after 3 attempts
+2026-02-18 04:05:02,937 [INFO] [74/220] Enriching Amplitude (amplitude.com) [non-customer]
+2026-02-18 04:05:08,320 [WARNING]   [Amplitude] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:08,321 [INFO]   [Amplitude] Retrying in 30s...
+2026-02-18 04:05:12,146 [WARNING]   [dbt Labs] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:12,146 [ERROR]   [dbt Labs] FAILED after 3 attempts
+2026-02-18 04:05:12,146 [INFO] [74/220] Enriching Cockroach Labs (cockroachlabs.com) [non-customer]
+2026-02-18 04:05:13,495 [WARNING]   [Arbisoft] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:13,495 [ERROR]   [Arbisoft] FAILED after 3 attempts
+2026-02-18 04:05:13,495 [INFO] [74/220] Enriching Ab Initio Software (abinitio.com) [non-customer]
+2026-02-18 04:05:17,670 [WARNING]   [Cockroach Labs] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:17,671 [INFO]   [Cockroach Labs] Retrying in 30s...
+2026-02-18 04:05:17,698 [WARNING]   [Sparq] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:17,698 [ERROR]   [Sparq] FAILED after 3 attempts
+2026-02-18 04:05:17,698 [INFO] [74/220] Enriching eQ Technologic (1eq.com) [non-customer]
+2026-02-18 04:05:19,961 [WARNING]   [Ab Initio Software] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:19,961 [INFO]   [Ab Initio Software] Retrying in 30s...
+2026-02-18 04:05:23,417 [WARNING]   [eQ Technologic] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:23,417 [INFO]   [eQ Technologic] Retrying in 30s...
+2026-02-18 04:05:35,830 [WARNING]   [KX] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:35,831 [INFO]   [KX] Retrying in 60s...
+2026-02-18 04:05:44,133 [WARNING]   [Amplitude] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:44,134 [INFO]   [Amplitude] Retrying in 60s...
+2026-02-18 04:05:53,184 [WARNING]   [Cockroach Labs] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:53,184 [INFO]   [Cockroach Labs] Retrying in 60s...
+2026-02-18 04:05:55,515 [WARNING]   [Ab Initio Software] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:55,515 [INFO]   [Ab Initio Software] Retrying in 60s...
+2026-02-18 04:05:59,032 [WARNING]   [eQ Technologic] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:05:59,032 [INFO]   [eQ Technologic] Retrying in 60s...
+2026-02-18 04:06:40,896 [WARNING]   [KX] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:06:40,897 [ERROR]   [KX] FAILED after 3 attempts
+2026-02-18 04:06:40,897 [INFO] [74/220] Enriching Sumo Logic (sumologic.com) [non-customer]
+2026-02-18 04:06:46,806 [WARNING]   [Sumo Logic] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:06:46,806 [INFO]   [Sumo Logic] Retrying in 30s...
+2026-02-18 04:06:49,889 [WARNING]   [Amplitude] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:06:49,889 [ERROR]   [Amplitude] FAILED after 3 attempts
+2026-02-18 04:06:49,889 [INFO] [74/220] Enriching Two Six Technologies (twosixtech.com) [non-customer]
+2026-02-18 04:06:55,105 [WARNING]   [Two Six Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:06:55,106 [INFO]   [Two Six Technologies] Retrying in 30s...
+2026-02-18 04:06:58,986 [WARNING]   [Cockroach Labs] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:06:58,986 [ERROR]   [Cockroach Labs] FAILED after 3 attempts
+2026-02-18 04:06:58,986 [INFO] [74/220] Enriching 3K Technologies (3ktechnologies.com) [non-customer]
+2026-02-18 04:07:00,877 [WARNING]   [Ab Initio Software] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:00,878 [ERROR]   [Ab Initio Software] FAILED after 3 attempts
+2026-02-18 04:07:00,878 [INFO] [74/220] Enriching BlueCloud (blue.cloud) [non-customer]
+2026-02-18 04:07:03,926 [WARNING]   [3K Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:03,927 [INFO]   [3K Technologies] Retrying in 30s...
+2026-02-18 04:07:04,255 [WARNING]   [eQ Technologic] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:04,256 [ERROR]   [eQ Technologic] FAILED after 3 attempts
+2026-02-18 04:07:04,256 [INFO] [74/220] Enriching Masstech Innovations (telestream.net) [non-customer]
+2026-02-18 04:07:05,783 [WARNING]   [BlueCloud] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:05,783 [INFO]   [BlueCloud] Retrying in 30s...
+2026-02-18 04:07:09,824 [WARNING]   [Masstech Innovations] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:09,824 [INFO]   [Masstech Innovations] Retrying in 30s...
+2026-02-18 04:07:22,495 [WARNING]   [Sumo Logic] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:22,495 [INFO]   [Sumo Logic] Retrying in 60s...
+2026-02-18 04:07:31,038 [WARNING]   [Two Six Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:31,038 [INFO]   [Two Six Technologies] Retrying in 60s...
+2026-02-18 04:07:38,956 [WARNING]   [3K Technologies] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:38,958 [INFO]   [3K Technologies] Retrying in 60s...
+2026-02-18 04:07:41,354 [WARNING]   [BlueCloud] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:41,354 [INFO]   [BlueCloud] Retrying in 60s...
+2026-02-18 04:07:45,791 [WARNING]   [Masstech Innovations] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:07:45,792 [INFO]   [Masstech Innovations] Retrying in 60s...
+2026-02-18 04:08:27,922 [WARNING]   [Sumo Logic] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:27,924 [ERROR]   [Sumo Logic] FAILED after 3 attempts
+2026-02-18 04:08:27,924 [INFO] [74/220] Enriching 360 Degree Cloud (360degreecloud.com) [non-customer]
+2026-02-18 04:08:33,652 [WARNING]   [360 Degree Cloud] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:33,652 [INFO]   [360 Degree Cloud] Retrying in 30s...
+2026-02-18 04:08:36,924 [WARNING]   [Two Six Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:36,924 [ERROR]   [Two Six Technologies] FAILED after 3 attempts
+2026-02-18 04:08:36,925 [INFO] [74/220] Enriching 5Data Inc (5datainc.com) [non-customer]
+2026-02-18 04:08:42,349 [WARNING]   [5Data Inc] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:42,350 [INFO]   [5Data Inc] Retrying in 30s...
+2026-02-18 04:08:44,542 [WARNING]   [3K Technologies] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:44,542 [ERROR]   [3K Technologies] FAILED after 3 attempts
+2026-02-18 04:08:44,542 [INFO] [74/220] Enriching Scale AI (scale.com) [non-customer]
+2026-02-18 04:08:47,241 [WARNING]   [BlueCloud] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:47,241 [ERROR]   [BlueCloud] FAILED after 3 attempts
+2026-02-18 04:08:47,241 [INFO] [74/220] Enriching Fullstory (fullstory.com) [non-customer]
+2026-02-18 04:08:49,802 [WARNING]   [Scale AI] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:49,803 [INFO]   [Scale AI] Retrying in 30s...
+2026-02-18 04:08:51,260 [WARNING]   [Masstech Innovations] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:51,260 [ERROR]   [Masstech Innovations] FAILED after 3 attempts
+2026-02-18 04:08:51,260 [INFO] [74/220] Enriching Saison Technology International (HULFT) (saison-technology-intl.com) [non-customer]
+2026-02-18 04:08:52,871 [WARNING]   [Fullstory] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:52,872 [INFO]   [Fullstory] Retrying in 30s...
+2026-02-18 04:08:57,335 [WARNING]   [Saison Technology International (HULFT)] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:08:57,336 [INFO]   [Saison Technology International (HULFT)] Retrying in 30s...
+2026-02-18 04:09:09,104 [WARNING]   [360 Degree Cloud] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:09:09,104 [INFO]   [360 Degree Cloud] Retrying in 60s...
+2026-02-18 04:09:17,571 [WARNING]   [5Data Inc] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:09:17,572 [INFO]   [5Data Inc] Retrying in 60s...
+2026-02-18 04:09:25,920 [WARNING]   [Scale AI] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:09:25,922 [INFO]   [Scale AI] Retrying in 60s...
+2026-02-18 04:09:28,517 [WARNING]   [Fullstory] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:09:28,517 [INFO]   [Fullstory] Retrying in 60s...
+2026-02-18 04:09:32,732 [WARNING]   [Saison Technology International (HULFT)] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:09:32,732 [INFO]   [Saison Technology International (HULFT)] Retrying in 60s...
+2026-02-18 04:10:14,603 [WARNING]   [360 Degree Cloud] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:14,604 [ERROR]   [360 Degree Cloud] FAILED after 3 attempts
+2026-02-18 04:10:14,604 [INFO] [74/220] Enriching SugarCRM (sugarcrm.com) [non-customer]
+2026-02-18 04:10:20,292 [WARNING]   [SugarCRM] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:20,293 [INFO]   [SugarCRM] Retrying in 30s...
+2026-02-18 04:10:23,058 [WARNING]   [5Data Inc] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:23,058 [ERROR]   [5Data Inc] FAILED after 3 attempts
+2026-02-18 04:10:23,058 [INFO] [74/220] Enriching Actian (actian.com) [non-customer]
+2026-02-18 04:10:29,097 [WARNING]   [Actian] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:29,098 [INFO]   [Actian] Retrying in 30s...
+2026-02-18 04:10:31,854 [WARNING]   [Scale AI] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:31,854 [ERROR]   [Scale AI] FAILED after 3 attempts
+2026-02-18 04:10:31,854 [INFO] [74/220] Enriching Incture (incture.com) [non-customer]
+2026-02-18 04:10:33,759 [WARNING]   [Fullstory] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:33,759 [ERROR]   [Fullstory] FAILED after 3 attempts
+2026-02-18 04:10:33,760 [INFO] [74/220] Enriching Treasure Data (treasuredata.com) [non-customer]
+2026-02-18 04:10:37,546 [WARNING]   [Incture] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:37,546 [INFO]   [Incture] Retrying in 30s...
+2026-02-18 04:10:38,328 [WARNING]   [Saison Technology International (HULFT)] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:38,328 [ERROR]   [Saison Technology International (HULFT)] FAILED after 3 attempts
+2026-02-18 04:10:38,328 [INFO] [74/220] Enriching Rokt mParticle (mparticle.com) [non-customer]
+2026-02-18 04:10:40,120 [WARNING]   [Treasure Data] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:40,121 [INFO]   [Treasure Data] Retrying in 30s...
+2026-02-18 04:10:43,917 [WARNING]   [Rokt mParticle] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:43,917 [INFO]   [Rokt mParticle] Retrying in 30s...
+2026-02-18 04:10:56,143 [WARNING]   [SugarCRM] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:10:56,145 [INFO]   [SugarCRM] Retrying in 60s...
+2026-02-18 04:11:04,489 [WARNING]   [Actian] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:11:04,490 [INFO]   [Actian] Retrying in 60s...
+2026-02-18 04:11:13,371 [WARNING]   [Incture] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:11:13,372 [INFO]   [Incture] Retrying in 60s...
+2026-02-18 04:11:16,024 [WARNING]   [Treasure Data] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:11:16,024 [INFO]   [Treasure Data] Retrying in 60s...
+2026-02-18 04:11:19,646 [WARNING]   [Rokt mParticle] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:11:19,646 [INFO]   [Rokt mParticle] Retrying in 60s...
+2026-02-18 04:12:02,001 [WARNING]   [SugarCRM] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:02,002 [ERROR]   [SugarCRM] FAILED after 3 attempts
+2026-02-18 04:12:02,002 [INFO] [74/220] Enriching Cavisson Systems, Inc. (cavisson.com) [non-customer]
+2026-02-18 04:12:07,892 [WARNING]   [Cavisson Systems, Inc.] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:07,894 [INFO]   [Cavisson Systems, Inc.] Retrying in 30s...
+2026-02-18 04:12:10,393 [WARNING]   [Actian] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:10,394 [ERROR]   [Actian] FAILED after 3 attempts
+2026-02-18 04:12:10,394 [INFO] [74/220] Enriching Kyvos Insights (kyvosinsights.com) [non-customer]
+2026-02-18 04:12:15,292 [WARNING]   [Kyvos Insights] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:15,292 [INFO]   [Kyvos Insights] Retrying in 30s...
+2026-02-18 04:12:19,052 [WARNING]   [Incture] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:19,053 [ERROR]   [Incture] FAILED after 3 attempts
+2026-02-18 04:12:22,108 [WARNING]   [Treasure Data] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:22,108 [ERROR]   [Treasure Data] FAILED after 3 attempts
+2026-02-18 04:12:25,232 [WARNING]   [Rokt mParticle] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:25,232 [ERROR]   [Rokt mParticle] FAILED after 3 attempts
+2026-02-18 04:12:43,641 [WARNING]   [Cavisson Systems, Inc.] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:43,641 [INFO]   [Cavisson Systems, Inc.] Retrying in 60s...
+2026-02-18 04:12:50,911 [WARNING]   [Kyvos Insights] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 04:12:50,912 [INFO]   [Kyvos Insights] Retrying in 60s...
+2026-02-18 04:13:49,545 [WARNING]   [Cavisson Systems, Inc.] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:13:49,547 [ERROR]   [Cavisson Systems, Inc.] FAILED after 3 attempts
+2026-02-18 04:13:56,634 [WARNING]   [Kyvos Insights] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 04:13:56,635 [ERROR]   [Kyvos Insights] FAILED after 3 attempts
+2026-02-18 04:13:56,636 [INFO] ============================================================
+2026-02-18 04:13:56,636 [INFO] ENRICHMENT COMPLETE
+2026-02-18 04:13:56,636 [INFO]   Workers: 5
+2026-02-18 04:13:56,636 [INFO]   Total time: 1:13:56
+2026-02-18 04:13:56,636 [INFO]   Completed: 73/220
+2026-02-18 04:13:56,636 [INFO]   Failed: 147
+2026-02-18 04:13:56,636 [INFO]   Failed companies:
+2026-02-18 04:13:56,636 [INFO]     - Bentley Mobility Simulation (bentley.com)
+2026-02-18 04:13:56,636 [INFO]     - Crest Data (crestdata.ai)
+2026-02-18 04:13:56,636 [INFO]     - Dataiku (dataiku.com)
+2026-02-18 04:13:56,636 [INFO]     - Cyera (cyera.com)
+2026-02-18 04:13:56,636 [INFO]     - Cohesity (cohesity.com)
+2026-02-18 04:13:56,636 [INFO]     - Candle Corporation (candle.com)
+2026-02-18 04:13:56,636 [INFO]     - Palantir Technologies (palantir.com)
+2026-02-18 04:13:56,637 [INFO]     - DDN (ddn.com)
+2026-02-18 04:13:56,637 [INFO]     - PartnerLinQ (partnerlinq.com)
+2026-02-18 04:13:56,637 [INFO]     - Qlik (qlik.com)
+2026-02-18 04:13:56,637 [INFO]     - Moraph (moraph.com)
+2026-02-18 04:13:56,637 [INFO]     - Istio (istio.io)
+2026-02-18 04:13:56,637 [INFO]     - Microsoft Power Platform Community (powerplatform.com)
+2026-02-18 04:13:56,637 [INFO]     - Datadog (datadoghq.com)
+2026-02-18 04:13:56,637 [INFO]     - Trimble App Xchange (trimble.com)
+2026-02-18 04:13:56,637 [INFO]     - SS&C Blue Prism (blueprism.com)
+2026-02-18 04:13:56,637 [INFO]     - StreamSets (streamsets.com)
+2026-02-18 04:13:56,637 [INFO]     - Cultura Technologies (culturatech.com)
+2026-02-18 04:13:56,637 [INFO]     - Blockchain Developer (crussaire.com)
+2026-02-18 04:13:56,637 [INFO]     - Minit Process Mining (Now Part of Microsoft Power Automate) (aka.ms)
+2026-02-18 04:13:56,637 [INFO]     - hooli (hbo.com)
+2026-02-18 04:13:56,637 [INFO]     - Zoho IoT (zoho.com)
+2026-02-18 04:13:56,637 [INFO]     - Ascendion (ascendion.com)
+2026-02-18 04:13:56,637 [INFO]     - Teradata (teradata.com)
+2026-02-18 04:13:56,637 [INFO]     - Cloud Software Group (cloud.com)
+2026-02-18 04:13:56,637 [INFO]     - Conneqt business solutions (conneqtcorp.com)
+2026-02-18 04:13:56,637 [INFO]     - Metropolis Technologies (metropolis.io)
+2026-02-18 04:13:56,637 [INFO]     - React (reactjs.org)
+2026-02-18 04:13:56,637 [INFO]     - Nextgen Technologies Inc (nextgentechinc.com)
+2026-02-18 04:13:56,637 [INFO]     - Infor (infor.com)
+2026-02-18 04:13:56,637 [INFO]     - IBM Turbonomic (ibm.com)
+2026-02-18 04:13:56,637 [INFO]     - ACS Solutions (acsicorp.com)
+2026-02-18 04:13:56,637 [INFO]     - CRM Analytics (salesforce.com)
+2026-02-18 04:13:56,637 [INFO]     - Salt Project (saltproject.io)
+2026-02-18 04:13:56,637 [INFO]     - Amdocs Cala (amdocs.com)
+2026-02-18 04:13:56,637 [INFO]     - Azure Cosmos DB (azurecosmosdb.com)
+2026-02-18 04:13:56,637 [INFO]     - FastTrack Dynamics 365 (dynamics.com)
+2026-02-18 04:13:56,637 [INFO]     - Red Hat (redhat.com)
+2026-02-18 04:13:56,637 [INFO]     - Thoughtworks (thoughtworks.com)
+2026-02-18 04:13:56,637 [INFO]     - Microsoft Innovation Hub (microsoft.com)
+2026-02-18 04:13:56,637 [INFO]     - Agentforce Commerce (commercecloud.com)
+2026-02-18 04:13:56,638 [INFO]     - Cox Business (coxbusiness.com)
+2026-02-18 04:13:56,638 [INFO]     - eClerx Digital (eclerxdigital.com)
+2026-02-18 04:13:56,638 [INFO]     - acaisoft (acaisoft.com)
+2026-02-18 04:13:56,638 [INFO]     - LucidLink (lucidlink.com)
+2026-02-18 04:13:56,638 [INFO]     - Lumenore (lumenore.com)
+2026-02-18 04:13:56,638 [INFO]     - Conviva (conviva.com)
+2026-02-18 04:13:56,638 [INFO]     - Striim (striim.com)
+2026-02-18 04:13:56,638 [INFO]     - Devart (devart.com)
+2026-02-18 04:13:56,638 [INFO]     - CAST (castsoftware.com)
+2026-02-18 04:13:56,638 [INFO]     - Reltio (reltio.com)
+2026-02-18 04:13:56,638 [INFO]     - WEKA (weka.io)
+2026-02-18 04:13:56,638 [INFO]     - Incorta (incorta.com)
+2026-02-18 04:13:56,638 [INFO]     - Big Compute (bigcompute.org)
+2026-02-18 04:13:56,638 [INFO]     - InfluxData (influxdata.com)
+2026-02-18 04:13:56,638 [INFO]     - Astronomer (astronomer.io)
+2026-02-18 04:13:56,638 [INFO]     - Ascentt (ascentt.com)
+2026-02-18 04:13:56,638 [INFO]     - Posit PBC (posit.co)
+2026-02-18 04:13:56,638 [INFO]     - XOps by gathr.ai (gathr.one)
+2026-02-18 04:13:56,638 [INFO]     - Hevo Data (hevodata.com)
+2026-02-18 04:13:56,638 [INFO]     - Hydrolix (hydrolix.io)
+2026-02-18 04:13:56,638 [INFO]     - Blue Spire Inc (thebluespire.com)
+2026-02-18 04:13:56,638 [INFO]     - Temporal Technologies (temporal.io)
+2026-02-18 04:13:56,638 [INFO]     - RSA Tech (rsatech.com)
+2026-02-18 04:13:56,638 [INFO]     - Nallas Corporation (nallas.com)
+2026-02-18 04:13:56,638 [INFO]     - OpenEBS (openebs.io)
+2026-02-18 04:13:56,638 [INFO]     - Oxagile (oxagile.com)
+2026-02-18 04:13:56,638 [INFO]     - Domino Data Lab (domino.ai)
+2026-02-18 04:13:56,638 [INFO]     - Right Skale, Inc. (rightskale.ai)
+2026-02-18 04:13:56,638 [INFO]     - Mobius 365 Knowledge Services, Inc. (mobius365.com)
+2026-02-18 04:13:56,638 [INFO]     - KMCCorp India Pvt Ltd (kmccorp.com)
+2026-02-18 04:13:56,638 [INFO]     - Qumulo (qumulo.com)
+2026-02-18 04:13:56,638 [INFO]     - DOMA Technologies (domaonline.com)
+2026-02-18 04:13:56,638 [INFO]     - Qwilt (qwilt.com)
+2026-02-18 04:13:56,638 [INFO]     - VDURA (vdura.com)
+2026-02-18 04:13:56,639 [INFO]     - Cloudwick (cloudwick.com)
+2026-02-18 04:13:56,639 [INFO]     - DATUM, an Infogix Company (precisely.com)
+2026-02-18 04:13:56,639 [INFO]     - SingleStore (singlestore.com)
+2026-02-18 04:13:56,639 [INFO]     - Yellowbrick Data (yellowbrick.com)
+2026-02-18 04:13:56,639 [INFO]     - Armada (armada.ai)
+2026-02-18 04:13:56,639 [INFO]     - The Modern Data Company (themoderndatacompany.com)
+2026-02-18 04:13:56,639 [INFO]     - Stratacent (stratacent.com)
+2026-02-18 04:13:56,639 [INFO]     - ClickHouse (clickhouse.com)
+2026-02-18 04:13:56,639 [INFO]     - Dekopon Stack (dekoponstack.com)
+2026-02-18 04:13:56,639 [INFO]     - Stier Solutions Inc (stiersol.com)
+2026-02-18 04:13:56,639 [INFO]     - Wasabi Technologies (wasabi.com)
+2026-02-18 04:13:56,639 [INFO]     - AI/R (aircompany.ai)
+2026-02-18 04:13:56,639 [INFO]     - ibi | Information Builders (ibi.com)
+2026-02-18 04:13:56,639 [INFO]     - Veritas Technologies LLC (veritas.com)
+2026-02-18 04:13:56,639 [INFO]     - Zendesk WFM (Tymeshift) (zdsk.co)
+2026-02-18 04:13:56,639 [INFO]     - Altimetrik (altimetrik.com)
+2026-02-18 04:13:56,639 [INFO]     - Kaseya (kaseya.com)
+2026-02-18 04:13:56,639 [INFO]     - Splunk (splunk.com)
+2026-02-18 04:13:56,639 [INFO]     - Datavant (datavant.com)
+2026-02-18 04:13:56,639 [INFO]     - Veeva Systems (veeva.com)
+2026-02-18 04:13:56,639 [INFO]     - Avaya (avaya.com)
+2026-02-18 04:13:56,639 [INFO]     - FPT Automotive (fptsoftware.com)
+2026-02-18 04:13:56,639 [INFO]     - Dynatrace (dynatrace.com)
+2026-02-18 04:13:56,639 [INFO]     - Centific (centific.com)
+2026-02-18 04:13:56,639 [INFO]     - MongoDB (mongodb.com)
+2026-02-18 04:13:56,639 [INFO]     - Nutanix (nutanix.com)
+2026-02-18 04:13:56,639 [INFO]     - CSG (csgi.com)
+2026-02-18 04:13:56,639 [INFO]     - Citrix (citrix.com)
+2026-02-18 04:13:56,639 [INFO]     - Siemens Digital Industries Software (siemens.com)
+2026-02-18 04:13:56,639 [INFO]     - Layer7 API Security (broadcom.com)
+2026-02-18 04:13:56,639 [INFO]     - NiCE (nice.com)
+2026-02-18 04:13:56,639 [INFO]     - Dell Compellent (dell.com)
+2026-02-18 04:13:56,639 [INFO]     - Starburst (starburst.io)
+2026-02-18 04:13:56,639 [INFO]     - MResult (mresult.com)
+2026-02-18 04:13:56,639 [INFO]     - Quantum Metric (quantummetric.com)
+2026-02-18 04:13:56,640 [INFO]     - Unify Technologies (unifytech.com)
+2026-02-18 04:13:56,640 [INFO]     - Quickbase (quickbase.com)
+2026-02-18 04:13:56,640 [INFO]     - Magnitude Software - insightsoftware (insightsoftware.com)
+2026-02-18 04:13:56,640 [INFO]     - Ideas2IT Technologies (ideas2it.com)
+2026-02-18 04:13:56,640 [INFO]     - Prophecy Technologies (prophecytechs.com)
+2026-02-18 04:13:56,640 [INFO]     - Celigo (celigo.com)
+2026-02-18 04:13:56,640 [INFO]     - Contata (contata.com)
+2026-02-18 04:13:56,640 [INFO]     - Ataccama (ataccama.com)
+2026-02-18 04:13:56,640 [INFO]     - Zolon Tech Inc. (zolontech.com)
+2026-02-18 04:13:56,640 [INFO]     - Kinective (kinective.io)
+2026-02-18 04:13:56,640 [INFO]     - Emplifi (emplifi.io)
+2026-02-18 04:13:56,640 [INFO]     - Lytics (contentstack.com)
+2026-02-18 04:13:56,640 [INFO]     - dbt Labs (getdbt.com)
+2026-02-18 04:13:56,640 [INFO]     - Arbisoft (arbisoft.com)
+2026-02-18 04:13:56,640 [INFO]     - Sparq (teamsparq.com)
+2026-02-18 04:13:56,640 [INFO]     - KX (kx.com)
+2026-02-18 04:13:56,640 [INFO]     - Amplitude (amplitude.com)
+2026-02-18 04:13:56,640 [INFO]     - Cockroach Labs (cockroachlabs.com)
+2026-02-18 04:13:56,640 [INFO]     - Ab Initio Software (abinitio.com)
+2026-02-18 04:13:56,640 [INFO]     - eQ Technologic (1eq.com)
+2026-02-18 04:13:56,640 [INFO]     - Sumo Logic (sumologic.com)
+2026-02-18 04:13:56,640 [INFO]     - Two Six Technologies (twosixtech.com)
+2026-02-18 04:13:56,640 [INFO]     - 3K Technologies (3ktechnologies.com)
+2026-02-18 04:13:56,640 [INFO]     - BlueCloud (blue.cloud)
+2026-02-18 04:13:56,640 [INFO]     - Masstech Innovations (telestream.net)
+2026-02-18 04:13:56,640 [INFO]     - 360 Degree Cloud (360degreecloud.com)
+2026-02-18 04:13:56,640 [INFO]     - 5Data Inc (5datainc.com)
+2026-02-18 04:13:56,640 [INFO]     - Scale AI (scale.com)
+2026-02-18 04:13:56,640 [INFO]     - Fullstory (fullstory.com)
+2026-02-18 04:13:56,640 [INFO]     - Saison Technology International (HULFT) (saison-technology-intl.com)
+2026-02-18 04:13:56,640 [INFO]     - SugarCRM (sugarcrm.com)
+2026-02-18 04:13:56,640 [INFO]     - Actian (actian.com)
+2026-02-18 04:13:56,640 [INFO]     - Incture (incture.com)
+2026-02-18 04:13:56,640 [INFO]     - Treasure Data (treasuredata.com)
+2026-02-18 04:13:56,640 [INFO]     - Rokt mParticle (mparticle.com)
+2026-02-18 04:13:56,640 [INFO]     - Cavisson Systems, Inc. (cavisson.com)
+2026-02-18 04:13:56,641 [INFO]     - Kyvos Insights (kyvosinsights.com)
+2026-02-18 04:13:56,641 [INFO] ============================================================
+2026-02-18 17:39:10,986 [INFO] ============================================================
+2026-02-18 17:39:10,986 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-18 17:39:10,986 [INFO] ============================================================
+2026-02-18 17:39:10,986 [INFO] Loaded prompt template (6985 chars)
+2026-02-18 17:39:10,987 [INFO] Loaded 44 known customers
+2026-02-18 17:39:10,987 [INFO] Loaded 176 non-customers
+2026-02-18 17:39:10,988 [INFO] Total companies to enrich: 220
+2026-02-18 17:39:11,005 [INFO] Already enriched: 73
+2026-02-18 17:39:11,005 [INFO] Remaining to process: 147
+2026-02-18 17:39:11,005 [INFO] [74/220] Enriching Bentley Mobility Simulation (bentley.com) [non-customer]
+2026-02-18 17:39:11,005 [INFO] [74/220] Enriching Cohesity (cohesity.com) [non-customer]
+2026-02-18 17:39:11,006 [INFO] [74/220] Enriching Dataiku (dataiku.com) [non-customer]
+2026-02-18 17:39:11,006 [INFO] [74/220] Enriching Crest Data (crestdata.ai) [non-customer]
+2026-02-18 17:39:11,006 [INFO] [74/220] Enriching Cyera (cyera.com) [non-customer]
+2026-02-18 17:40:50,489 [WARNING]   [Cyera] Error on attempt 1/3: Could not extract JSON from output: {"company_name": "Cyera", "domain": "cyera.com", "signals": {"tool_count": {"score": 1, "reasoning": "Confirmed tools with evidence: GitHub (cyeragit org with 22 repos confirmed), Slack and Jira refer...
+2026-02-18 17:40:50,490 [INFO]   [Cyera] Retrying in 30s...
+2026-02-18 17:40:56,369 [INFO]   [Bentley Mobility Simulation] Saved to bentley_com.json
+2026-02-18 17:40:56,369 [INFO] [75/220] Enriching Candle Corporation (candle.com) [non-customer]
+2026-02-18 17:41:08,739 [INFO]   [Cohesity] Saved to cohesity_com.json
+2026-02-18 17:41:08,740 [INFO] [76/220] Enriching DDN (ddn.com) [non-customer]
+2026-02-18 17:41:25,861 [INFO]   [Dataiku] Saved to dataiku_com.json
+2026-02-18 17:41:25,862 [INFO] [77/220] Enriching Palantir Technologies (palantir.com) [non-customer]
+2026-02-18 17:42:22,129 [INFO]   [Candle Corporation] Saved to candle_com.json
+2026-02-18 17:42:22,130 [INFO] [78/220] Enriching PartnerLinQ (partnerlinq.com) [non-customer]
+2026-02-18 17:42:51,117 [INFO]   [DDN] Saved to ddn_com.json
+2026-02-18 17:42:51,117 [INFO] [79/220] Enriching Qlik (qlik.com) [non-customer]
+2026-02-18 17:42:54,244 [INFO]   [Palantir Technologies] Saved to palantir_com.json
+2026-02-18 17:42:54,244 [INFO] [80/220] Enriching Moraph (moraph.com) [non-customer]
+2026-02-18 17:43:18,501 [INFO]   [Cyera] Saved to cyera_com.json
+2026-02-18 17:43:18,502 [INFO] [81/220] Enriching Istio (istio.io) [non-customer]
+2026-02-18 17:43:41,910 [INFO]   [Crest Data] Saved to crestdata_ai.json
+2026-02-18 17:43:41,911 [INFO] [82/220] Enriching Datadog (datadoghq.com) [non-customer]
+2026-02-18 17:44:21,445 [INFO]   [Istio] Saved to istio_io.json
+2026-02-18 17:44:21,447 [INFO] [83/220] Enriching Microsoft Power Platform Community (powerplatform.com) [non-customer]
+2026-02-18 17:44:25,036 [INFO]   [Moraph] Saved to moraph_com.json
+2026-02-18 17:44:25,036 [INFO] [84/220] Enriching Trimble App Xchange (trimble.com) [non-customer]
+2026-02-18 17:44:38,701 [INFO]   [Qlik] Saved to qlik_com.json
+2026-02-18 17:44:38,702 [INFO] [85/220] Enriching SS&C Blue Prism (blueprism.com) [non-customer]
+2026-02-18 17:44:44,864 [INFO]   [PartnerLinQ] Saved to partnerlinq_com.json
+2026-02-18 17:44:44,864 [INFO] [86/220] Enriching StreamSets (streamsets.com) [non-customer]
+2026-02-18 17:45:02,900 [INFO]   [Datadog] Saved to datadoghq_com.json
+2026-02-18 17:45:02,901 [INFO] [87/220] Enriching Cultura Technologies (culturatech.com) [non-customer]
+2026-02-18 17:45:58,482 [INFO]   [Trimble App Xchange] Saved to trimble_com.json
+2026-02-18 17:45:58,483 [INFO] [88/220] Enriching Blockchain Developer (crussaire.com) [non-customer]
+2026-02-18 17:46:01,364 [INFO]   [Microsoft Power Platform Community] Saved to powerplatform_com.json
+2026-02-18 17:46:01,365 [INFO] [89/220] Enriching Minit Process Mining (Now Part of Microsoft Power Automate) (aka.ms) [non-customer]
+2026-02-18 17:46:23,860 [INFO]   [SS&C Blue Prism] Saved to blueprism_com.json
+2026-02-18 17:46:23,861 [INFO] [90/220] Enriching hooli (hbo.com) [non-customer]
+2026-02-18 17:46:31,413 [INFO]   [StreamSets] Saved to streamsets_com.json
+2026-02-18 17:46:31,413 [INFO] [91/220] Enriching Zoho IoT (zoho.com) [non-customer]
+2026-02-18 17:46:44,424 [INFO]   [Cultura Technologies] Saved to culturatech_com.json
+2026-02-18 17:46:44,425 [INFO] [92/220] Enriching Teradata (teradata.com) [non-customer]
+2026-02-18 17:46:49,828 [INFO]   [Blockchain Developer] Saved to crussaire_com.json
+2026-02-18 17:46:49,829 [INFO] [93/220] Enriching Ascendion (ascendion.com) [non-customer]
+2026-02-18 17:47:27,823 [INFO]   [Minit Process Mining (Now Part of Microsoft Power Automate)] Saved to aka_ms.json
+2026-02-18 17:47:27,824 [INFO] [94/220] Enriching Cloud Software Group (cloud.com) [non-customer]
+2026-02-18 17:48:12,602 [INFO]   [hooli] Saved to hbo_com.json
+2026-02-18 17:48:12,603 [INFO] [95/220] Enriching Conneqt business solutions (conneqtcorp.com) [non-customer]
+2026-02-18 17:48:14,155 [INFO]   [Zoho IoT] Saved to zoho_com.json
+2026-02-18 17:48:14,155 [INFO] [96/220] Enriching Metropolis Technologies (metropolis.io) [non-customer]
+2026-02-18 17:48:24,324 [INFO]   [Teradata] Saved to teradata_com.json
+2026-02-18 17:48:24,325 [INFO] [97/220] Enriching React (reactjs.org) [non-customer]
+2026-02-18 17:48:53,375 [INFO]   [Ascendion] Saved to ascendion_com.json
+2026-02-18 17:48:53,376 [INFO] [98/220] Enriching Nextgen Technologies Inc (nextgentechinc.com) [non-customer]
+2026-02-18 17:49:20,028 [INFO]   [Cloud Software Group] Saved to cloud_com.json
+2026-02-18 17:49:20,029 [INFO] [99/220] Enriching Infor (infor.com) [non-customer]
+2026-02-18 21:11:41,507 [INFO] ============================================================
+2026-02-18 21:11:41,507 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-18 21:11:41,508 [INFO] ============================================================
+2026-02-18 21:11:41,508 [INFO] Loaded prompt template (6985 chars)
+2026-02-18 21:11:41,508 [INFO] Loaded 44 known customers
+2026-02-18 21:11:41,509 [INFO] Loaded 176 non-customers
+2026-02-18 21:11:41,509 [INFO] Total companies to enrich: 220
+2026-02-18 21:11:41,531 [INFO] Already enriched: 98
+2026-02-18 21:11:41,531 [INFO] Remaining to process: 122
+2026-02-18 21:11:41,531 [INFO] [99/220] Enriching Conneqt business solutions (conneqtcorp.com) [non-customer]
+2026-02-18 21:11:41,531 [INFO] [99/220] Enriching Metropolis Technologies (metropolis.io) [non-customer]
+2026-02-18 21:11:41,531 [INFO] [99/220] Enriching React (reactjs.org) [non-customer]
+2026-02-18 21:11:41,532 [INFO] [99/220] Enriching Nextgen Technologies Inc (nextgentechinc.com) [non-customer]
+2026-02-18 21:11:41,532 [INFO] [99/220] Enriching Infor (infor.com) [non-customer]
+2026-02-18 21:12:41,560 [INFO]   [React] Saved to reactjs_org.json
+2026-02-18 21:12:41,561 [INFO] [100/220] Enriching IBM Turbonomic (ibm.com) [non-customer]
+2026-02-18 21:12:55,079 [INFO]   [Nextgen Technologies Inc] Saved to nextgentechinc_com.json
+2026-02-18 21:12:55,080 [INFO] [101/220] Enriching ACS Solutions (acsicorp.com) [non-customer]
+2026-02-18 21:13:12,115 [INFO]   [Conneqt business solutions] Saved to conneqtcorp_com.json
+2026-02-18 21:13:12,116 [INFO] [102/220] Enriching CRM Analytics (salesforce.com) [non-customer]
+2026-02-18 21:13:36,229 [INFO]   [Metropolis Technologies] Saved to metropolis_io.json
+2026-02-18 21:13:36,230 [INFO] [103/220] Enriching Salt Project (saltproject.io) [non-customer]
+2026-02-18 21:13:42,227 [INFO]   [Infor] Saved to infor_com.json
+2026-02-18 21:13:42,227 [INFO] [104/220] Enriching Amdocs Cala (amdocs.com) [non-customer]
+2026-02-18 21:14:10,283 [INFO]   [ACS Solutions] Saved to acsicorp_com.json
+2026-02-18 21:14:10,284 [INFO] [105/220] Enriching Azure Cosmos DB (azurecosmosdb.com) [non-customer]
+2026-02-18 21:14:43,875 [INFO]   [IBM Turbonomic] Saved to ibm_com.json
+2026-02-18 21:14:43,875 [INFO] [106/220] Enriching FastTrack Dynamics 365 (dynamics.com) [non-customer]
+2026-02-18 21:15:09,821 [INFO]   [CRM Analytics] Saved to salesforce_com.json
+2026-02-18 21:15:09,822 [INFO] [107/220] Enriching Red Hat (redhat.com) [non-customer]
+2026-02-18 21:15:23,737 [INFO]   [Azure Cosmos DB] Saved to azurecosmosdb_com.json
+2026-02-18 21:15:23,737 [INFO] [108/220] Enriching Thoughtworks (thoughtworks.com) [non-customer]
+2026-02-18 21:15:26,978 [INFO]   [Amdocs Cala] Saved to amdocs_com.json
+2026-02-18 21:15:26,978 [INFO] [109/220] Enriching Microsoft Innovation Hub (microsoft.com) [non-customer]
+2026-02-18 21:15:32,145 [INFO]   [Salt Project] Saved to saltproject_io.json
+2026-02-18 21:15:32,145 [INFO] [110/220] Enriching Agentforce Commerce (commercecloud.com) [non-customer]
+2026-02-18 21:16:36,028 [INFO]   [FastTrack Dynamics 365] Saved to dynamics_com.json
+2026-02-18 21:16:36,029 [INFO] [111/220] Enriching Cox Business (coxbusiness.com) [non-customer]
+2026-02-18 21:16:58,295 [INFO]   [Microsoft Innovation Hub] Saved to microsoft_com.json
+2026-02-18 21:16:58,295 [INFO] [112/220] Enriching eClerx Digital (eclerxdigital.com) [non-customer]
+2026-02-18 21:17:13,623 [INFO]   [Red Hat] Saved to redhat_com.json
+2026-02-18 21:17:13,624 [INFO] [113/220] Enriching acaisoft (acaisoft.com) [non-customer]
+2026-02-18 21:17:28,148 [INFO]   [Agentforce Commerce] Saved to commercecloud_com.json
+2026-02-18 21:17:28,149 [INFO] [114/220] Enriching LucidLink (lucidlink.com) [non-customer]
+2026-02-18 21:17:28,882 [INFO]   [Thoughtworks] Saved to thoughtworks_com.json
+2026-02-18 21:17:28,882 [INFO] [115/220] Enriching Lumenore (lumenore.com) [non-customer]
+2026-02-18 21:17:54,956 [INFO]   [Cox Business] Saved to coxbusiness_com.json
+2026-02-18 21:17:54,957 [INFO] [116/220] Enriching Conviva (conviva.com) [non-customer]
+2026-02-18 21:18:24,535 [INFO]   [eClerx Digital] Saved to eclerxdigital_com.json
+2026-02-18 21:18:24,535 [INFO] [117/220] Enriching Striim (striim.com) [non-customer]
+2026-02-18 21:18:35,596 [INFO]   [acaisoft] Saved to acaisoft_com.json
+2026-02-18 21:18:35,597 [INFO] [118/220] Enriching CAST (castsoftware.com) [non-customer]
+2026-02-18 21:19:22,799 [INFO]   [LucidLink] Saved to lucidlink_com.json
+2026-02-18 21:19:22,800 [INFO] [119/220] Enriching Devart (devart.com) [non-customer]
+2026-02-18 21:20:03,546 [INFO]   [Striim] Saved to striim_com.json
+2026-02-18 21:20:03,548 [INFO] [120/220] Enriching Reltio (reltio.com) [non-customer]
+2026-02-18 21:20:04,856 [INFO]   [Lumenore] Saved to lumenore_com.json
+2026-02-18 21:20:04,857 [INFO] [121/220] Enriching WEKA (weka.io) [non-customer]
+2026-02-18 21:20:06,161 [INFO]   [Conviva] Saved to conviva_com.json
+2026-02-18 21:20:06,161 [INFO] [122/220] Enriching Incorta (incorta.com) [non-customer]
+2026-02-18 23:30:01,114 [INFO] ============================================================
+2026-02-18 23:30:01,114 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-18 23:30:01,114 [INFO] ============================================================
+2026-02-18 23:30:01,115 [INFO] Loaded prompt template (6985 chars)
+2026-02-18 23:30:01,115 [INFO] Loaded 44 known customers
+2026-02-18 23:30:01,116 [INFO] Loaded 176 non-customers
+2026-02-18 23:30:01,116 [INFO] Total companies to enrich: 220
+2026-02-18 23:30:01,143 [INFO] Already enriched: 121
+2026-02-18 23:30:01,143 [INFO] Remaining to process: 99
+2026-02-18 23:30:01,143 [INFO] [122/220] Enriching CAST (castsoftware.com) [non-customer]
+2026-02-18 23:30:01,143 [INFO] [122/220] Enriching Devart (devart.com) [non-customer]
+2026-02-18 23:30:01,143 [INFO] [122/220] Enriching Reltio (reltio.com) [non-customer]
+2026-02-18 23:30:01,144 [INFO] [122/220] Enriching WEKA (weka.io) [non-customer]
+2026-02-18 23:30:01,144 [INFO] [122/220] Enriching Incorta (incorta.com) [non-customer]
+2026-02-18 23:31:46,776 [INFO]   [Devart] Saved to devart_com.json
+2026-02-18 23:31:46,778 [INFO] [123/220] Enriching Big Compute (bigcompute.org) [non-customer]
+2026-02-18 23:31:47,324 [INFO]   [Reltio] Saved to reltio_com.json
+2026-02-18 23:31:47,324 [INFO] [124/220] Enriching InfluxData (influxdata.com) [non-customer]
+2026-02-18 23:32:07,084 [INFO]   [CAST] Saved to castsoftware_com.json
+2026-02-18 23:32:07,085 [INFO] [125/220] Enriching Astronomer (astronomer.io) [non-customer]
+2026-02-18 23:32:13,913 [INFO]   [WEKA] Saved to weka_io.json
+2026-02-18 23:32:13,913 [INFO] [126/220] Enriching Ascentt (ascentt.com) [non-customer]
+2026-02-18 23:32:17,014 [INFO]   [Incorta] Saved to incorta_com.json
+2026-02-18 23:32:17,014 [INFO] [127/220] Enriching Posit PBC (posit.co) [non-customer]
+2026-02-18 23:32:48,269 [INFO]   [InfluxData] Saved to influxdata_com.json
+2026-02-18 23:32:48,269 [INFO] [128/220] Enriching XOps by gathr.ai (gathr.one) [non-customer]
+2026-02-18 23:32:51,321 [INFO]   [Big Compute] Saved to bigcompute_org.json
+2026-02-18 23:32:51,321 [INFO] [129/220] Enriching Hevo Data (hevodata.com) [non-customer]
+2026-02-18 23:33:58,669 [INFO]   [Ascentt] Saved to ascentt_com.json
+2026-02-18 23:33:58,671 [INFO] [130/220] Enriching Hydrolix (hydrolix.io) [non-customer]
+2026-02-18 23:34:07,911 [INFO]   [Astronomer] Saved to astronomer_io.json
+2026-02-18 23:34:07,912 [INFO] [131/220] Enriching Blue Spire Inc (thebluespire.com) [non-customer]
+2026-02-18 23:34:28,838 [INFO]   [Posit PBC] Saved to posit_co.json
+2026-02-18 23:34:28,839 [INFO] [132/220] Enriching Temporal Technologies (temporal.io) [non-customer]
+2026-02-18 23:34:30,493 [INFO]   [XOps by gathr.ai] Saved to gathr_one.json
+2026-02-18 23:34:30,493 [INFO] [133/220] Enriching RSA Tech (rsatech.com) [non-customer]
+2026-02-18 23:35:02,875 [INFO]   [Hevo Data] Saved to hevodata_com.json
+2026-02-18 23:35:02,877 [INFO] [134/220] Enriching Nallas Corporation (nallas.com) [non-customer]
+2026-02-18 23:35:40,755 [INFO]   [Blue Spire Inc] Saved to thebluespire_com.json
+2026-02-18 23:35:40,756 [INFO] [135/220] Enriching OpenEBS (openebs.io) [non-customer]
+2026-02-18 23:36:03,708 [INFO]   [RSA Tech] Saved to rsatech_com.json
+2026-02-18 23:36:03,709 [INFO] [136/220] Enriching Oxagile (oxagile.com) [non-customer]
+2026-02-18 23:36:12,900 [INFO]   [Hydrolix] Saved to hydrolix_io.json
+2026-02-18 23:36:12,901 [INFO] [137/220] Enriching Domino Data Lab (domino.ai) [non-customer]
+2026-02-18 23:36:33,388 [INFO]   [Nallas Corporation] Saved to nallas_com.json
+2026-02-18 23:36:33,389 [INFO] [138/220] Enriching Right Skale, Inc. (rightskale.ai) [non-customer]
+2026-02-18 23:36:45,377 [INFO]   [Temporal Technologies] Saved to temporal_io.json
+2026-02-18 23:36:45,377 [INFO] [139/220] Enriching Mobius 365 Knowledge Services, Inc. (mobius365.com) [non-customer]
+2026-02-18 23:37:11,422 [INFO]   [OpenEBS] Saved to openebs_io.json
+2026-02-18 23:37:11,422 [INFO] [140/220] Enriching KMCCorp India Pvt Ltd (kmccorp.com) [non-customer]
+2026-02-18 23:37:36,362 [INFO]   [Domino Data Lab] Saved to domino_ai.json
+2026-02-18 23:37:36,363 [INFO] [141/220] Enriching Qumulo (qumulo.com) [non-customer]
+2026-02-18 23:37:38,717 [INFO]   [Oxagile] Saved to oxagile_com.json
+2026-02-18 23:37:38,718 [INFO] [142/220] Enriching DOMA Technologies (domaonline.com) [non-customer]
+2026-02-18 23:38:04,252 [INFO]   [Right Skale, Inc.] Saved to rightskale_ai.json
+2026-02-18 23:38:04,253 [INFO] [143/220] Enriching Qwilt (qwilt.com) [non-customer]
+2026-02-18 23:38:38,690 [INFO]   [Mobius 365 Knowledge Services, Inc.] Saved to mobius365_com.json
+2026-02-18 23:38:38,691 [INFO] [144/220] Enriching VDURA (vdura.com) [non-customer]
+2026-02-18 23:38:42,805 [INFO]   [KMCCorp India Pvt Ltd] Saved to kmccorp_com.json
+2026-02-18 23:38:42,806 [INFO] [145/220] Enriching Cloudwick (cloudwick.com) [non-customer]
+2026-02-18 23:39:03,303 [INFO]   [Qumulo] Saved to qumulo_com.json
+2026-02-18 23:39:03,304 [INFO] [146/220] Enriching DATUM, an Infogix Company (precisely.com) [non-customer]
+2026-02-18 23:39:39,087 [INFO]   [Qwilt] Saved to qwilt_com.json
+2026-02-18 23:39:39,088 [INFO] [147/220] Enriching SingleStore (singlestore.com) [non-customer]
+2026-02-18 23:39:57,383 [INFO]   [DOMA Technologies] Saved to domaonline_com.json
+2026-02-18 23:39:57,384 [INFO] [148/220] Enriching Yellowbrick Data (yellowbrick.com) [non-customer]
+2026-02-18 23:40:32,088 [INFO]   [VDURA] Saved to vdura_com.json
+2026-02-18 23:40:32,089 [INFO] [149/220] Enriching Armada (armada.ai) [non-customer]
+2026-02-18 23:40:50,309 [INFO]   [Cloudwick] Saved to cloudwick_com.json
+2026-02-18 23:40:50,310 [INFO] [150/220] Enriching The Modern Data Company (themoderndatacompany.com) [non-customer]
+2026-02-18 23:41:11,232 [INFO]   [DATUM, an Infogix Company] Saved to precisely_com.json
+2026-02-18 23:41:11,233 [INFO] [151/220] Enriching Stratacent (stratacent.com) [non-customer]
+2026-02-18 23:41:24,819 [INFO]   [Yellowbrick Data] Saved to yellowbrick_com.json
+2026-02-18 23:41:24,820 [INFO] [152/220] Enriching ClickHouse (clickhouse.com) [non-customer]
+2026-02-18 23:42:18,564 [INFO]   [Armada] Saved to armada_ai.json
+2026-02-18 23:42:18,565 [INFO] [153/220] Enriching Dekopon Stack (dekoponstack.com) [non-customer]
+2026-02-18 23:42:28,190 [INFO]   [SingleStore] Saved to singlestore_com.json
+2026-02-18 23:42:28,191 [INFO] [154/220] Enriching Stier Solutions Inc (stiersol.com) [non-customer]
+2026-02-18 23:42:37,915 [INFO]   [Stratacent] Saved to stratacent_com.json
+2026-02-18 23:42:37,916 [INFO] [155/220] Enriching Wasabi Technologies (wasabi.com) [non-customer]
+2026-02-18 23:42:59,269 [INFO]   [The Modern Data Company] Saved to themoderndatacompany_com.json
+2026-02-18 23:42:59,270 [INFO] [156/220] Enriching AI/R (aircompany.ai) [non-customer]
+2026-02-18 23:43:24,015 [INFO]   [ClickHouse] Saved to clickhouse_com.json
+2026-02-18 23:43:24,016 [INFO] [157/220] Enriching ibi | Information Builders (ibi.com) [non-customer]
+2026-02-18 23:43:39,656 [INFO]   [Dekopon Stack] Saved to dekoponstack_com.json
+2026-02-18 23:43:39,657 [INFO] [158/220] Enriching Veritas Technologies LLC (veritas.com) [non-customer]
+2026-02-18 23:44:06,392 [INFO]   [Stier Solutions Inc] Saved to stiersol_com.json
+2026-02-18 23:44:06,393 [INFO] [159/220] Enriching Zendesk WFM (Tymeshift) (zdsk.co) [non-customer]
+2026-02-18 23:44:33,729 [INFO]   [Wasabi Technologies] Saved to wasabi_com.json
+2026-02-18 23:44:33,730 [INFO] [160/220] Enriching Altimetrik (altimetrik.com) [non-customer]
+2026-02-18 23:44:35,555 [INFO]   [AI/R] Saved to aircompany_ai.json
+2026-02-18 23:44:35,555 [INFO] [161/220] Enriching Kaseya (kaseya.com) [non-customer]
+2026-02-18 23:44:51,167 [INFO]   [ibi | Information Builders] Saved to ibi_com.json
+2026-02-18 23:44:51,168 [INFO] [162/220] Enriching Splunk (splunk.com) [non-customer]
+2026-02-18 23:45:31,237 [INFO]   [Veritas Technologies LLC] Saved to veritas_com.json
+2026-02-18 23:45:31,239 [INFO] [163/220] Enriching Datavant (datavant.com) [non-customer]
+2026-02-18 23:46:08,053 [WARNING]   [Zendesk WFM (Tymeshift)] Error on attempt 1/3: Could not extract JSON from output: {"company_name": "Zendesk WFM (Tymeshift)", "domain": "zdsk.co", "signals": {"tool_count": {"score": 2, "reasoning": "Zendesk is a 7,500-person enterprise software company. Confirmed tools include Sla...
+2026-02-18 23:46:08,055 [INFO]   [Zendesk WFM (Tymeshift)] Retrying in 30s...
+2026-02-18 23:46:16,284 [INFO]   [Kaseya] Saved to kaseya_com.json
+2026-02-18 23:46:16,284 [INFO] [164/220] Enriching Veeva Systems (veeva.com) [non-customer]
+2026-02-18 23:46:18,830 [INFO]   [Altimetrik] Saved to altimetrik_com.json
+2026-02-18 23:46:18,831 [INFO] [165/220] Enriching Avaya (avaya.com) [non-customer]
+2026-02-18 23:46:56,276 [INFO]   [Splunk] Saved to splunk_com.json
+2026-02-18 23:46:56,278 [INFO] [166/220] Enriching FPT Automotive (fptsoftware.com) [non-customer]
+2026-02-18 23:47:33,804 [INFO]   [Datavant] Saved to datavant_com.json
+2026-02-18 23:47:33,806 [INFO] [167/220] Enriching Dynatrace (dynatrace.com) [non-customer]
+2026-02-18 23:47:46,221 [INFO]   [Avaya] Saved to avaya_com.json
+2026-02-18 23:47:46,221 [INFO] [168/220] Enriching Centific (centific.com) [non-customer]
+2026-02-18 23:47:57,648 [INFO]   [Veeva Systems] Saved to veeva_com.json
+2026-02-18 23:47:57,648 [INFO] [169/220] Enriching MongoDB (mongodb.com) [non-customer]
+2026-02-18 23:48:10,512 [INFO]   [Zendesk WFM (Tymeshift)] Saved to zdsk_co.json
+2026-02-18 23:48:10,513 [INFO] [170/220] Enriching Nutanix (nutanix.com) [non-customer]
+2026-02-18 23:48:12,502 [WARNING]   [Dynatrace] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:12,502 [INFO]   [Dynatrace] Retrying in 30s...
+2026-02-18 23:48:14,365 [WARNING]   [Centific] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:14,365 [INFO]   [Centific] Retrying in 30s...
+2026-02-18 23:48:15,278 [WARNING]   [MongoDB] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:15,278 [INFO]   [MongoDB] Retrying in 30s...
+2026-02-18 23:48:16,166 [WARNING]   [Nutanix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:16,166 [INFO]   [Nutanix] Retrying in 30s...
+2026-02-18 23:48:33,274 [INFO]   [FPT Automotive] Saved to fptsoftware_com.json
+2026-02-18 23:48:33,275 [INFO] [171/220] Enriching CSG (csgi.com) [non-customer]
+2026-02-18 23:48:38,981 [WARNING]   [CSG] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:38,982 [INFO]   [CSG] Retrying in 30s...
+2026-02-18 23:48:48,120 [WARNING]   [Dynatrace] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:48,121 [INFO]   [Dynatrace] Retrying in 60s...
+2026-02-18 23:48:50,743 [WARNING]   [Centific] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:50,743 [INFO]   [Centific] Retrying in 60s...
+2026-02-18 23:48:51,217 [WARNING]   [MongoDB] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:51,217 [INFO]   [MongoDB] Retrying in 60s...
+2026-02-18 23:48:51,686 [WARNING]   [Nutanix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:48:51,687 [INFO]   [Nutanix] Retrying in 60s...
+2026-02-18 23:49:14,469 [WARNING]   [CSG] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:49:14,471 [INFO]   [CSG] Retrying in 60s...
+2026-02-18 23:49:53,587 [WARNING]   [Dynatrace] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:49:53,589 [ERROR]   [Dynatrace] FAILED after 3 attempts (consecutive: 1)
+2026-02-18 23:49:53,589 [INFO] [171/220] Enriching Citrix (citrix.com) [non-customer]
+2026-02-18 23:49:56,231 [WARNING]   [Centific] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:49:56,231 [ERROR]   [Centific] FAILED after 3 attempts (consecutive: 2)
+2026-02-18 23:49:56,231 [INFO] [171/220] Enriching Siemens Digital Industries Software (siemens.com) [non-customer]
+2026-02-18 23:49:56,678 [WARNING]   [MongoDB] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:49:56,678 [ERROR]   [MongoDB] FAILED after 3 attempts (consecutive: 3)
+2026-02-18 23:49:56,678 [INFO] [171/220] Enriching Layer7 API Security (broadcom.com) [non-customer]
+2026-02-18 23:49:57,174 [WARNING]   [Nutanix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:49:57,175 [ERROR]   [Nutanix] FAILED after 3 attempts (consecutive: 4)
+2026-02-18 23:49:57,175 [INFO] [171/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-18 23:49:59,787 [WARNING]   [Citrix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:49:59,787 [INFO]   [Citrix] Retrying in 30s...
+2026-02-18 23:50:01,260 [WARNING]   [Siemens Digital Industries Software] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:01,261 [INFO]   [Siemens Digital Industries Software] Retrying in 30s...
+2026-02-18 23:50:02,193 [WARNING]   [Layer7 API Security] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:02,193 [INFO]   [Layer7 API Security] Retrying in 30s...
+2026-02-18 23:50:02,439 [WARNING]   [NiCE] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:02,439 [INFO]   [NiCE] Retrying in 30s...
+2026-02-18 23:50:19,943 [WARNING]   [CSG] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:19,943 [ERROR]   [CSG] FAILED after 3 attempts (consecutive: 5)
+2026-02-18 23:50:19,944 [INFO] [171/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-18 23:50:25,639 [WARNING]   [Dell Compellent] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:25,641 [INFO]   [Dell Compellent] Retrying in 30s...
+2026-02-18 23:50:35,284 [WARNING]   [Citrix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:35,286 [INFO]   [Citrix] Retrying in 60s...
+2026-02-18 23:50:36,917 [WARNING]   [Siemens Digital Industries Software] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:36,918 [INFO]   [Siemens Digital Industries Software] Retrying in 60s...
+2026-02-18 23:50:38,055 [WARNING]   [NiCE] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:38,056 [INFO]   [NiCE] Retrying in 60s...
+2026-02-18 23:50:38,187 [WARNING]   [Layer7 API Security] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:50:38,187 [INFO]   [Layer7 API Security] Retrying in 60s...
+2026-02-18 23:51:01,070 [WARNING]   [Dell Compellent] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:01,070 [INFO]   [Dell Compellent] Retrying in 60s...
+2026-02-18 23:51:40,667 [WARNING]   [Citrix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:40,670 [ERROR]   [Citrix] FAILED after 3 attempts (consecutive: 6)
+2026-02-18 23:51:40,670 [INFO] [171/220] Enriching Starburst (starburst.io) [non-customer]
+2026-02-18 23:51:42,788 [WARNING]   [Siemens Digital Industries Software] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:42,788 [ERROR]   [Siemens Digital Industries Software] FAILED after 3 attempts (consecutive: 7)
+2026-02-18 23:51:42,789 [INFO] [171/220] Enriching MResult (mresult.com) [non-customer]
+2026-02-18 23:51:43,493 [WARNING]   [NiCE] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:43,493 [ERROR]   [NiCE] FAILED after 3 attempts (consecutive: 8)
+2026-02-18 23:51:43,493 [INFO] [171/220] Enriching Quantum Metric (quantummetric.com) [non-customer]
+2026-02-18 23:51:44,085 [WARNING]   [Layer7 API Security] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:44,085 [ERROR]   [Layer7 API Security] FAILED after 3 attempts (consecutive: 9)
+2026-02-18 23:51:44,085 [INFO] [171/220] Enriching Unify Technologies (unifytech.com) [non-customer]
+2026-02-18 23:51:46,144 [WARNING]   [Starburst] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:46,148 [INFO]   [Starburst] Retrying in 30s...
+2026-02-18 23:51:48,125 [WARNING]   [MResult] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:48,125 [INFO]   [MResult] Retrying in 30s...
+2026-02-18 23:51:49,439 [WARNING]   [Quantum Metric] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:49,439 [INFO]   [Quantum Metric] Retrying in 30s...
+2026-02-18 23:51:49,643 [WARNING]   [Unify Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-18 23:51:49,643 [INFO]   [Unify Technologies] Retrying in 30s...
+2026-02-18 23:52:06,402 [WARNING]   [Dell Compellent] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-18 23:52:06,402 [ERROR]   [Dell Compellent] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-18 23:52:16,158 [ERROR]   [Starburst] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-18 23:52:18,135 [ERROR]   [MResult] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-18 23:52:19,449 [ERROR]   [Quantum Metric] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-18 23:52:19,653 [ERROR]   [Unify Technologies] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-18 23:52:19,654 [INFO] ============================================================
+2026-02-18 23:52:19,655 [INFO] ENRICHMENT COMPLETE
+2026-02-18 23:52:19,655 [INFO]   Workers: 5
+2026-02-18 23:52:19,655 [INFO]   Total time: 0:22:19
+2026-02-18 23:52:19,655 [INFO]   Completed: 170/220
+2026-02-18 23:52:19,655 [INFO]   Failed: 14
+2026-02-18 23:52:19,655 [INFO]   Failed companies:
+2026-02-18 23:52:19,655 [INFO]     - Dynatrace (dynatrace.com)
+2026-02-18 23:52:19,655 [INFO]     - Centific (centific.com)
+2026-02-18 23:52:19,655 [INFO]     - MongoDB (mongodb.com)
+2026-02-18 23:52:19,655 [INFO]     - Nutanix (nutanix.com)
+2026-02-18 23:52:19,655 [INFO]     - CSG (csgi.com)
+2026-02-18 23:52:19,655 [INFO]     - Citrix (citrix.com)
+2026-02-18 23:52:19,655 [INFO]     - Siemens Digital Industries Software (siemens.com)
+2026-02-18 23:52:19,655 [INFO]     - NiCE (nice.com)
+2026-02-18 23:52:19,655 [INFO]     - Layer7 API Security (broadcom.com)
+2026-02-18 23:52:19,655 [INFO]     - Dell Compellent (dell.com)
+2026-02-18 23:52:19,655 [INFO]     - Starburst (starburst.io)
+2026-02-18 23:52:19,655 [INFO]     - MResult (mresult.com)
+2026-02-18 23:52:19,656 [INFO]     - Quantum Metric (quantummetric.com)
+2026-02-18 23:52:19,656 [INFO]     - Unify Technologies (unifytech.com)
+2026-02-18 23:52:19,656 [INFO] ============================================================
+2026-02-19 04:30:00,816 [INFO] ============================================================
+2026-02-19 04:30:00,816 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 04:30:00,816 [INFO] ============================================================
+2026-02-19 04:30:00,816 [INFO] Loaded prompt template (6985 chars)
+2026-02-19 04:30:00,817 [INFO] Loaded 44 known customers
+2026-02-19 04:30:00,818 [INFO] Loaded 176 non-customers
+2026-02-19 04:30:00,818 [INFO] Total companies to enrich: 220
+2026-02-19 04:30:00,856 [INFO] Already enriched: 170
+2026-02-19 04:30:00,856 [INFO] Remaining to process: 50
+2026-02-19 04:30:00,856 [INFO] [171/220] Enriching Dynatrace (dynatrace.com) [non-customer]
+2026-02-19 04:30:00,856 [INFO] [171/220] Enriching Centific (centific.com) [non-customer]
+2026-02-19 04:30:00,856 [INFO] [171/220] Enriching MongoDB (mongodb.com) [non-customer]
+2026-02-19 04:30:00,856 [INFO] [171/220] Enriching Nutanix (nutanix.com) [non-customer]
+2026-02-19 04:30:00,856 [INFO] [171/220] Enriching CSG (csgi.com) [non-customer]
+2026-02-19 04:30:13,033 [WARNING]   [MongoDB] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:13,034 [INFO]   [MongoDB] Retrying in 30s...
+2026-02-19 04:30:13,036 [WARNING]   [Nutanix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:13,036 [INFO]   [Nutanix] Retrying in 30s...
+2026-02-19 04:30:13,292 [WARNING]   [Dynatrace] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:13,293 [INFO]   [Dynatrace] Retrying in 30s...
+2026-02-19 04:30:13,527 [WARNING]   [Centific] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:13,527 [INFO]   [Centific] Retrying in 30s...
+2026-02-19 04:30:13,574 [WARNING]   [CSG] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:13,575 [INFO]   [CSG] Retrying in 30s...
+2026-02-19 04:30:49,415 [WARNING]   [Centific] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:49,415 [INFO]   [Centific] Retrying in 60s...
+2026-02-19 04:30:49,834 [WARNING]   [Dynatrace] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:49,834 [INFO]   [Dynatrace] Retrying in 60s...
+2026-02-19 04:30:50,016 [WARNING]   [Nutanix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:50,016 [INFO]   [Nutanix] Retrying in 60s...
+2026-02-19 04:30:50,017 [WARNING]   [CSG] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:50,017 [INFO]   [CSG] Retrying in 60s...
+2026-02-19 04:30:50,043 [WARNING]   [MongoDB] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:30:50,043 [INFO]   [MongoDB] Retrying in 60s...
+2026-02-19 04:31:55,917 [WARNING]   [Centific] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:31:55,918 [ERROR]   [Centific] FAILED after 3 attempts (consecutive: 1)
+2026-02-19 04:31:55,920 [INFO] [171/220] Enriching Citrix (citrix.com) [non-customer]
+2026-02-19 04:31:55,931 [WARNING]   [CSG] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:31:55,932 [ERROR]   [CSG] FAILED after 3 attempts (consecutive: 2)
+2026-02-19 04:31:55,932 [INFO] [171/220] Enriching Siemens Digital Industries Software (siemens.com) [non-customer]
+2026-02-19 04:31:56,307 [WARNING]   [Nutanix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:31:56,307 [ERROR]   [Nutanix] FAILED after 3 attempts (consecutive: 3)
+2026-02-19 04:31:56,307 [INFO] [171/220] Enriching Layer7 API Security (broadcom.com) [non-customer]
+2026-02-19 04:31:56,690 [WARNING]   [MongoDB] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:31:56,690 [ERROR]   [MongoDB] FAILED after 3 attempts (consecutive: 4)
+2026-02-19 04:31:56,690 [INFO] [171/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-19 04:31:57,353 [WARNING]   [Dynatrace] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:31:57,353 [ERROR]   [Dynatrace] FAILED after 3 attempts (consecutive: 5)
+2026-02-19 04:31:57,353 [INFO] [171/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-19 04:32:02,253 [WARNING]   [Siemens Digital Industries Software] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:02,254 [INFO]   [Siemens Digital Industries Software] Retrying in 30s...
+2026-02-19 04:32:02,517 [WARNING]   [Layer7 API Security] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:02,517 [INFO]   [Layer7 API Security] Retrying in 30s...
+2026-02-19 04:32:02,577 [WARNING]   [Citrix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:02,577 [INFO]   [Citrix] Retrying in 30s...
+2026-02-19 04:32:02,750 [WARNING]   [NiCE] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:02,750 [INFO]   [NiCE] Retrying in 30s...
+2026-02-19 04:32:03,225 [WARNING]   [Dell Compellent] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:03,225 [INFO]   [Dell Compellent] Retrying in 30s...
+2026-02-19 04:32:38,774 [WARNING]   [NiCE] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:38,776 [INFO]   [NiCE] Retrying in 60s...
+2026-02-19 04:32:39,137 [WARNING]   [Citrix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:39,137 [INFO]   [Citrix] Retrying in 60s...
+2026-02-19 04:32:39,305 [WARNING]   [Layer7 API Security] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:39,306 [INFO]   [Layer7 API Security] Retrying in 60s...
+2026-02-19 04:32:40,024 [WARNING]   [Dell Compellent] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:40,025 [INFO]   [Dell Compellent] Retrying in 60s...
+2026-02-19 04:32:40,140 [WARNING]   [Siemens Digital Industries Software] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 04:32:40,141 [INFO]   [Siemens Digital Industries Software] Retrying in 60s...
+2026-02-19 04:33:44,566 [WARNING]   [NiCE] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:44,569 [ERROR]   [NiCE] FAILED after 3 attempts (consecutive: 6)
+2026-02-19 04:33:44,569 [INFO] [171/220] Enriching Starburst (starburst.io) [non-customer]
+2026-02-19 04:33:44,727 [WARNING]   [Citrix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:44,728 [ERROR]   [Citrix] FAILED after 3 attempts (consecutive: 7)
+2026-02-19 04:33:44,728 [INFO] [171/220] Enriching MResult (mresult.com) [non-customer]
+2026-02-19 04:33:45,094 [WARNING]   [Layer7 API Security] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:45,094 [ERROR]   [Layer7 API Security] FAILED after 3 attempts (consecutive: 8)
+2026-02-19 04:33:45,094 [INFO] [171/220] Enriching Quantum Metric (quantummetric.com) [non-customer]
+2026-02-19 04:33:46,257 [WARNING]   [Dell Compellent] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:46,258 [ERROR]   [Dell Compellent] FAILED after 3 attempts (consecutive: 9)
+2026-02-19 04:33:46,258 [INFO] [171/220] Enriching Unify Technologies (unifytech.com) [non-customer]
+2026-02-19 04:33:46,778 [WARNING]   [Siemens Digital Industries Software] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:46,778 [ERROR]   [Siemens Digital Industries Software] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 04:33:52,828 [WARNING]   [Starburst] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:52,829 [INFO]   [Starburst] Retrying in 30s...
+2026-02-19 04:33:52,916 [WARNING]   [Unify Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:52,916 [INFO]   [Unify Technologies] Retrying in 30s...
+2026-02-19 04:33:52,966 [WARNING]   [MResult] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:52,966 [INFO]   [MResult] Retrying in 30s...
+2026-02-19 04:33:53,420 [WARNING]   [Quantum Metric] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 04:33:53,420 [INFO]   [Quantum Metric] Retrying in 30s...
+2026-02-19 04:34:22,839 [ERROR]   [Starburst] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 04:34:22,927 [ERROR]   [Unify Technologies] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 04:34:22,976 [ERROR]   [MResult] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 04:34:23,425 [ERROR]   [Quantum Metric] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 04:34:23,427 [INFO] ============================================================
+2026-02-19 04:34:23,427 [INFO] ENRICHMENT COMPLETE
+2026-02-19 04:34:23,427 [INFO]   Workers: 5
+2026-02-19 04:34:23,427 [INFO]   Total time: 0:04:23
+2026-02-19 04:34:23,427 [INFO]   Completed: 170/220
+2026-02-19 04:34:23,427 [INFO]   Failed: 14
+2026-02-19 04:34:23,427 [INFO]   Failed companies:
+2026-02-19 04:34:23,427 [INFO]     - Centific (centific.com)
+2026-02-19 04:34:23,427 [INFO]     - CSG (csgi.com)
+2026-02-19 04:34:23,427 [INFO]     - Nutanix (nutanix.com)
+2026-02-19 04:34:23,427 [INFO]     - MongoDB (mongodb.com)
+2026-02-19 04:34:23,427 [INFO]     - Dynatrace (dynatrace.com)
+2026-02-19 04:34:23,427 [INFO]     - NiCE (nice.com)
+2026-02-19 04:34:23,427 [INFO]     - Citrix (citrix.com)
+2026-02-19 04:34:23,428 [INFO]     - Layer7 API Security (broadcom.com)
+2026-02-19 04:34:23,428 [INFO]     - Dell Compellent (dell.com)
+2026-02-19 04:34:23,428 [INFO]     - Siemens Digital Industries Software (siemens.com)
+2026-02-19 04:34:23,428 [INFO]     - Starburst (starburst.io)
+2026-02-19 04:34:23,428 [INFO]     - Unify Technologies (unifytech.com)
+2026-02-19 04:34:23,428 [INFO]     - MResult (mresult.com)
+2026-02-19 04:34:23,428 [INFO]     - Quantum Metric (quantummetric.com)
+2026-02-19 04:34:23,428 [INFO] ============================================================
+2026-02-19 06:45:27,388 [INFO] ============================================================
+2026-02-19 06:45:27,388 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 06:45:27,388 [INFO] ============================================================
+2026-02-19 06:45:27,388 [INFO] Loaded prompt template (6985 chars)
+2026-02-19 06:45:27,388 [INFO] Loaded 44 known customers
+2026-02-19 06:45:27,389 [INFO] Loaded 176 non-customers
+2026-02-19 06:45:27,389 [INFO] Total companies to enrich: 220
+2026-02-19 06:45:27,426 [INFO] Already enriched: 170
+2026-02-19 06:45:27,426 [INFO] Remaining to process: 50
+2026-02-19 06:45:27,426 [INFO] [171/220] Enriching Dynatrace (dynatrace.com) [non-customer]
+2026-02-19 06:45:27,426 [INFO] [171/220] Enriching Centific (centific.com) [non-customer]
+2026-02-19 06:45:27,426 [INFO] [171/220] Enriching MongoDB (mongodb.com) [non-customer]
+2026-02-19 06:45:27,426 [INFO] [171/220] Enriching Nutanix (nutanix.com) [non-customer]
+2026-02-19 06:45:27,426 [INFO] [171/220] Enriching CSG (csgi.com) [non-customer]
+2026-02-19 06:45:35,230 [WARNING]   [CSG] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:45:35,230 [INFO]   [CSG] Retrying in 30s...
+2026-02-19 06:45:35,770 [WARNING]   [Dynatrace] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:45:35,770 [INFO]   [Dynatrace] Retrying in 30s...
+2026-02-19 06:45:35,812 [WARNING]   [Centific] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:45:35,812 [INFO]   [Centific] Retrying in 30s...
+2026-02-19 06:45:36,066 [WARNING]   [Nutanix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:45:36,066 [INFO]   [Nutanix] Retrying in 30s...
+2026-02-19 06:45:36,477 [WARNING]   [MongoDB] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:45:36,477 [INFO]   [MongoDB] Retrying in 30s...
+2026-02-19 06:46:11,525 [WARNING]   [Dynatrace] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:46:11,525 [INFO]   [Dynatrace] Retrying in 60s...
+2026-02-19 06:46:12,250 [WARNING]   [CSG] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:46:12,250 [INFO]   [CSG] Retrying in 60s...
+2026-02-19 06:46:12,285 [WARNING]   [MongoDB] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:46:12,285 [INFO]   [MongoDB] Retrying in 60s...
+2026-02-19 06:46:12,411 [WARNING]   [Centific] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:46:12,411 [INFO]   [Centific] Retrying in 60s...
+2026-02-19 06:46:12,608 [WARNING]   [Nutanix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:46:12,608 [INFO]   [Nutanix] Retrying in 60s...
+2026-02-19 06:47:17,820 [WARNING]   [Dynatrace] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:17,821 [ERROR]   [Dynatrace] FAILED after 3 attempts (consecutive: 1)
+2026-02-19 06:47:17,821 [INFO] [171/220] Enriching Citrix (citrix.com) [non-customer]
+2026-02-19 06:47:18,350 [WARNING]   [CSG] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:18,350 [ERROR]   [CSG] FAILED after 3 attempts (consecutive: 2)
+2026-02-19 06:47:18,351 [INFO] [171/220] Enriching Siemens Digital Industries Software (siemens.com) [non-customer]
+2026-02-19 06:47:18,357 [WARNING]   [Nutanix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:18,357 [ERROR]   [Nutanix] FAILED after 3 attempts (consecutive: 3)
+2026-02-19 06:47:18,358 [INFO] [171/220] Enriching Layer7 API Security (broadcom.com) [non-customer]
+2026-02-19 06:47:18,359 [WARNING]   [MongoDB] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:18,360 [ERROR]   [MongoDB] FAILED after 3 attempts (consecutive: 4)
+2026-02-19 06:47:18,360 [INFO] [171/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-19 06:47:18,570 [WARNING]   [Centific] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:18,571 [ERROR]   [Centific] FAILED after 3 attempts (consecutive: 5)
+2026-02-19 06:47:18,571 [INFO] [171/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-19 06:47:24,355 [WARNING]   [Layer7 API Security] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:24,355 [WARNING]   [Citrix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:24,356 [WARNING]   [NiCE] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:24,356 [INFO]   [Layer7 API Security] Retrying in 30s...
+2026-02-19 06:47:24,356 [INFO]   [Citrix] Retrying in 30s...
+2026-02-19 06:47:24,357 [INFO]   [NiCE] Retrying in 30s...
+2026-02-19 06:47:24,477 [WARNING]   [Dell Compellent] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:24,478 [INFO]   [Dell Compellent] Retrying in 30s...
+2026-02-19 06:47:24,479 [WARNING]   [Siemens Digital Industries Software] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:47:24,479 [INFO]   [Siemens Digital Industries Software] Retrying in 30s...
+2026-02-19 06:48:00,317 [WARNING]   [Layer7 API Security] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:48:00,317 [INFO]   [Layer7 API Security] Retrying in 60s...
+2026-02-19 06:48:00,827 [WARNING]   [NiCE] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:48:00,827 [INFO]   [NiCE] Retrying in 60s...
+2026-02-19 06:48:00,847 [WARNING]   [Citrix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:48:00,848 [WARNING]   [Dell Compellent] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:48:00,848 [INFO]   [Citrix] Retrying in 60s...
+2026-02-19 06:48:00,848 [INFO]   [Dell Compellent] Retrying in 60s...
+2026-02-19 06:48:00,848 [WARNING]   [Siemens Digital Industries Software] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 06:48:00,848 [INFO]   [Siemens Digital Industries Software] Retrying in 60s...
+2026-02-19 06:49:07,820 [WARNING]   [Citrix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:07,820 [WARNING]   [Layer7 API Security] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:07,820 [WARNING]   [NiCE] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:07,822 [ERROR]   [Citrix] FAILED after 3 attempts (consecutive: 6)
+2026-02-19 06:49:07,822 [ERROR]   [Layer7 API Security] FAILED after 3 attempts (consecutive: 7)
+2026-02-19 06:49:07,822 [ERROR]   [NiCE] FAILED after 3 attempts (consecutive: 8)
+2026-02-19 06:49:07,823 [INFO] [171/220] Enriching Starburst (starburst.io) [non-customer]
+2026-02-19 06:49:07,823 [INFO] [171/220] Enriching MResult (mresult.com) [non-customer]
+2026-02-19 06:49:07,823 [INFO] [171/220] Enriching Quantum Metric (quantummetric.com) [non-customer]
+2026-02-19 06:49:08,051 [WARNING]   [Dell Compellent] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:08,052 [ERROR]   [Dell Compellent] FAILED after 3 attempts (consecutive: 9)
+2026-02-19 06:49:08,052 [INFO] [171/220] Enriching Unify Technologies (unifytech.com) [non-customer]
+2026-02-19 06:49:09,017 [WARNING]   [Siemens Digital Industries Software] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:09,018 [ERROR]   [Siemens Digital Industries Software] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 06:49:13,573 [WARNING]   [Starburst] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:13,573 [INFO]   [Starburst] Retrying in 30s...
+2026-02-19 06:49:13,729 [WARNING]   [Quantum Metric] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:13,729 [INFO]   [Quantum Metric] Retrying in 30s...
+2026-02-19 06:49:14,457 [WARNING]   [Unify Technologies] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:14,457 [INFO]   [Unify Technologies] Retrying in 30s...
+2026-02-19 06:49:15,609 [WARNING]   [MResult] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 06:49:15,609 [INFO]   [MResult] Retrying in 30s...
+2026-02-19 06:49:43,576 [ERROR]   [Starburst] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 06:49:43,733 [ERROR]   [Quantum Metric] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 06:49:44,463 [ERROR]   [Unify Technologies] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 06:49:45,615 [ERROR]   [MResult] FAILED. 10 consecutive failures hit. Likely API limit. Auto-stopping.
+2026-02-19 06:49:45,616 [INFO] ============================================================
+2026-02-19 06:49:45,616 [INFO] ENRICHMENT COMPLETE
+2026-02-19 06:49:45,616 [INFO]   Workers: 5
+2026-02-19 06:49:45,616 [INFO]   Total time: 0:04:18
+2026-02-19 06:49:45,616 [INFO]   Completed: 170/220
+2026-02-19 06:49:45,616 [INFO]   Failed: 14
+2026-02-19 06:49:45,616 [INFO]   Failed companies:
+2026-02-19 06:49:45,616 [INFO]     - Dynatrace (dynatrace.com)
+2026-02-19 06:49:45,616 [INFO]     - CSG (csgi.com)
+2026-02-19 06:49:45,616 [INFO]     - Nutanix (nutanix.com)
+2026-02-19 06:49:45,616 [INFO]     - MongoDB (mongodb.com)
+2026-02-19 06:49:45,616 [INFO]     - Centific (centific.com)
+2026-02-19 06:49:45,616 [INFO]     - Citrix (citrix.com)
+2026-02-19 06:49:45,616 [INFO]     - Layer7 API Security (broadcom.com)
+2026-02-19 06:49:45,616 [INFO]     - NiCE (nice.com)
+2026-02-19 06:49:45,616 [INFO]     - Dell Compellent (dell.com)
+2026-02-19 06:49:45,616 [INFO]     - Siemens Digital Industries Software (siemens.com)
+2026-02-19 06:49:45,616 [INFO]     - Starburst (starburst.io)
+2026-02-19 06:49:45,616 [INFO]     - Quantum Metric (quantummetric.com)
+2026-02-19 06:49:45,616 [INFO]     - Unify Technologies (unifytech.com)
+2026-02-19 06:49:45,616 [INFO]     - MResult (mresult.com)
+2026-02-19 06:49:45,616 [INFO] ============================================================
+2026-02-19 07:03:35,436 [INFO] ============================================================
+2026-02-19 07:03:35,436 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 07:03:35,436 [INFO] ============================================================
+2026-02-19 07:03:35,437 [INFO] Loaded prompt template (6985 chars)
+2026-02-19 07:03:35,437 [INFO] Loaded 44 known customers
+2026-02-19 07:03:35,438 [INFO] Loaded 176 non-customers
+2026-02-19 07:03:35,438 [INFO] Total companies to enrich: 220
+2026-02-19 07:03:35,475 [INFO] Already enriched: 170
+2026-02-19 07:03:35,475 [INFO] Remaining to process: 50
+2026-02-19 07:03:35,475 [INFO] [171/220] Enriching Dynatrace (dynatrace.com) [non-customer]
+2026-02-19 07:03:35,476 [INFO] [171/220] Enriching Centific (centific.com) [non-customer]
+2026-02-19 07:03:35,476 [INFO] [171/220] Enriching MongoDB (mongodb.com) [non-customer]
+2026-02-19 07:03:35,476 [INFO] [171/220] Enriching Nutanix (nutanix.com) [non-customer]
+2026-02-19 07:03:35,476 [INFO] [171/220] Enriching CSG (csgi.com) [non-customer]
+2026-02-19 07:03:41,364 [WARNING]   [Nutanix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:03:41,364 [INFO]   [Nutanix] Retrying in 30s...
+2026-02-19 07:03:41,590 [WARNING]   [Centific] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:03:41,590 [INFO]   [Centific] Retrying in 30s...
+2026-02-19 07:03:41,789 [WARNING]   [MongoDB] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:03:41,789 [INFO]   [MongoDB] Retrying in 30s...
+2026-02-19 07:03:41,983 [WARNING]   [Dynatrace] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:03:41,983 [INFO]   [Dynatrace] Retrying in 30s...
+2026-02-19 07:03:41,995 [WARNING]   [CSG] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:03:41,995 [INFO]   [CSG] Retrying in 30s...
+2026-02-19 07:04:17,639 [WARNING]   [Nutanix] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 07:04:17,640 [INFO]   [Nutanix] Retrying in 60s...
+2026-02-19 07:04:18,239 [WARNING]   [Centific] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 07:04:18,239 [INFO]   [Centific] Retrying in 60s...
+2026-02-19 07:04:18,313 [WARNING]   [Dynatrace] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 07:04:18,313 [INFO]   [Dynatrace] Retrying in 60s...
+2026-02-19 07:04:18,453 [WARNING]   [CSG] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 07:04:18,453 [INFO]   [CSG] Retrying in 60s...
+2026-02-19 07:04:18,477 [WARNING]   [MongoDB] Error on attempt 2/3: Claude CLI exited with code 1: 
+2026-02-19 07:04:18,477 [INFO]   [MongoDB] Retrying in 60s...
+2026-02-19 07:05:23,994 [WARNING]   [Nutanix] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:23,995 [ERROR]   [Nutanix] FAILED after 3 attempts (consecutive: 1)
+2026-02-19 07:05:23,995 [INFO] [171/220] Enriching Citrix (citrix.com) [non-customer]
+2026-02-19 07:05:24,169 [WARNING]   [CSG] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:24,169 [ERROR]   [CSG] FAILED after 3 attempts (consecutive: 2)
+2026-02-19 07:05:24,169 [INFO] [171/220] Enriching Siemens Digital Industries Software (siemens.com) [non-customer]
+2026-02-19 07:05:24,282 [WARNING]   [Dynatrace] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:24,282 [ERROR]   [Dynatrace] FAILED after 3 attempts (consecutive: 3)
+2026-02-19 07:05:24,282 [INFO] [171/220] Enriching Layer7 API Security (broadcom.com) [non-customer]
+2026-02-19 07:05:24,570 [WARNING]   [Centific] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:24,570 [ERROR]   [Centific] FAILED after 3 attempts (consecutive: 4)
+2026-02-19 07:05:24,570 [INFO] [171/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-19 07:05:24,573 [WARNING]   [MongoDB] Error on attempt 3/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:24,573 [ERROR]   [MongoDB] FAILED after 3 attempts (consecutive: 5)
+2026-02-19 07:05:24,573 [INFO] [171/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-19 07:05:30,161 [WARNING]   [Layer7 API Security] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:30,162 [INFO]   [Layer7 API Security] Retrying in 30s...
+2026-02-19 07:05:30,262 [WARNING]   [Dell Compellent] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:30,263 [INFO]   [Dell Compellent] Retrying in 30s...
+2026-02-19 07:05:30,353 [WARNING]   [Citrix] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:30,353 [INFO]   [Citrix] Retrying in 30s...
+2026-02-19 07:05:30,429 [WARNING]   [Siemens Digital Industries Software] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:30,429 [INFO]   [Siemens Digital Industries Software] Retrying in 30s...
+2026-02-19 07:05:30,433 [WARNING]   [NiCE] Error on attempt 1/3: Claude CLI exited with code 1: 
+2026-02-19 07:05:30,433 [INFO]   [NiCE] Retrying in 30s...
+2026-02-19 12:51:46,640 [INFO] ============================================================
+2026-02-19 12:51:46,640 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 12:51:46,640 [INFO] ============================================================
+2026-02-19 12:51:46,641 [INFO] Loaded prompt template (6536 chars)
+2026-02-19 12:51:46,641 [INFO] Loaded 44 known customers
+2026-02-19 12:51:46,642 [INFO] Loaded 176 non-customers
+2026-02-19 12:51:46,642 [INFO] Total companies to enrich: 220
+2026-02-19 12:51:46,679 [INFO] Already enriched: 170
+2026-02-19 12:51:46,679 [INFO] Remaining to process: 50
+2026-02-19 12:51:46,679 [INFO] [171/220] Enriching Dynatrace (dynatrace.com) [non-customer]
+2026-02-19 12:51:46,679 [INFO] [171/220] Enriching Centific (centific.com) [non-customer]
+2026-02-19 12:51:46,679 [INFO] [171/220] Enriching MongoDB (mongodb.com) [non-customer]
+2026-02-19 12:51:46,679 [INFO] [171/220] Enriching Nutanix (nutanix.com) [non-customer]
+2026-02-19 12:51:46,679 [INFO] [171/220] Enriching CSG (csgi.com) [non-customer]
+2026-02-19 12:53:08,354 [INFO]   [Nutanix] Saved to nutanix_com.json
+2026-02-19 12:53:08,356 [INFO] [172/220] Enriching Citrix (citrix.com) [non-customer]
+2026-02-19 12:53:38,981 [INFO]   [Centific] Saved to centific_com.json
+2026-02-19 12:53:38,982 [INFO] [173/220] Enriching Siemens Digital Industries Software (siemens.com) [non-customer]
+2026-02-19 12:53:55,049 [INFO]   [Dynatrace] Saved to dynatrace_com.json
+2026-02-19 12:53:55,050 [INFO] [174/220] Enriching Layer7 API Security (broadcom.com) [non-customer]
+2026-02-19 12:54:07,444 [INFO]   [CSG] Saved to csgi_com.json
+2026-02-19 12:54:07,445 [INFO] [175/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-19 12:54:52,664 [INFO]   [Citrix] Saved to citrix_com.json
+2026-02-19 12:54:52,665 [INFO] [176/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-19 12:54:59,675 [INFO]   [Siemens Digital Industries Software] Saved to siemens_com.json
+2026-02-19 12:54:59,676 [INFO] [177/220] Enriching Starburst (starburst.io) [non-customer]
+2026-02-19 12:55:16,497 [INFO]   [MongoDB] Saved to mongodb_com.json
+2026-02-19 12:55:16,498 [INFO] [178/220] Enriching MResult (mresult.com) [non-customer]
+2026-02-19 12:55:18,541 [INFO]   [Layer7 API Security] Saved to broadcom_com.json
+2026-02-19 12:55:18,541 [INFO] [179/220] Enriching Quantum Metric (quantummetric.com) [non-customer]
+2026-02-19 15:20:59,046 [INFO] ============================================================
+2026-02-19 15:20:59,046 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 15:20:59,046 [INFO] ============================================================
+2026-02-19 15:20:59,046 [INFO] Loaded prompt template (6536 chars)
+2026-02-19 15:20:59,047 [INFO] Loaded 44 known customers
+2026-02-19 15:20:59,048 [INFO] Loaded 176 non-customers
+2026-02-19 15:20:59,048 [INFO] Total companies to enrich: 220
+2026-02-19 15:20:59,090 [INFO] Already enriched: 178
+2026-02-19 15:20:59,090 [INFO] Remaining to process: 42
+2026-02-19 15:20:59,090 [INFO] [179/220] Enriching NiCE (nice.com) [non-customer]
+2026-02-19 15:20:59,090 [INFO] [179/220] Enriching Dell Compellent (dell.com) [non-customer]
+2026-02-19 15:20:59,090 [INFO] [179/220] Enriching Starburst (starburst.io) [non-customer]
+2026-02-19 15:20:59,090 [INFO] [179/220] Enriching MResult (mresult.com) [non-customer]
+2026-02-19 15:20:59,090 [INFO] [179/220] Enriching Quantum Metric (quantummetric.com) [non-customer]
+2026-02-19 15:22:24,535 [INFO]   [Starburst] Saved to starburst_io.json
+2026-02-19 15:22:24,536 [INFO] [180/220] Enriching Unify Technologies (unifytech.com) [non-customer]
+2026-02-19 15:22:29,992 [INFO]   [NiCE] Saved to nice_com.json
+2026-02-19 15:22:29,992 [INFO] [181/220] Enriching Quickbase (quickbase.com) [non-customer]
+2026-02-19 15:22:47,922 [INFO]   [Quantum Metric] Saved to quantummetric_com.json
+2026-02-19 15:22:47,923 [INFO] [182/220] Enriching Magnitude Software - insightsoftware (insightsoftware.com) [non-customer]
+2026-02-19 15:23:14,587 [INFO]   [Dell Compellent] Saved to dell_com.json
+2026-02-19 15:23:14,588 [INFO] [183/220] Enriching Ideas2IT Technologies (ideas2it.com) [non-customer]
+2026-02-19 15:23:18,871 [INFO]   [MResult] Saved to mresult_com.json
+2026-02-19 15:23:18,871 [INFO] [184/220] Enriching Prophecy Technologies (prophecytechs.com) [non-customer]
+2026-02-19 15:23:56,554 [INFO]   [Quickbase] Saved to quickbase_com.json
+2026-02-19 15:23:56,555 [INFO] [185/220] Enriching Celigo (celigo.com) [non-customer]
+2026-02-19 15:24:17,299 [INFO]   [Unify Technologies] Saved to unifytech_com.json
+2026-02-19 15:24:17,300 [INFO] [186/220] Enriching Contata (contata.com) [non-customer]
+2026-02-19 15:24:25,111 [INFO]   [Magnitude Software - insightsoftware] Saved to insightsoftware_com.json
+2026-02-19 15:24:25,112 [INFO] [187/220] Enriching Ataccama (ataccama.com) [non-customer]
+2026-02-19 15:24:37,631 [INFO]   [Ideas2IT Technologies] Saved to ideas2it_com.json
+2026-02-19 15:24:37,632 [INFO] [188/220] Enriching Zolon Tech Inc. (zolontech.com) [non-customer]
+2026-02-19 15:24:50,385 [INFO]   [Prophecy Technologies] Saved to prophecytechs_com.json
+2026-02-19 15:24:50,386 [INFO] [189/220] Enriching Kinective (kinective.io) [non-customer]
+2026-02-19 17:36:50,775 [INFO] ============================================================
+2026-02-19 17:36:50,775 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 17:36:50,775 [INFO] ============================================================
+2026-02-19 17:36:50,775 [INFO] Loaded prompt template (6536 chars)
+2026-02-19 17:36:50,776 [INFO] Loaded 44 known customers
+2026-02-19 17:36:50,777 [INFO] Loaded 176 non-customers
+2026-02-19 17:36:50,777 [INFO] Total companies to enrich: 220
+2026-02-19 17:36:50,822 [INFO] Already enriched: 188
+2026-02-19 17:36:50,822 [INFO] Remaining to process: 32
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Celigo (celigo.com) [non-customer]
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Contata (contata.com) [non-customer]
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Ataccama (ataccama.com) [non-customer]
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Zolon Tech Inc. (zolontech.com) [non-customer]
+2026-02-19 17:36:50,823 [INFO] [189/220] Enriching Kinective (kinective.io) [non-customer]
+2026-02-19 17:38:20,131 [INFO]   [Celigo] Saved to celigo_com.json
+2026-02-19 17:38:20,132 [INFO] [190/220] Enriching Emplifi (emplifi.io) [non-customer]
+2026-02-19 17:38:20,513 [INFO]   [Contata] Saved to contata_com.json
+2026-02-19 17:38:20,513 [INFO] [191/220] Enriching Lytics (contentstack.com) [non-customer]
+2026-02-19 17:38:31,529 [INFO]   [Kinective] Saved to kinective_io.json
+2026-02-19 17:38:31,530 [INFO] [192/220] Enriching dbt Labs (getdbt.com) [non-customer]
+2026-02-19 17:38:31,621 [INFO]   [Ataccama] Saved to ataccama_com.json
+2026-02-19 17:38:31,621 [INFO] [193/220] Enriching Arbisoft (arbisoft.com) [non-customer]
+2026-02-19 17:39:30,353 [INFO]   [Zolon Tech Inc.] Saved to zolontech_com.json
+2026-02-19 17:39:30,355 [INFO] [194/220] Enriching Sparq (teamsparq.com) [non-customer]
+2026-02-19 17:39:55,240 [INFO]   [Lytics] Saved to contentstack_com.json
+2026-02-19 17:39:55,240 [INFO] [195/220] Enriching KX (kx.com) [non-customer]
+2026-02-19 17:40:23,624 [INFO]   [Arbisoft] Saved to arbisoft_com.json
+2026-02-19 17:40:23,625 [INFO] [196/220] Enriching Amplitude (amplitude.com) [non-customer]
+2026-02-19 17:40:32,277 [INFO]   [dbt Labs] Saved to getdbt_com.json
+2026-02-19 17:40:32,278 [INFO] [197/220] Enriching Cockroach Labs (cockroachlabs.com) [non-customer]
+2026-02-19 17:40:50,508 [INFO]   [Emplifi] Saved to emplifi_io.json
+2026-02-19 17:40:50,509 [INFO] [198/220] Enriching Ab Initio Software (abinitio.com) [non-customer]
+2026-02-19 17:41:04,125 [INFO]   [Sparq] Saved to teamsparq_com.json
+2026-02-19 17:41:04,126 [INFO] [199/220] Enriching eQ Technologic (1eq.com) [non-customer]
+2026-02-19 17:42:13,386 [INFO]   [KX] Saved to kx_com.json
+2026-02-19 17:42:13,387 [INFO] [200/220] Enriching Sumo Logic (sumologic.com) [non-customer]
+2026-02-19 17:42:34,680 [INFO]   [Amplitude] Saved to amplitude_com.json
+2026-02-19 17:42:34,681 [INFO] [201/220] Enriching Two Six Technologies (twosixtech.com) [non-customer]
+2026-02-19 17:42:39,594 [INFO]   [eQ Technologic] Saved to 1eq_com.json
+2026-02-19 17:42:39,594 [INFO] [202/220] Enriching 3K Technologies (3ktechnologies.com) [non-customer]
+2026-02-19 17:42:47,925 [INFO]   [Cockroach Labs] Saved to cockroachlabs_com.json
+2026-02-19 17:42:47,926 [INFO] [203/220] Enriching BlueCloud (blue.cloud) [non-customer]
+2026-02-19 17:42:59,623 [INFO]   [Ab Initio Software] Saved to abinitio_com.json
+2026-02-19 17:42:59,623 [INFO] [204/220] Enriching Masstech Innovations (telestream.net) [non-customer]
+2026-02-19 17:47:13,401 [WARNING]   [Sumo Logic] Timeout on attempt 1/3
+2026-02-19 17:47:13,403 [INFO]   [Sumo Logic] Retrying in 30s...
+2026-02-19 17:47:34,698 [WARNING]   [Two Six Technologies] Timeout on attempt 1/3
+2026-02-19 17:47:34,699 [INFO]   [Two Six Technologies] Retrying in 30s...
+2026-02-19 17:47:39,611 [WARNING]   [3K Technologies] Timeout on attempt 1/3
+2026-02-19 17:47:39,612 [INFO]   [3K Technologies] Retrying in 30s...
+2026-02-19 17:47:47,946 [WARNING]   [BlueCloud] Timeout on attempt 1/3
+2026-02-19 17:47:47,947 [INFO]   [BlueCloud] Retrying in 30s...
+2026-02-19 17:47:59,648 [WARNING]   [Masstech Innovations] Timeout on attempt 1/3
+2026-02-19 17:47:59,651 [INFO]   [Masstech Innovations] Retrying in 30s...
+2026-02-19 17:49:17,427 [INFO]   [3K Technologies] Saved to 3ktechnologies_com.json
+2026-02-19 17:49:17,428 [INFO] [205/220] Enriching 360 Degree Cloud (360degreecloud.com) [non-customer]
+2026-02-19 17:49:30,962 [INFO]   [Sumo Logic] Saved to sumologic_com.json
+2026-02-19 17:49:30,962 [INFO] [206/220] Enriching 5Data Inc (5datainc.com) [non-customer]
+2026-02-19 17:49:34,617 [INFO]   [Two Six Technologies] Saved to twosixtech_com.json
+2026-02-19 17:49:34,617 [INFO] [207/220] Enriching Scale AI (scale.com) [non-customer]
+2026-02-19 17:50:23,063 [INFO]   [Masstech Innovations] Saved to telestream_net.json
+2026-02-19 17:50:23,064 [INFO] [208/220] Enriching Fullstory (fullstory.com) [non-customer]
+2026-02-19 17:50:30,801 [INFO]   [360 Degree Cloud] Saved to 360degreecloud_com.json
+2026-02-19 17:50:30,802 [INFO] [209/220] Enriching Saison Technology International (HULFT) (saison-technology-intl.com) [non-customer]
+2026-02-19 17:50:40,108 [INFO]   [BlueCloud] Saved to blue_cloud.json
+2026-02-19 17:50:40,109 [INFO] [210/220] Enriching SugarCRM (sugarcrm.com) [non-customer]
+2026-02-19 17:50:47,361 [INFO]   [5Data Inc] Saved to 5datainc_com.json
+2026-02-19 17:50:47,361 [INFO] [211/220] Enriching Actian (actian.com) [non-customer]
+2026-02-19 17:51:42,126 [INFO]   [Scale AI] Saved to scale_com.json
+2026-02-19 17:51:42,127 [INFO] [212/220] Enriching Incture (incture.com) [non-customer]
+2026-02-19 17:52:08,463 [INFO]   [Saison Technology International (HULFT)] Saved to saison_technology_intl_com.json
+2026-02-19 17:52:08,463 [INFO] [213/220] Enriching Treasure Data (treasuredata.com) [non-customer]
+2026-02-19 17:52:15,587 [INFO]   [Actian] Saved to actian_com.json
+2026-02-19 17:52:15,587 [INFO] [214/220] Enriching Rokt mParticle (mparticle.com) [non-customer]
+2026-02-19 17:52:30,803 [INFO]   [Fullstory] Saved to fullstory_com.json
+2026-02-19 17:52:30,803 [INFO] [215/220] Enriching Cavisson Systems, Inc. (cavisson.com) [non-customer]
+2026-02-19 17:53:01,785 [INFO]   [SugarCRM] Saved to sugarcrm_com.json
+2026-02-19 17:53:01,786 [INFO] [216/220] Enriching Kyvos Insights (kyvosinsights.com) [non-customer]
+2026-02-19 17:53:21,745 [INFO]   [Incture] Saved to incture_com.json
+2026-02-19 17:53:27,999 [INFO]   [Treasure Data] Saved to treasuredata_com.json
+2026-02-19 17:54:10,826 [INFO]   [Cavisson Systems, Inc.] Saved to cavisson_com.json
+2026-02-19 17:55:46,259 [INFO]   [Kyvos Insights] Saved to kyvosinsights_com.json
+2026-02-19 17:57:15,616 [WARNING]   [Rokt mParticle] Timeout on attempt 1/3
+2026-02-19 17:57:15,618 [INFO]   [Rokt mParticle] Retrying in 30s...
+2026-02-19 17:59:16,813 [INFO]   [Rokt mParticle] Saved to mparticle_com.json
+2026-02-19 17:59:16,814 [INFO] ============================================================
+2026-02-19 17:59:16,814 [INFO] ENRICHMENT COMPLETE
+2026-02-19 17:59:16,814 [INFO]   Workers: 5
+2026-02-19 17:59:16,814 [INFO]   Total time: 0:22:26
+2026-02-19 17:59:16,814 [INFO]   Completed: 220/220
+2026-02-19 17:59:16,814 [INFO]   Failed: 0
+2026-02-19 17:59:16,815 [INFO] ============================================================
+2026-02-20 10:09:04,239 [INFO] ============================================================
+2026-02-20 10:09:04,240 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-20 10:09:04,240 [INFO] ============================================================
+2026-02-20 10:09:04,240 [INFO] Loaded prompt template (6536 chars)
+2026-02-20 10:09:04,240 [INFO] Loaded 44 known customers
+2026-02-20 10:09:04,241 [INFO] Loaded 176 non-customers
+2026-02-20 10:09:04,241 [INFO] Total companies to enrich: 220
+2026-02-20 10:09:04,284 [INFO] Already enriched: 200
+2026-02-20 10:09:04,284 [INFO] Remaining to process: 20
+2026-02-20 10:09:04,284 [INFO] [201/220] Enriching Aerospike (aerospike.com) [non-customer]
+2026-02-20 10:09:04,284 [INFO] [201/220] Enriching Keylent Inc (keylent.com) [non-customer]
+2026-02-20 10:09:04,284 [INFO] [201/220] Enriching Avolin (avolin.com) [non-customer]
+2026-02-20 10:09:04,284 [INFO] [201/220] Enriching Spin Technologies (spintechnologies.net) [non-customer]
+2026-02-20 10:09:04,285 [INFO] [201/220] Enriching Domo (domo.com) [non-customer]
+2026-02-20 10:10:09,069 [INFO]   [Keylent Inc] Saved to keylent_com.json
+2026-02-20 10:10:09,069 [INFO] [202/220] Enriching Interra Information Technologies (InterraIT) (interrait.com) [non-customer]
+2026-02-20 10:10:30,201 [INFO]   [Spin Technologies] Saved to spintechnologies_net.json
+2026-02-20 10:10:30,203 [INFO] [203/220] Enriching Solix Technologies, Inc. (solix.com) [non-customer]
+2026-02-20 10:10:33,898 [INFO]   [Domo] Saved to domo_com.json
+2026-02-20 10:10:33,899 [INFO] [204/220] Enriching SPAR Information Systems LLC (sparinfosys.com) [non-customer]
+2026-02-20 10:10:59,023 [INFO]   [Aerospike] Saved to aerospike_com.json
+2026-02-20 10:10:59,024 [INFO] [205/220] Enriching KMS Technology, Inc. (kms-technology.com) [non-customer]
+2026-02-20 10:11:10,384 [INFO]   [Avolin] Saved to avolin_com.json
+2026-02-20 10:11:10,385 [INFO] [206/220] Enriching Alteryx (alteryx.com) [non-customer]
+2026-02-20 10:11:46,737 [INFO]   [SPAR Information Systems LLC] Saved to sparinfosys_com.json
+2026-02-20 10:11:46,737 [INFO] [207/220] Enriching Meltwater (meltwater.com) [non-customer]
+2026-02-20 10:11:53,334 [INFO]   [Interra Information Technologies (InterraIT)] Saved to interrait_com.json
+2026-02-20 10:11:53,335 [INFO] [208/220] Enriching LogicMonitor (logicmonitor.com) [non-customer]
+2026-02-20 10:12:13,932 [INFO]   [Solix Technologies, Inc.] Saved to solix_com.json
+2026-02-20 10:12:13,932 [INFO] [209/220] Enriching Harmonic (harmonicinc.com) [non-customer]
+2026-02-20 10:13:01,150 [INFO]   [KMS Technology, Inc.] Saved to kms_technology_com.json
+2026-02-20 10:13:01,151 [INFO] [210/220] Enriching Perforce Software (perforce.com) [non-customer]
+2026-02-20 10:13:13,554 [INFO]   [Alteryx] Saved to alteryx_com.json
+2026-02-20 10:13:13,554 [INFO] [211/220] Enriching NETSCOUT (netscout.com) [non-customer]
+2026-02-20 10:13:24,127 [INFO]   [LogicMonitor] Saved to logicmonitor_com.json
+2026-02-20 10:13:24,127 [INFO] [212/220] Enriching Informatica (informatica.com) [non-customer]
+2026-02-20 10:13:46,081 [INFO]   [Harmonic] Saved to harmonicinc_com.json
+2026-02-20 10:13:46,081 [INFO] [213/220] Enriching Pegasystems (launchpad.io) [non-customer]
+2026-02-20 10:14:23,543 [INFO]   [Perforce Software] Saved to perforce_com.json
+2026-02-20 10:14:23,543 [INFO] [214/220] Enriching BMC (bmc.com) [non-customer]
+2026-02-20 10:14:31,499 [INFO]   [Meltwater] Saved to meltwater_com.json
+2026-02-20 10:14:31,499 [INFO] [215/220] Enriching SAS (sas.com) [non-customer]
+2026-02-20 10:14:50,884 [INFO]   [Informatica] Saved to informatica_com.json
+2026-02-20 10:14:50,885 [INFO] [216/220] Enriching Endava (endava.com) [non-customer]
+2026-02-20 10:15:13,884 [INFO]   [Pegasystems] Saved to launchpad_io.json
+2026-02-20 10:15:21,103 [INFO]   [NETSCOUT] Saved to netscout_com.json
+2026-02-20 10:15:51,456 [INFO]   [BMC] Saved to bmc_com.json
+2026-02-20 10:15:53,178 [INFO]   [SAS] Saved to sas_com.json
+2026-02-20 10:16:16,868 [INFO]   [Endava] Saved to endava_com.json
+2026-02-20 10:16:16,869 [INFO] ============================================================
+2026-02-20 10:16:16,869 [INFO] ENRICHMENT COMPLETE
+2026-02-20 10:16:16,869 [INFO]   Workers: 5
+2026-02-20 10:16:16,869 [INFO]   Total time: 0:07:13
+2026-02-20 10:16:16,869 [INFO]   Completed: 220/220
+2026-02-20 10:16:16,869 [INFO]   Failed: 0
+2026-02-20 10:16:16,869 [INFO] ============================================================

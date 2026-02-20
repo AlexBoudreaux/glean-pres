@@ -1,0 +1,94 @@
+Thu Feb 19 17:36:50 CST 2026: Starting enrichment pipeline...
+2026-02-19 17:36:50,775 [INFO] ============================================================
+2026-02-19 17:36:50,775 [INFO] ENRICHMENT PIPELINE STARTING (5 parallel workers)
+2026-02-19 17:36:50,775 [INFO] ============================================================
+2026-02-19 17:36:50,775 [INFO] Loaded prompt template (6536 chars)
+2026-02-19 17:36:50,776 [INFO] Loaded 44 known customers
+2026-02-19 17:36:50,777 [INFO] Loaded 176 non-customers
+2026-02-19 17:36:50,777 [INFO] Total companies to enrich: 220
+2026-02-19 17:36:50,822 [INFO] Already enriched: 188
+2026-02-19 17:36:50,822 [INFO] Remaining to process: 32
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Celigo (celigo.com) [non-customer]
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Contata (contata.com) [non-customer]
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Ataccama (ataccama.com) [non-customer]
+2026-02-19 17:36:50,822 [INFO] [189/220] Enriching Zolon Tech Inc. (zolontech.com) [non-customer]
+2026-02-19 17:36:50,823 [INFO] [189/220] Enriching Kinective (kinective.io) [non-customer]
+2026-02-19 17:38:20,131 [INFO]   [Celigo] Saved to celigo_com.json
+2026-02-19 17:38:20,132 [INFO] [190/220] Enriching Emplifi (emplifi.io) [non-customer]
+2026-02-19 17:38:20,513 [INFO]   [Contata] Saved to contata_com.json
+2026-02-19 17:38:20,513 [INFO] [191/220] Enriching Lytics (contentstack.com) [non-customer]
+2026-02-19 17:38:31,529 [INFO]   [Kinective] Saved to kinective_io.json
+2026-02-19 17:38:31,530 [INFO] [192/220] Enriching dbt Labs (getdbt.com) [non-customer]
+2026-02-19 17:38:31,621 [INFO]   [Ataccama] Saved to ataccama_com.json
+2026-02-19 17:38:31,621 [INFO] [193/220] Enriching Arbisoft (arbisoft.com) [non-customer]
+2026-02-19 17:39:30,353 [INFO]   [Zolon Tech Inc.] Saved to zolontech_com.json
+2026-02-19 17:39:30,355 [INFO] [194/220] Enriching Sparq (teamsparq.com) [non-customer]
+2026-02-19 17:39:55,240 [INFO]   [Lytics] Saved to contentstack_com.json
+2026-02-19 17:39:55,240 [INFO] [195/220] Enriching KX (kx.com) [non-customer]
+2026-02-19 17:40:23,624 [INFO]   [Arbisoft] Saved to arbisoft_com.json
+2026-02-19 17:40:23,625 [INFO] [196/220] Enriching Amplitude (amplitude.com) [non-customer]
+2026-02-19 17:40:32,277 [INFO]   [dbt Labs] Saved to getdbt_com.json
+2026-02-19 17:40:32,278 [INFO] [197/220] Enriching Cockroach Labs (cockroachlabs.com) [non-customer]
+2026-02-19 17:40:50,508 [INFO]   [Emplifi] Saved to emplifi_io.json
+2026-02-19 17:40:50,509 [INFO] [198/220] Enriching Ab Initio Software (abinitio.com) [non-customer]
+2026-02-19 17:41:04,125 [INFO]   [Sparq] Saved to teamsparq_com.json
+2026-02-19 17:41:04,126 [INFO] [199/220] Enriching eQ Technologic (1eq.com) [non-customer]
+2026-02-19 17:42:13,386 [INFO]   [KX] Saved to kx_com.json
+2026-02-19 17:42:13,387 [INFO] [200/220] Enriching Sumo Logic (sumologic.com) [non-customer]
+2026-02-19 17:42:34,680 [INFO]   [Amplitude] Saved to amplitude_com.json
+2026-02-19 17:42:34,681 [INFO] [201/220] Enriching Two Six Technologies (twosixtech.com) [non-customer]
+2026-02-19 17:42:39,594 [INFO]   [eQ Technologic] Saved to 1eq_com.json
+2026-02-19 17:42:39,594 [INFO] [202/220] Enriching 3K Technologies (3ktechnologies.com) [non-customer]
+2026-02-19 17:42:47,925 [INFO]   [Cockroach Labs] Saved to cockroachlabs_com.json
+2026-02-19 17:42:47,926 [INFO] [203/220] Enriching BlueCloud (blue.cloud) [non-customer]
+2026-02-19 17:42:59,623 [INFO]   [Ab Initio Software] Saved to abinitio_com.json
+2026-02-19 17:42:59,623 [INFO] [204/220] Enriching Masstech Innovations (telestream.net) [non-customer]
+2026-02-19 17:47:13,401 [WARNING]   [Sumo Logic] Timeout on attempt 1/3
+2026-02-19 17:47:13,403 [INFO]   [Sumo Logic] Retrying in 30s...
+2026-02-19 17:47:34,698 [WARNING]   [Two Six Technologies] Timeout on attempt 1/3
+2026-02-19 17:47:34,699 [INFO]   [Two Six Technologies] Retrying in 30s...
+2026-02-19 17:47:39,611 [WARNING]   [3K Technologies] Timeout on attempt 1/3
+2026-02-19 17:47:39,612 [INFO]   [3K Technologies] Retrying in 30s...
+2026-02-19 17:47:47,946 [WARNING]   [BlueCloud] Timeout on attempt 1/3
+2026-02-19 17:47:47,947 [INFO]   [BlueCloud] Retrying in 30s...
+2026-02-19 17:47:59,648 [WARNING]   [Masstech Innovations] Timeout on attempt 1/3
+2026-02-19 17:47:59,651 [INFO]   [Masstech Innovations] Retrying in 30s...
+2026-02-19 17:49:17,427 [INFO]   [3K Technologies] Saved to 3ktechnologies_com.json
+2026-02-19 17:49:17,428 [INFO] [205/220] Enriching 360 Degree Cloud (360degreecloud.com) [non-customer]
+2026-02-19 17:49:30,962 [INFO]   [Sumo Logic] Saved to sumologic_com.json
+2026-02-19 17:49:30,962 [INFO] [206/220] Enriching 5Data Inc (5datainc.com) [non-customer]
+2026-02-19 17:49:34,617 [INFO]   [Two Six Technologies] Saved to twosixtech_com.json
+2026-02-19 17:49:34,617 [INFO] [207/220] Enriching Scale AI (scale.com) [non-customer]
+2026-02-19 17:50:23,063 [INFO]   [Masstech Innovations] Saved to telestream_net.json
+2026-02-19 17:50:23,064 [INFO] [208/220] Enriching Fullstory (fullstory.com) [non-customer]
+2026-02-19 17:50:30,801 [INFO]   [360 Degree Cloud] Saved to 360degreecloud_com.json
+2026-02-19 17:50:30,802 [INFO] [209/220] Enriching Saison Technology International (HULFT) (saison-technology-intl.com) [non-customer]
+2026-02-19 17:50:40,108 [INFO]   [BlueCloud] Saved to blue_cloud.json
+2026-02-19 17:50:40,109 [INFO] [210/220] Enriching SugarCRM (sugarcrm.com) [non-customer]
+2026-02-19 17:50:47,361 [INFO]   [5Data Inc] Saved to 5datainc_com.json
+2026-02-19 17:50:47,361 [INFO] [211/220] Enriching Actian (actian.com) [non-customer]
+2026-02-19 17:51:42,126 [INFO]   [Scale AI] Saved to scale_com.json
+2026-02-19 17:51:42,127 [INFO] [212/220] Enriching Incture (incture.com) [non-customer]
+2026-02-19 17:52:08,463 [INFO]   [Saison Technology International (HULFT)] Saved to saison_technology_intl_com.json
+2026-02-19 17:52:08,463 [INFO] [213/220] Enriching Treasure Data (treasuredata.com) [non-customer]
+2026-02-19 17:52:15,587 [INFO]   [Actian] Saved to actian_com.json
+2026-02-19 17:52:15,587 [INFO] [214/220] Enriching Rokt mParticle (mparticle.com) [non-customer]
+2026-02-19 17:52:30,803 [INFO]   [Fullstory] Saved to fullstory_com.json
+2026-02-19 17:52:30,803 [INFO] [215/220] Enriching Cavisson Systems, Inc. (cavisson.com) [non-customer]
+2026-02-19 17:53:01,785 [INFO]   [SugarCRM] Saved to sugarcrm_com.json
+2026-02-19 17:53:01,786 [INFO] [216/220] Enriching Kyvos Insights (kyvosinsights.com) [non-customer]
+2026-02-19 17:53:21,745 [INFO]   [Incture] Saved to incture_com.json
+2026-02-19 17:53:27,999 [INFO]   [Treasure Data] Saved to treasuredata_com.json
+2026-02-19 17:54:10,826 [INFO]   [Cavisson Systems, Inc.] Saved to cavisson_com.json
+2026-02-19 17:55:46,259 [INFO]   [Kyvos Insights] Saved to kyvosinsights_com.json
+2026-02-19 17:57:15,616 [WARNING]   [Rokt mParticle] Timeout on attempt 1/3
+2026-02-19 17:57:15,618 [INFO]   [Rokt mParticle] Retrying in 30s...
+2026-02-19 17:59:16,813 [INFO]   [Rokt mParticle] Saved to mparticle_com.json
+2026-02-19 17:59:16,814 [INFO] ============================================================
+2026-02-19 17:59:16,814 [INFO] ENRICHMENT COMPLETE
+2026-02-19 17:59:16,814 [INFO]   Workers: 5
+2026-02-19 17:59:16,814 [INFO]   Total time: 0:22:26
+2026-02-19 17:59:16,814 [INFO]   Completed: 220/220
+2026-02-19 17:59:16,814 [INFO]   Failed: 0
+2026-02-19 17:59:16,815 [INFO] ============================================================
+Thu Feb 19 17:59:16 CST 2026: Pipeline finished. Exit code: 0

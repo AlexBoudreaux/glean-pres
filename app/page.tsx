@@ -65,7 +65,7 @@ function ProfilePhoto() {
     <div className="relative inline-block">
       {/* Ambient glow */}
       <div
-        className="absolute inset-0 rounded-full blur-2xl opacity-25"
+        className="absolute inset-0 rounded-full blur-2xl opacity-60"
         style={{
           background: "linear-gradient(135deg, #343CED, #D8FD49)",
         }}
@@ -75,7 +75,7 @@ function ProfilePhoto() {
         className="relative rounded-full p-[2px]"
         style={{
           background:
-            "linear-gradient(135deg, rgba(52,60,237,0.6), rgba(52,60,237,0.1) 50%, rgba(216,253,73,0.3))",
+            "linear-gradient(135deg, rgba(52,60,237,0.8), rgba(52,60,237,0.2) 50%, rgba(216,253,73,0.5))",
         }}
       >
         <Image
@@ -93,116 +93,121 @@ function ProfilePhoto() {
 
 export default function HubPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-8 relative">
-      {/* Radial glow behind hero */}
-      <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(52, 60, 237, 0.06) 0%, transparent 70%)",
-        }}
-      />
+    <div className="min-h-screen flex flex-col items-center justify-center px-8 relative overflow-hidden bg-[#0A0A0A]">
+      {/* Dynamic background lighting to match the presentation aesthetic */}
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[800px] rounded-full blur-[120px] opacity-[0.25]"
+          style={{
+            background: "radial-gradient(ellipse, #343CED 0%, transparent 60%)",
+          }}
+        />
+        {/* Subtle dot overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.15]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at center, #ffffff 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+            maskImage:
+              "radial-gradient(ellipse at center, black 40%, transparent 80%)",
+          }}
+        />
+      </div>
 
       <div className="w-full max-w-[900px] mx-auto relative z-10">
         {/* Profile + Title */}
-        <div className="flex flex-col items-center gap-6 mb-14">
+        <div className="flex flex-col items-center gap-5 mb-10">
           <ProfilePhoto />
 
-          <div className="text-center">
+          <div className="text-center flex flex-col items-center">
             <div className="flex items-center justify-center gap-4 mb-3">
               <GleanLogo height={36} className="text-foreground" />
-              <span className="text-faint text-3xl font-light">×</span>
-              <span className="font-serif text-4xl tracking-tight">Alex</span>
+              <span className="text-accent/80 text-3xl font-light">×</span>
+              <span className="font-serif text-4xl tracking-tight text-foreground">Alex</span>
             </div>
-            <p className="text-secondary text-base">
-              GTM Engineer Case Study Presentation
-            </p>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.15] bg-white/[0.05] backdrop-blur-md">
+              <div className="w-1.5 h-1.5 rounded-full bg-accent/80" />
+              <span className="font-mono text-[10px] uppercase tracking-widest text-secondary">
+                GTM Engineer Case Study
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-2 gap-6 mb-16">
+        {/* Actionable Cards */}
+        <div className="grid grid-cols-2 gap-6 mb-12">
           {cases.map((c) => (
             <Link
               key={c.href}
               href={c.href}
-              className="card-glow group flex flex-col p-8 rounded-xl bg-surface border border-border"
+              className="group relative flex flex-col p-6 rounded-2xl bg-[#141414] border border-white/[0.12] hover:border-accent/60 transition-all duration-300 active:scale-[0.98] hover:shadow-[0_10px_40px_rgba(52,60,237,0.2)] overflow-hidden"
             >
+              {/* Internal hover glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
               {/* Header: icon container + number */}
-              <div className="flex items-start justify-between mb-6">
-                <div className="w-12 h-12 rounded-lg bg-accent-muted flex items-center justify-center text-accent">
+              <div className="flex items-start justify-between mb-6 relative z-10">
+                <div className="w-12 h-12 rounded-xl bg-white/[0.05] border border-white/[0.1] group-hover:bg-accent/20 group-hover:border-accent/40 group-hover:text-accent flex items-center justify-center text-secondary transition-all duration-300 shadow-inner">
                   {c.icon}
                 </div>
-                <span className="font-mono text-faint text-2xl tracking-tight">
+                <span className="font-mono text-accent/50 text-2xl font-light tracking-tight group-hover:text-accent/80 transition-colors">
                   {c.number}
                 </span>
               </div>
 
               {/* Label tag */}
-              <span className="inline-flex self-start px-2.5 py-1 rounded-md bg-surface-raised text-secondary text-xs font-medium tracking-wide mb-4">
+              <span className="inline-flex self-start px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/[0.1] text-secondary font-mono text-[10px] uppercase tracking-wider mb-4 relative z-10 group-hover:border-accent/30 group-hover:text-accent transition-colors">
                 {c.label}
               </span>
 
-              {/* Title (min-height for alignment across cards) */}
-              <h2 className="text-[22px] font-semibold leading-snug min-h-[60px] mb-3 group-hover:text-foreground transition-colors">
+              {/* Title */}
+              <h2 className="text-xl font-serif text-foreground leading-[1.2] min-h-[56px] mb-3 relative z-10">
                 {c.title}
               </h2>
 
               {/* Description */}
-              <p className="text-muted text-[15px] leading-relaxed mb-6">
+              <p className="text-secondary text-sm leading-relaxed mb-6 relative z-10">
                 {c.description}
               </p>
 
-              {/* Spacer to push CTA to bottom */}
+              {/* Spacer */}
               <div className="flex-grow" />
 
-              {/* CTA */}
-              <span className="text-accent text-sm font-medium flex items-center gap-2 group-hover:gap-3.5 transition-all duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]">
-                Explore case study
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                >
-                  <path
-                    d="M1 7H13M13 7L7 1M13 7L7 13"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+              {/* CTA Button styling */}
+              <div className="flex items-center justify-between w-full pt-4 border-t border-white/[0.1] group-hover:border-accent/30 transition-colors relative z-10">
+                <span className="text-secondary text-sm font-medium group-hover:text-foreground transition-colors">
+                  Present Case Study
+                </span>
+                <div className="w-7 h-7 rounded-full bg-white/[0.05] flex items-center justify-center group-hover:bg-accent group-hover:text-white text-secondary transition-all duration-300 group-hover:translate-x-1">
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              </div>
             </Link>
           ))}
         </div>
 
         {/* Gradient divider */}
-        <div className="w-24 h-px mx-auto mb-8 bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+        <div className="w-full max-w-[150px] h-px mx-auto mb-8 bg-gradient-to-r from-transparent via-white/[0.2] to-transparent" />
 
         {/* Footer links */}
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex items-center justify-center gap-4">
           <a
             href="https://github.com/AlexBoudreaux"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted
-                       bg-surface border border-border
-                       hover:text-foreground hover:border-border-hover hover:bg-surface-hover
-                       transition-all duration-200"
+            className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium text-secondary bg-[#141414] border border-white/[0.12] hover:text-foreground hover:border-white/[0.3] hover:bg-white/[0.05] transition-all duration-200 active:scale-[0.98]"
           >
             <GitHubIcon />
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/alexboudreaux"
+            href="https://www.linkedin.com/in/alex-boudreaux-424831341/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted
-                       bg-surface border border-border
-                       hover:text-foreground hover:border-border-hover hover:bg-surface-hover
-                       transition-all duration-200"
+            className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium text-secondary bg-[#141414] border border-white/[0.12] hover:text-foreground hover:border-white/[0.3] hover:bg-white/[0.05] transition-all duration-200 active:scale-[0.98]"
           >
             <LinkedInIcon />
             LinkedIn
@@ -211,10 +216,7 @@ export default function HubPage() {
             href="https://cap.link/1g8qw2ysqv9aywn"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted
-                       bg-surface border border-border
-                       hover:text-foreground hover:border-border-hover hover:bg-surface-hover
-                       transition-all duration-200"
+            className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium text-accent bg-accent/10 border border-accent/30 hover:text-white hover:border-accent/60 hover:bg-accent/30 hover:shadow-[0_0_20px_rgba(52,60,237,0.3)] transition-all duration-200 active:scale-[0.98]"
           >
             <PlayIcon />
             Demo Video

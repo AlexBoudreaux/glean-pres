@@ -10,12 +10,12 @@ import { ImpactMetrics } from "./components/ImpactMetrics";
 import { IntroPanel } from "./components/IntroPanel";
 
 const panels = [
-  { id: "intro", title: "Reimagining Customer Service with AI" },
+  { id: "intro", title: "Building an AI Agent for Fiserv's Service Team" },
   { id: "problem", title: "The Old Way" },
   { id: "approach", title: "Discovery First" },
   { id: "architecture", title: "The System We Built" },
-  { id: "eval", title: "Measuring Everything" },
-  { id: "team", title: "Built With Them, Not For Them" },
+  { id: "eval", title: "How We Measured It" },
+  { id: "team", title: "Embedded With the Team" },
   { id: "emerged", title: "What We Didn't Expect" },
   { id: "results", title: "The Impact" },
 ];
@@ -38,12 +38,12 @@ const panelContent: Record<string, React.ReactNode> = {
     </PanelShell>
   ),
   eval: (
-    <PanelShell number="05" title="Measuring Everything" subtitle="Before building anything, we got their hardest questions.">
+    <PanelShell number="05" title="How We Measured It" subtitle="We asked Fiserv agents for their hardest questions and built the test suite from those.">
       <EvalPillars />
     </PanelShell>
   ),
   team: (
-    <PanelShell number="06" title="Built With Them, Not For Them">
+    <PanelShell number="06" title="Embedded With the Team">
       <TeamQuotes />
     </PanelShell>
   ),

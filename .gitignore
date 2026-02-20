@@ -43,6 +43,10 @@ yarn-error.log*
 /docs/
 CLAUDE.md
 
+# experiment data (company data, enrichment results)
+/experiment/data/
+/experiment/output/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

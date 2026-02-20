@@ -1,0 +1,14 @@
+{
+  "completed": 220,
+  "failed": 0,
+  "failed_companies": [],
+  "total": 220,
+  "remaining": 0,
+  "workers": 5,
+  "elapsed_seconds": 433,
+  "elapsed_human": "0:07:13",
+  "avg_seconds_per_company": 2.0,
+  "eta_seconds": 0,
+  "eta_human": "0:00:00",
+  "updated_at": "2026-02-20T10:16:16.869372"
+}
