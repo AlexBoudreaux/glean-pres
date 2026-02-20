@@ -16,7 +16,7 @@ const nodeVariants = {
 
 function ConnectingLine({ delay = 0 }: { delay?: number }) {
   return (
-    <div className="flex-1 mx-4 relative h-[2px] flex items-center min-w-[40px]">
+    <div className="flex-1 mx-4 relative h-[2px] flex items-center min-w-[40px] mt-7">
       <div className="absolute w-full border-t-2 border-dashed border-white/[0.08]" />
       <motion.div
         className="absolute left-0 border-t-2 border-solid border-accent"
@@ -105,23 +105,6 @@ export function PipelinePanel() {
         </div>
       </div>
 
-      {/* Callout */}
-      <motion.div
-        className="flex items-center gap-4"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 1.2, duration: 0.5, ease }}
-      >
-        <div className="w-2 h-2 rounded-full bg-accent/60 animate-pulse" />
-        <p className="text-secondary text-[15px] leading-relaxed">
-          <span className="text-foreground font-medium">
-            Right tool for the job.
-          </span>{" "}
-          Each step handles what it&apos;s best at. Clay for discovery,
-          Python for data wrangling, Claude Code for reasoning.
-        </p>
-      </motion.div>
     </div>
   );
 }

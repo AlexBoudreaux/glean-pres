@@ -44,7 +44,7 @@ export function EvalPillars() {
             <div className="h-32 bg-white/[0.02] border-b border-white/[0.05] p-6 flex flex-col justify-end relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
               <div className="absolute top-5 right-5 z-10">
-                <pillar.icon size={18} className="text-accent/40" strokeWidth={1.5} />
+                <pillar.icon size={18} className="text-accent" strokeWidth={1.5} />
               </div>
               <div className="flex items-baseline gap-2 relative z-10">
                 <span className="font-serif text-5xl text-foreground tracking-tighter">

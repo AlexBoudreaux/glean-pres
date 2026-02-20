@@ -80,7 +80,7 @@ function PanelShell({
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-2">
-        <span className="font-mono text-accent/30 text-sm tracking-wider">
+        <span className="font-mono text-accent text-sm tracking-wider">
           {number}
         </span>
         <h2 className="text-4xl font-semibold tracking-tight">{title}</h2>

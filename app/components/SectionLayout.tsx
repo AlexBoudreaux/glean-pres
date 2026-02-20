@@ -137,7 +137,7 @@ export function SectionLayout({
                   strokeLinejoin="round"
                 />
               </svg>
-              <GleanMark size={14} className="text-accent/60" />
+              <GleanMark size={14} className="text-accent" />
             </Link>
             <div className="w-px h-4 bg-border" />
             <span className="text-foreground text-sm font-medium">
@@ -146,10 +146,10 @@ export function SectionLayout({
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="text-muted text-xs max-w-[200px] truncate">
+            <span className="text-secondary text-xs max-w-[200px] truncate">
               {currentTitle}
             </span>
-            <span className="font-mono text-faint text-xs tabular-nums">
+            <span className="font-mono text-secondary text-xs tabular-nums">
               {currentIndex + 1}/{totalPanels}
             </span>
           </div>
@@ -158,7 +158,7 @@ export function SectionLayout({
         {/* Progress bar */}
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-border">
           <div
-            className="h-full bg-accent/50 transition-all duration-500 ease-out"
+            className="h-full bg-accent transition-all duration-500 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>

@@ -262,7 +262,7 @@ export function FrameworkPanel() {
                 <div className="flex items-center gap-4">
                   <span
                     className={`font-mono text-sm w-6 ${
-                      isOpen ? "text-accent" : "text-accent/30"
+                      isOpen ? "text-accent" : "text-accent/70"
                     }`}
                   >
                     {condition.id}
@@ -272,14 +272,14 @@ export function FrameworkPanel() {
                       isOpen
                         ? "text-foreground"
                         : condition.isFilter
-                          ? "text-secondary/70"
-                          : "text-secondary"
+                          ? "text-secondary"
+                          : "text-foreground/80"
                     }`}
                   >
                     {condition.title}
                   </h3>
                   {condition.isFilter && (
-                    <span className="flex items-center gap-1.5 font-mono text-[10px] px-2.5 py-1 rounded-full bg-white/[0.03] border border-white/[0.06] text-muted uppercase tracking-wider">
+                    <span className="flex items-center gap-1.5 font-mono text-[10px] px-2.5 py-1 rounded-full bg-white/[0.03] border border-white/[0.06] text-secondary uppercase tracking-wider">
                       <Shield size={10} />
                       Qualifying Filter
                     </span>

@@ -216,7 +216,7 @@ export default function HubPage() {
             href="https://cap.link/1g8qw2ysqv9aywn"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium text-accent bg-accent/10 border border-accent/30 hover:text-white hover:border-accent/60 hover:bg-accent/30 hover:shadow-[0_0_20px_rgba(52,60,237,0.3)] transition-all duration-200 active:scale-[0.98]"
+            className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium text-secondary bg-[#141414] border border-white/[0.12] hover:text-foreground hover:border-white/[0.3] hover:bg-white/[0.05] transition-all duration-200 active:scale-[0.98]"
           >
             <PlayIcon />
             Demo Video
